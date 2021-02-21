@@ -1,0 +1,145 @@
+.overlayer-2 {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 9990;
+  width: 100vw;
+  min-height: 100vh;
+  background-color: rgba(255, 255, 255, 0.95);
+
+  visibility: hidden;
+  opacity: 0;
+  // visibility: visible;
+  // opacity: 1;
+}
+.signin-account {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 9999;
+  width: 100vw;
+  min-height: 100vh;
+  //   background-color: rgba(255, 255, 255, 0.858);
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @media only screen and (max-width: 1020px) {
+    display: none;
+  }
+  visibility: hidden;
+  opacity: 0;
+
+  transition: all 0.5s 0.2s;
+  &-container {
+    width: 80rem;
+    min-height: 50%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 6rem 2rem;
+    position: relative;
+    box-shadow: 0rem 0.7rem 3rem rgba(rgb(1, 1, 1), 0.08);
+    &-left {
+      p {
+        margin-bottom: 2rem;
+      }
+      border-right: 0.03px solid #000;
+    }
+    &-right,
+    &-left {
+      flex: 1;
+      width: 100%;
+      max-height: 100%;
+
+      padding: 0 2rem;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      .text-main {
+        margin-bottom: 2rem;
+      }
+      p {
+        width: 100%;
+      }
+    }
+  }
+}
+.icon-close-signin {
+  position: absolute;
+  top: 1.4rem;
+  right: 1.4rem;
+  width: 2.4rem;
+  height: 2.4rem;
+  fill: #9b9898;
+  cursor: pointer;
+  transition: all 0.2s;
+  &:hover {
+    fill: #000000;
+  }
+}
+
+.form-email .search__field {
+  border: none;
+  background: none;
+  font-family: inherit;
+  width: 100%;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 2px;
+  font-size: 1.8rem;
+  color: #838383;
+  letter-spacing: 1px;
+  padding: 1rem 0rem;
+  border-bottom: 1px solid rgb(53, 53, 53);
+  margin-bottom: 3rem;
+}
+
+.form-email input {
+  font-size: 0.5rem;
+  font-weight: 400;
+  padding: 0.8rem 1rem;
+  border: none;
+  transition: all 0.2s;
+  &::placeholder {
+    color: #b3b1b1;
+    font-size: 1.2rem;
+  }
+  &:focus {
+    outline: none;
+  }
+}
+
+.checks p {
+  margin-bottom: 0rem;
+}
+.create p {
+  font-size: 1.2rem;
+  margin-top: 3rem;
+  font-size: 500;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.amazon-svg {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-self: flex-start;
+}
+
+.amazon-login-btn {
+  width: 18rem;
+  height: 4rem;
+  margin-right: 2rem;
+}
+.prime-svg {
+  height: 3rem;
+}

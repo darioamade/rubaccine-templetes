@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,600,700"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="src/img/apple-touch-icon.png"
+      type="image/x-icon"
+    />
+
+    <link rel="stylesheet" href="src/sass/main.css" />
+    <script defer src="src/js/controller.js"></script>
+
+    <title>RUBACCINE||ITALIAN FASHION BRAND</title>
+  </head>
+  <body>
+      <!--  -->
+    <div class="container">
+        <!--  -->
+        <header class="header ">
+            <nav class="nav nav__container">
+              <ul class="nav__list">
+                <li class="nav__item ">
+                  <button class="nav__btn nav__btn--add-recipe " data-tab="1" >
+                    <svg class="icon-test nav__bar__icon hidden-icons">
+                       <use href="src/img/sprite.svg#icon-menu1"></use> 
+                      <!-- <img src="src/img/menu-s.svg" alt="icon" class="con-test nav__bar__icon hidden-icons"> -->
+                    </svg>
+                    <span class="hidden-icons-text  sale__tab_1" style="color: #ec0606">
+                      SALE
+                    </span>
+                  </button>
+                </li>
+                <li class="nav__item">
+                  <button class="nav__btn " data-tab="1" >
+                    <span class="signin hidden-icons-text  sale__tab_2" style="color: #ec0606"
+                      >OUTLET</span
+                    >
+                  </button>
+                </li>
+    
+                <li class="nav__item">
+                  <button class="nav__btn nav__btn--add-recipe" data-tab="2">
+                    <span class="signin hidden-icons-text sale__tab_3" >Women</span>
+                  </button>
+                </li>
+    
+                <li class="nav__item">
+                  <button class="nav__btn nav__btn--add-recipe" data-tab="3">
+                    <span class="signin hidden-icons-text sale__tab_4" >Men</span>
+                  </button>
+                </li>
+                <li class="nav__item">
+                  <button class="nav__btn nav__btn--add-recipe tag1" data-tab="1" >
+                    <svg class="icon-test hoveruv hidden-icons">
+                      <use href="src/img/icons.svg#icon-magnifying-glass"></use>
+                    </svg>
+                    <span class="signin hoveruv hidden-icons-text">Search</span>
+                  </button>
+                </li>
+              </ul>
+            </nav>
+            <!-- Form search 😆  REMOVE VISIBLITY LATER -->
+            <form class="search ">
+              <div class="search-overlay">
+                <div class="search-overlay-content">
+                  <input type="text" class="search-overlay-content__field" placeholder="Search Here" autofocus />
+                  <button class="btn search-overlay-content__btn">
+                    <!-- <svg class="search__icon">
+                      <use href="src/img/icons.svg#icon-close"></use>
+                    </svg> -->
+                    <span class="closeX">X</span>
+                  </button>
+                </div>
+    
+              </div>
+        
+            
+            </form>
+            <!-- form seach -->
+            <div class="header__logo" onclick="location.href='index.html'" ;>
+              <p>RUBACCINE</p>
+            </div>
+            <nav class="nav">
+              <ul class="nav__list">
+                <li class="nav__item">
+                  <button class="nav__btn nav__btn--add-recipe">
+                    <span class="signin currency hidden-icons-text">Currency</span>
+                  </button>
+                </li>
+                <li class="nav__item">
+                  <button class="nav__btn nav__btn--add-recipe">
+                    <span class="signin sign__In hidden-icons-text">Sign in</span>
+                  </button>
+                </li>
+                <li class="nav__item">
+                  <button class="nav__btn nav__btn--bookmarks  tag2">
+                    <svg class="icon-test icon__heart__whishlist hidden-icons">
+                      <use href="src/img/icons.svg#icon-heart"></use>
+                    </svg>
+                    <span class="hidden-icons-text whishlist__form"> WISHLIST </span>
+                  </button>
+                 
+                </li>
+                <li class="nav__item">
+                  <button class="nav__btn nav__btn--add-recipe">
+                    <svg class="icon-test icon_bag__icon__small hidden-icons">
+                      <!-- <use href="src/img/icons.svg#icon-shopping_bag"></use> -->
+                      <img src="src/img/cart.svg" style="margin-right: .5rem;" alt="icon"  class="icon-test hoveruv hidden-icons">
+                    </svg>
+                    <span class="icon-test-name bag__icon__cart hidden-icons-text">bag (1)</span>
+                  </button>
+                </li>
+              </ul>
+            </nav>
+        </header>
+        <!-- header END -->
+        <!-- Hero -->
+        <div class="hero ">
+            <!--  NAV  SALE TAB -1 SALE-->
+            <div class="nav-link-preview  sale__tab_1_box hidden"> <!-- //TODO DONE   ok-->
+              <div class="nav-link-preview-container-left">
+                <ul class="nav__list-preview">
+                  <li class="nav__item-preview bold-title">
+                    <a href="#" id="nav__item-preview-title">WOMEN</a>
+                  </li>
+                  <li class="nav__item-preview"><a href="#">All Sale</a></li>
+                  <li class="nav__item-preview"><a href="#">Leather Jackets</a></li>
+                  <li class="nav__item-preview"><a href="#">Coats & Jackets</a></li>
+                  <li class="nav__item-preview"><a href="#">Dresses</a></li>
+                  <li class="nav__item-preview"><a href="#">Knitwear</a></li>
+                  <li class="nav__item-preview">
+                    <a href="#">T-shirts & Sweatshirts</a>
+                  </li>
+                  <li class="nav__item-preview"><a href="#">Tops & Shirts</a></li>
+                  <li class="nav__item-preview">
+                    <a href="#">Jeans & Trousers</a>
+                  </li>
+                  <li class="nav__item-preview"><a href="#">Skirts & Shorts</a></li>
+                  <li class="nav__item-preview">
+                    <a href="#">Handbags & Accesssories</a>
+                  </li>
+                  <li class="nav__item-preview"><a href="#">Boots & Shoes</a></li>
+                </ul>
+                <ul class="nav__list-preview">
+                  <li class="nav__item-preview">
+                    <a href="#" id="nav__item-preview-title">MEN</a>
+                  </li>
+                  <li class="nav__item-preview"><a href="#">All Sale</a></li>
+                  <li class="nav__item-preview"><a href="#">Leather Jackets</a></li>
+                  <li class="nav__item-preview"><a href="#">Coats & Jackets</a></li>
+                  <li class="nav__item-preview"><a href="#">Knitwear</a></li>
+                  <li class="nav__item-preview"><a href="#">Shirts</a></li>
+                  <li class="nav__item-preview">
+                    <a href="#">Jeans & Trousers</a>
+                  </li>
+                  <li class="nav__item-preview"><a href="#">Ramskull</a></li>
+                  <li class="nav__item-preview"><a href="#">Polos</a></li>
+                  <li class="nav__item-preview"><a href="#">Boots & Shoes</a></li>
+                  <li class="nav__item-preview">
+                    <a href="#">Bags & Accesssories</a>
+                  </li>
+                </ul>
+               
+              </div>
+              <div class="nav-link-preview-container-right">
+                <div class="nav-link-preview-container-right-content">
+                  <div class="nav-link-preview-container-right-content-top">
+                    <p class="sale-thiny">S.A.L.E.</p>
+                    <p class="text-sale">UP TO 70% OFF</p>
+                  </div>
+                  <div class="nav-link-preview-container-right-content-bottom">
+                    <p clas="text-shop">Shop Now</p>
+                  </div>
+                </div>
+              </div>
+              <p class="text-free">
+                Free UK Delivery on orders over £150 & UK Returns
+              </p>
+            </div>
+            <!--  -->
+            <!--  NAV SALE TAB -2 OUTLET-->
+            <div class="nav-link-preview sale__tab_2_box hidden"> <!-- //TODO  done   ok-->
+              <div class="nav-link-preview-container-left">
+                <ul class="nav__list-preview">
+                  <li class="nav__item-preview bold-title">
+                    <a href="#" id="nav__item-preview-title">WOMEN</a>
+                  </li>
+                  <li class="nav__item-preview"><a href="#">All Outlet</a></li>
+                  <li class="nav__item-preview"><a href="#">Dresses</a></li>
+                  <li class="nav__item-preview">
+                    <a href="#"> T-Shirts & Sweatshirts</a>
+                  </li>
+                  <li class="nav__item-preview"><a href="#"> Tops & Shirts</a></li>
+                  <li class="nav__item-preview">
+                    <a href="#"> Leather Jackets</a>
+                  </li>
+                  <li class="nav__item-preview">
+                    <a href="#"> Coats & Jackets</a>
+                  </li>
+                  <li class="nav__item-preview"><a href="#"> Knitwear</a></li>
+                  <li class="nav__item-preview">
+                    <a href="#"> Jeans & Trousers</a>
+                  </li>
+                  <li class="nav__item-preview"><a href="#"> Skirts</a></li>
+                  <li class="nav__item-preview"><a href="#">Accessories</a></li>
+                </ul>
+                <ul class="nav__list-preview">
+                  <li class="nav__item-preview">
+                    <a href="#" id="nav__item-preview-title">MEN</a>
+                  </li>
+                  <li class="nav__item-preview"><a href="#">All Outlet</a></li>
+                  <li class="nav__item-preview">
+                    <a href="#"> T-Shirts & Sweatshirts</a>
+                  </li>
+                  <li class="nav__item-preview"><a href="#">Shirts</a></li>
+                  <li class="nav__item-preview">
+                    <a href="#"> Leather Jackets</a>
+                  </li>
+                  <li class="nav__item-preview">
+                    <a href="#"> Coats & Jackets</a>
+                  </li>
+                  <li class="nav__item-preview"><a href="#"> Knitwear</a></li>
+                  <li class="nav__item-preview">
+                    <a href="#"> Jeans & Trousers</a>
+                  </li>
+                  <li class="nav__item-preview"><a href="#"> Polos</a></li>
+                  <li class="nav__item-preview"><a href="#">Accessories</a></li>
+                </ul>
+              
+              </div>
+              <div class="nav-link-preview-container-right">
+                <div class="nav-link-preview-container-right-content">
+                  <div class="nav-link-preview-container-right-content-top-2">
+                    <p class="sale-thiny">S.A.L.E.</p>
+                    <span>UP TO 70% OFF</span>
+                  </div>
+                  <div class="nav-link-preview-container-right-content-bottom">
+                    <p clas="text-shopNow">Shop Now</p>
+                  </div>
+                </div>
+              </div>
+              <p class="text-free">
+                Free UK Delivery on orders over £150 & UK Returns
+              </p>
+            </div>
+            <!--  -->
+            <!--  -->
+            <!--  NAV SALE TAB -3 WOMEN-->
+            <div class="nav-link-preview sale__tab_3_box hidden"> <!-- //TODO  done  ok-->
+              <div class="nav-link-preview-container-left">
+                <ul class="nav__list-preview">
+                  <li class="nav__item-preview bold-title">
+                    <a href="#" id="nav__item-preview-title">SHOP</a>
+                  </li>
+                  <li class="nav__item-preview"><a href="#">Sale</a></li>
+                  <li class="nav__item-preview"><a href="#">Outlet</a></li>
+                  <li class="nav__item-preview">
+                    <a href="#" style="color: black"> New Arrivals</a>
+                  </li>
+                  <li class="nav__item-preview">
+                    <a href="#" style="color: black">Best Sellers</a>
+                  </li>
+                  <li class="nav__item-preview">
+                    <a href="#" style="color: black">Limited Edition</a>
+                  </li>
+                  <li class="nav__item-preview">
+                    <a href="#" style="color: black">Loungewear</a>
+                  </li>
+                  <li class="nav__item-preview">
+                    <a href="#" style="color: black">Knitwear</a>
+                  </li>
+                  <li class="nav__item-preview">
+                    <a href="#" style="color: black">Gifts for Her</a>
+                  </li>
+                  <li class="nav__item-preview">
+                    <a href="#" style="color: black">Gifts for Him</a>
+                  </li>
+                  <li class="nav__item-preview">
+                    <a href="#" style="color: black">Gift Cards</a>
+                  </li>
+                </ul>
+                <ul class="nav__list-preview">
+                  <li class="nav__item-preview">
+                    <a href="#" id="nav__item-preview-title">CLOTHING</a>
+                  </li>
+                  <li class="nav__item-preview">
+                    <a href="#" style="color: black">Dresses</a>
+                  </li>
+                  <li class="nav__item-preview">
+                    <a href="#" style="color: black">Knitwear</a>
+                  </li>
+                  <li class="nav__item-preview">
+                    <a href="#" style="color: black">Leather Jackets</a>
+                  </li>
+                  <li class="nav__item-preview">
+                    <a href="#" style="color: black">Sweatshirts & Hoodies</a>
+                  </li>
+                  <li class="nav__item-preview">
+                    <a href="#" style="color: black">Tops & Shirts</a>
+                  </li>
+                  <li class="nav__item-preview">
+                    <a href="#" style="color: black">T-Shirts</a>
+                  </li>
+                  <li class="nav__item-preview">
+                    <a href="#" style="color: black">Jeans</a>
+                  </li>
+                  <li class="nav__item-preview">
+                    <a href="#" style="color: black">Trousers & Leggings</a>
+                  </li>
+                  <li class="nav__item-preview">
+                    <a href="#" style="color: black">Skirts & Shorts</a>
+                  </li>
+                  <li class="nav__item-preview">
+                    <a href="#" style="color: black">Co-ords </a>
+                  </li>
+                  <li class="nav__item-preview">
+                    <a href="#" style="color: black">Tailoring</a>
+                  </li>
+                </ul>
+                <ul class="nav__list-preview">
+                  <li class="nav__item-preview bold-title">
+                    <a href="#" id="nav__item-preview-title">SHOES & ACCESSORIES</a>
+                  </li>
+                  <li class="nav__item-preview">
+                    <a href="#" style="color: black">All Shoes</a>
+                  </li>
+                  <li class="nav__item-preview">
+                    <a href="#" style="color: black"> All Accessories</a>
+                  </li>
+                  <li class="nav__item-preview">
+                    <a href="#" style="color: black">Handbags</a>
+                  </li>
+                  <li class="nav__item-preview"><a href="#">Watches 50% OFF</a></li>
+                  <li class="nav__item-preview">
+                    <a href="#" style="color: black">Jewellery</a>
+                  </li>
+                  <li class="nav__item-preview">
+                    <a href="#" style="color: black">Belts</a>
+                  </li>
+                  <li class="nav__item-preview">
+                    <a href="#" style="color: black">Face Masks</a>
+                  </li>
+                  <li class="nav__item-preview">
+                    <a href="#" style="color: black">Scarves</a>
+                  </li>
+                  <li class="nav__item-preview">
+                    <a href="#" style="color: black">Hats & Beanies</a>
+                  </li>
+                  <li class="nav__item-preview">
+                    <a href="#" style="color: black">Gloves</a>
+                  </li>
+                  <li class="nav__item-preview">
+                    <a href="#" style="color: black">Wallets</a>
+                  </li>
+                  <li class="nav__item-preview">
+                    <a href="#" style="color: black">Fragrance</a>
+                  </li>
+                </ul>
+                <ul class="nav__list-preview">
+                  <li class="nav__item-preview">
+                    <a href="#" id="nav__item-preview-title">STORIES</a>
+                  </li>
+                  <li class="nav__item-preview">
+                    <a href="#" style="color: black">All Stories</a>
+                  </li>
+                  <li class="nav__item-preview">
+                    <a href="#" style="color: black">Feature: Leather</a>
+                  </li>
+                  <li class="nav__item-preview">
+                    <a href="#" style="color: black">Feature: Cold Weather</a>
+                  </li>
+                  <li class="nav__item-preview">
+                    <a href="#" style="color: black"
+                      >Campaign: All Day All Night Rubaccine</a
+                    >
+                  </li>
+                  <li class="nav__item-preview">
+                    <a href="#" style="color: black">Edit: Up All Night</a>
+                  </li>
+                  <li class="nav__item-preview">
+                    <a href="#" style="color: black">Edit: Logo</a>
+                  </li>
+                  <li class="nav__item-preview">
+                    <a href="#" style="color: black">Edit: Prints</a>
+                  </li>
+                  <li class="nav__item-preview">
+                    <a href="#" style="color: black">@Rubaccine </a>
+                  </li>
+                  <li class="nav__item-preview">
+                    <a href="#" style="color: black">Not For Sale</a>
+                  </li>
+                </ul>
+               
+              </div>
+              <div class="nav-link-preview-container-right">
+                <div class="nav-link-preview-container-right-content">
+                  <div class="nav-link-preview-container-right-content-top-3">
+                    <p class="sale-thiny">S.A.L.E.</p>
+                    <span>UP TO 70% OFF</span>
+                  </div>
+                  <div class="nav-link-preview-container-right-content-bottom">
+                    <p clas="text-shopNow">Shop Now</p>
+                  </div>
+                </div>
+              </div>
+              <p class="text-free">
+                Free UK Delivery on orders over £150 & UK Returns
+              </p>
+            </div>
+            <!--  -->
+            <!--  NAV SALE TAB -4 MEN-->
+            <div class="nav-link-preview sale__tab_4_box hidden">  <!-- //TODO  done ok-->
+              <div class="nav-link-preview-container-left">
+                <ul class="nav__list-preview">
+                  <li class="nav__item-preview bold-title">
+                    <a href="#" id="nav__item-preview-title">SHOP</a>
+                  </li>
+                  <li class="nav__item-preview"><a href="#">Sale</a></li>
+                  <li class="nav__item-preview"><a href="#">Outlet</a></li>
+                  <li class="nav__item-preview">
+                    <a href="#" style="color: black"> New Arrivals</a>
+                  </li>
+                  <li class="nav__item-preview">
+                    <a href="#" style="color: black">Best Sellers</a>
+                  </li>
+                  <li class="nav__item-preview">
+                    <a href="#" style="color: black">Limited Edition</a>
+                  </li>
+                  <li class="nav__item-preview">
+                    <a href="#" style="color: black">Loungewear</a>
+                  </li>
+                  <li class="nav__item-preview">
+                    <a href="#" style="color: black">Knitwear</a>
+                  </li>
+                  <li class="nav__item-preview">
+                    <a href="#" style="color: black">Gifts for Her</a>
+                  </li>
+                  <li class="nav__item-preview">
+                    <a href="#" style="color: black">Gifts for Him</a>
+                  </li>
+                  <li class="nav__item-preview">
+                    <a href="#" style="color: black">Gift Cards</a>
+                  </li>
+                </ul>
+                <ul class="nav__list-preview">
+                  <li class="nav__item-preview">
+                    <a href="#" id="nav__item-preview-title">CLOTHING</a>
+                  </li>
+                  <li class="nav__item-preview">
+                    <a href="#" style="color: black">Dresses</a>
+                  </li>
+                  <li class="nav__item-preview">
+                    <a href="#" style="color: black">Knitwear</a>
+                  </li>
+                  <li class="nav__item-preview">
+                    <a href="#" style="color: black">Leather Jackets</a>
+                  </li>
+                  <li class="nav__item-preview">
+                    <a href="#" style="color: black">Sweatshirts & Hoodies</a>
+                  </li>
+                  <li class="nav__item-preview">
+                    <a href="#" style="color: black">Tops & Shirts</a>
+                  </li>
+                  <li class="nav__item-preview">
+                    <a href="#" style="color: black">T-Shirts</a>
+                  </li>
+                  <li class="nav__item-preview">
+                    <a href="#" style="color: black">Jeans</a>
+                  </li>
+                  <li class="nav__item-preview">
+                    <a href="#" style="color: black">Trousers & Leggings</a>
+                  </li>
+                  <li class="nav__item-preview">
+                    <a href="#" style="color: black">Skirts & Shorts</a>
+                  </li>
+                  <li class="nav__item-preview">
+                    <a href="#" style="color: black">Co-ords </a>
+                  </li>
+                  <li class="nav__item-preview">
+                    <a href="#" style="color: black">Tailoring</a>
+                  </li>
+                </ul>
+                <ul class="nav__list-preview">
+                  <li class="nav__item-preview bold-title">
+                    <a href="#" id="nav__item-preview-title">SHOES & ACCESSORIES</a>
+                  </li>
+                  <li class="nav__item-preview">
+                    <a href="#" style="color: black">All Shoes</a>
+                  </li>
+                  <li class="nav__item-preview">
+                    <a href="#" style="color: black"> All Accessories</a>
+                  </li>
+                  <li class="nav__item-preview">
+                    <a href="#" style="color: black">Handbags</a>
+                  </li>
+                  <li class="nav__item-preview"><a href="#">Watches 50% OFF</a></li>
+                  <li class="nav__item-preview">
+                    <a href="#" style="color: black">Jewellery</a>
+                  </li>
+                  <li class="nav__item-preview">
+                    <a href="#" style="color: black">Belts</a>
+                  </li>
+                  <li class="nav__item-preview">
+                    <a href="#" style="color: black">Face Masks</a>
+                  </li>
+                  <li class="nav__item-preview">
+                    <a href="#" style="color: black">Scarves</a>
+                  </li>
+                  <li class="nav__item-preview">
+                    <a href="#" style="color: black">Hats & Beanies</a>
+                  </li>
+                  <li class="nav__item-preview">
+                    <a href="#" style="color: black">Gloves</a>
+                  </li>
+                  <li class="nav__item-preview">
+                    <a href="#" style="color: black">Wallets</a>
+                  </li>
+                  <li class="nav__item-preview">
+                    <a href="#" style="color: black">Fragrance</a>
+                  </li>
+                </ul>
+                <ul class="nav__list-preview">
+                  <li class="nav__item-preview">
+                    <a href="#" id="nav__item-preview-title">STORIES</a>
+                  </li>
+                  <li class="nav__item-preview">
+                    <a href="#" style="color: black">All Stories</a>
+                  </li>
+                  <li class="nav__item-preview">
+                    <a href="#" style="color: black">Feature: Leather</a>
+                  </li>
+                  <li class="nav__item-preview">
+                    <a href="#" style="color: black">Feature: Cold Weather</a>
+                  </li>
+                  <li class="nav__item-preview">
+                    <a href="#" style="color: black"
+                      >Campaign: All Day All Night Rubaccine</a
+                    >
+                  </li>
+                  <li class="nav__item-preview">
+                    <a href="#" style="color: black">Edit: Up All Night</a>
+                  </li>
+                  <li class="nav__item-preview">
+                    <a href="#" style="color: black">Edit: Logo</a>
+                  </li>
+                  <li class="nav__item-preview">
+                    <a href="#" style="color: black">Edit: Prints</a>
+                  </li>
+                  <li class="nav__item-preview">
+                    <a href="#" style="color: black">@Rubaccine </a>
+                  </li>
+                  <li class="nav__item-preview">
+                    <a href="#" style="color: black">Not For Sale</a>
+                  </li>
+                </ul>
+              
+              </div>
+              <div class="nav-link-preview-container-right">
+                <div class="nav-link-preview-container-right-content">
+                  <div class="nav-link-preview-container-right-content-top-4">
+                    <p class="sale-thiny">S.A.L.E.</p>
+                    <span>UP TO 70% OFF</span>
+                  </div>
+                  <div class="nav-link-preview-container-right-content-bottom">
+                    <p clas="text-shopNow">Shop Now</p>
+                  </div>
+                </div>
+              </div>
+              <p class="text-free">
+                Free UK Delivery on orders over £150 & UK Returns
+              </p>
+            </div>
+    
+            <!--  Hidden TAB's-->
+            <div class="women-tab  hero__tab__hidden women-tab-grid hero-sale__content--3  hero-sale--active ">
+              <div class="women-tab-left">
+                &nbsp;
+                <div class="women-tab-left-logo-sale">
+                  <p class="sale-text-red">S.A.L.E.</p>
+                </div>
+              </div>
+              <div class="women-tab-right">
+                <div class="women-tab-right-container">
+                  <div class="women-tab-right-container-sale">
+                    <p class="sale-text-red">S.A.L.E.</p>
+                  </div>
+                  <div class="women-tab-right-container-across">
+                    <p class="align-left">
+                      SALE.ACROSS.<br />LITERRALLY.EVERTHING.
+                    </p>
+                  </div>
+                  <div class="women-tab-right-container-upto">
+                    <p class="upto-text">UP TO 70% OFF*</p>
+                  </div>
+                  <div class="women-tab-right-container-links">
+                    <ul class="nav__list-bottom">
+                      <li class="nav__item-bottom"><a href="#">ALL SALE</a></li>
+                      <li class="nav__item-bottom"><a href="#">DRESSES</a></li>
+                      <li class="nav__item-bottom"><a href="#">LEATHERS</a></li>
+                    </ul>
+                    <ul class="nav__list-bottom">
+                      <li class="nav__item-bottom"><a href="#">T-SHIRTS</a></li>
+                      <li class="nav__item-bottom"><a href="#">KNITWEAR</a></li>
+                      <li class="nav__item-bottom"><a href="#">ACCESSORIES</a></li>
+                    </ul>
+                  </div>
+                  <div class="women-tab-right-container-outlet">
+                    <p class="outlet-text">*Includes Outlet</p>
+                    <p></p>
+                  </div>
+                </div>
+              </div>
+            </div> 
+              <!--  Hidden TAB END-->
+        </div>
+        <div class="slider-wrapper">
+            <div  class="slider slider__contain  slider__hidden slider__content--3 slider__contain-active   "  >
+            <div class="slider-container">
+            <div class="slider-img">
+            <img
+                src="/src/img/pic-45.jpg"
+                alt="outlet"
+                class="slider-image"
+            />
+            <p class="slider-img-name">OUTLET</p>
+            </div>
+            <div class="slider-title">
+            <ul class="slider-link">
+                <li class="slider-link-item"><a href="#">OUTLET</a></li>
+            </ul>
+            </div>
+            </div>
+            <p class="vl1"></p>
+            <div class="slider-container">
+            <div class="slider-img">
+            <img src="/src/img/pic-40.jpg" alt="outlet" class="slider-image" />
+            </div>
+            <div class="slider-title">
+            <ul class="slider-link">
+                <li class="slider-link-item"><a href="#">NEW ARRIVALS</a></li>
+            </ul>
+            </div>
+            </div>
+            <p class="vl1"></p>
+            <div class="slider-container">
+            <div class="slider-img">
+            <img src="/src/img/pic-41.jpg" alt="outlet" class="slider-image" />
+            </div>
+            <div class="slider-title">
+            <ul class="slider-link">
+                <li class="slider-link-item"><a href="#">BEST SELLERS</a></li>
+            </ul>
+            </div>
+            </div>
+            <p class="vl1"></p>
+            <div class="slider-container">
+            <div class="slider-img">
+            <img src="/src/img/pic-43.jpg" alt="outlet" class="slider-image" />
+            </div>
+            <div class="slider-title">
+            <ul class="slider-link">
+                <li class="slider-link-item"><a href="#">KNITWEAR</a></li>
+            </ul>
+            </div>
+            </div>
+            <p class="vl1"></p>
+            <div class="slider-container">
+            <div class="slider-img">
+            <img src="/src/img/pic-44.jpg" alt="outlet" class="slider-image" />
+            </div>
+            <div class="slider-title">
+            <ul class="slider-link">
+                <li class="slider-link-item"><a href="#">ACCESSORIES</a></li>
+            </ul>
+            </div>
+            </div>
+            </div>
+        </div>
+        <div class="shop-more ">
+          <div class="section-1-content-1">
+            <p class="text-main">Shop With Confidence</p>
+            <p>
+              We’re still here for you. With a 60 day returns policy and free
+              delivery on all orders over £150.
+            </p>
+            <ul class="nav__list-bottom">
+              <li class="nav__item-bottom outmore">
+                <a href="#">FIND OUT MORE</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="section-1 "> <!--IMPORTANTdisplays on the bottom slider__contain-active -->
+          
+           <hr class="hr" />
+           <div class="section-1-content-2">
+             <div class="section-1-content-2-left">
+               <p class="text-main">
+                 New to Rubaccine? Sign up for 15% off full-price styles in your
+                 first order.
+               </p>
+             </div>
+             <div class="section-1-content-2-right">
+               <p class="text-thiny hidden">
+                 Sign up to receive exclusive updates on our new collections and
+                 special offers. To improve your experience we may; profile,
+                 segment, test, analyse and model your details. You can unsubscribe
+                 at any time via the link in your emails. Please refer to our
+                 <strong>Privacy Policy</strong> for further details.
+               </p>
+               <div class="email-parent">
+                 <input
+                   class="footer-newsletter-form__input"
+                   id="footer-newsletter-email1"
+                   type="text"
+                   value=""
+                   name="email"
+                   aria-describedby="footer-disclaimer"
+                   placeholder="Email Address"
+                   aria-label="Enter email address"
+                   data-mailcheck="Did you mean"
+                   data-prev-value=""
+                 />
+                 <div class="parent-bottom">
+                   <a href="#" class="input-email-parent">WOMENWEAR</a>
+                   <a href="#" class="input-email-parent">MANWEAR</a>
+                 </div>
+               </div>
+               <div class="thinyAlert hidden">
+                 <p class="errorEmailRegisted">
+                   WE RECOGNISE THIS EMAIL ADDRESS. YOU HAVE ALREADY SUBSCRIBED
+                 </p>
+               </div>
+             </div>
+           </div>
+           <hr class="hr1" />
+           <div class="footer">
+             <div class="footer-info">
+               <div class="footer-info-container">
+                 <div class="footer-info-container-left">
+                   <div class="footer-info-container-left-info1">
+                     <ul class="nav__list-footer">
+                       <li class="nav__item-footer-a">
+                         <a href="#">INFORMATION</a>
+                       </li>
+                       <!--  1020px  😃   Toggle .icon-footer-rotation class to Rotate -->
+                       <svg class="icon-footer icon-hidden footer-first ">
+                         <use
+                           href="src/img/sprite.svg#icon-keyboard_arrow_down"
+                           id="dario1"
+                         ></use>
+                       </svg>
+                     </ul>
+                   </div>
+                   <hr class="hr2" />
+                   <!--  1020px  😃 REMOVE VISIBILITY TO SEE -->
+                   <div class="footer-info-container-left-info2  active-link" id="footerUp_1">
+                     <ul  class="nav__list-footer-2 operations__tab--active">
+                       <li class="nav__item-footer"><a href="#">Contact Us</a></li>
+                       <li class="nav__item-footer"><a href="#">Delivery</a></li>
+                       <li class="nav__item-footer">
+                         <a href="#">Returns & Exchange</a>
+                       </li>
+                       <li class="nav__item-footer"><a href="#">FAQs</a></li>
+                       <li class="nav__item-footer"><a href="#">Size Guide</a></li>
+                       <li class="nav__item-footer"><a href="#">Careers</a></li>
+                       <li class="nav__item-footer"><a href="#">Stores</a></li>
+                       <li class="nav__item-footer">
+                         <a href="#">Sustainability</a>
+                       </li>
+                     </ul>
+                   </div>
+                 </div>
+                 <!--  -->
+                 <div class="footer-info-container-right">
+                   <div class="footer-info-container-left-info1">
+                     <ul class="nav__list-footer previeweEl">
+                       <li class="nav__item-footer-a"><a href="#">&nbsp;</a></li>
+                     </ul>
+                   </div>
+                   <!--  1020px  😃 REMOVE VISIBILITY TO SEE -->
+                   <div class="footer-info-container-left-info2 active-link" id="footerUp_11">
+                     <ul class="nav__list-footer-2">
+                       <li class="nav__item-footer">
+                         <a href="#">Accesssibility</a>
+                       </li>
+                       <li class="nav__item-footer"><a href="#">Klarna</a></li>
+                       <li class="nav__item-footer">
+                         <a href="#">Terms & Conditions</a>
+                       </li>
+                       <li class="nav__item-footer">
+                         <a href="#">Privacy Policy</a>
+                       </li>
+                       <li class="nav__item-footer">
+                         <a href="#">Tax Strategy</a>
+                       </li>
+                       <li class="nav__item-footer">
+                         <a href="#">Modern Slavery Act</a>
+                       </li>
+                       <li class="nav__item-footer">
+                         <a href="#">Gender Pay Gap</a>
+                       </li>
+                       <li class="nav__item-footer"><a href="#">Site Map</a></li>
+                     </ul>
+                   </div>
+                 </div>
+               </div>
+             </div>
+             <!--  -->
+             <!-- <hr class="hr2"> -->
+             <div class="footer-icon">
+               <div class="footer-icon-container">
+                 <div class="footer-icon-container-left">
+                   <div class="footer-info-container-left-info1 ">
+                     <ul class="nav__list-footer">
+                       <li class="nav__item-footer-a">
+                         <a href="#">DOWNLOAD OUR APP</a>
+                       </li>
+                       <!-- 😃 ADD icon-footer-rotation class to Rotate  -->
+                       <svg class="icon-footer icon-hidden footer-second">
+                         <use
+                           href="src/img/sprite.svg#icon-keyboard_arrow_down"
+                         ></use>
+                       </svg>
+                     </ul>
+                   </div>
+                   <hr class="hr2" />
+                   <!--  1020px  😃 REMOVE VISIBILITY TO SEE -->
+                   <div class="footer-info-container-left-info2 active-link"  id="footerUp_2">
+                     <img
+                       src="/src/img/App_Store_(iOS)-Badge-Logo.wine.svg"
+                       alt="app store"
+                       class="appStore"
+                     />
+                   </div>
+                 </div>
+                 <!-- <hr class="hr2"> -->
+                 <!-- <div class="footer-icon-container-right">
+   
+                 </div> -->
+                 <div class="footer-info-container-right">
+                   <div class="footer-info-container-left-info1">
+                     <ul class="nav__list-footer">
+                       <li class="nav__item-footer-a">
+                         <a href="#">FOLLOW US</a>
+                       </li>
+                       <!-- 😃 ADD icon-footer-rotation class to Rotate  -->
+                       <svg class="icon-footer icon-hidden footer-third">
+                         <use
+                           href="src/img/sprite.svg#icon-keyboard_arrow_down"
+                         ></use>
+                       </svg>
+                     </ul>
+                   </div>
+                   <hr class="hr2" />
+                   <!--  1020px  😃 REMOVE VISIBILITY TO SEE -->
+                   <div class="footer-info-container-left-info2 active-link" id="footerUp_3">
+                     <ul class="nav__list-footer-2">
+                       <li class="nav__item-footer"><a href="#">Instagram</a></li>
+                       <li class="nav__item-footer"><a href="#">Facebook</a></li>
+                       <li class="nav__item-footer"><a href="#">Twitter</a></li>
+                       <li class="nav__item-footer"><a href="#">Youtube</a></li>
+                       <li class="nav__item-footer"><a href="#">Pinterest</a></li>
+                     </ul>
+                   </div>
+                 </div>
+               </div>
+             </div>
+           </div>
+           <hr class="hr3" />
+           <div class="copyright">
+             <p>Copyright&copy;Dario Amade 2021</p>
+           </div>
+         </div>
+
+
+    </div>
+    <!-- CONTAINER END -->
+  </body>
+</html>

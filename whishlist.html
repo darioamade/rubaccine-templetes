@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,600,700"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="src/img/apple-touch-icon.png"
+      type="image/x-icon"
+    />
+
+    <link rel="stylesheet" href="src/sass/main.css" />
+    <script defer src="src/js/controller.js"></script>
+
+    <title>RUBACCINE||ITALIAN FASHION BRAND</title>
+  </head>
+
+  <body>
+      <!--  -->
+    <div class="container">
+        <!--  -->
+        <header class="header ">
+        <nav class="nav nav__container">
+            <ul class="nav__list">
+            <li class="nav__item ">
+                <button class="nav__btn nav__btn--add-recipe " data-tab="1" >
+                <svg class="icon-test nav__bar__icon hidden-icons">
+                    <use href="src/img/sprite.svg#icon-menu1"></use> 
+                    <!-- <img src="src/img/menu-s.svg" alt="icon" class="con-test nav__bar__icon hidden-icons"> -->
+                </svg>
+                <span class="hidden-icons-text  sale__tab_1" style="color: #ec0606">
+                    SALE
+                </span>
+                </button>
+            </li>
+            <li class="nav__item">
+                <button class="nav__btn " data-tab="1" >
+                <span class="signin hidden-icons-text  sale__tab_2" style="color: #ec0606"
+                    >OUTLET</span
+                >
+                </button>
+            </li>
+
+            <li class="nav__item">
+                <button class="nav__btn nav__btn--add-recipe" data-tab="2">
+                <span class="signin hidden-icons-text sale__tab_3" >Women</span>
+                </button>
+            </li>
+
+            <li class="nav__item">
+                <button class="nav__btn nav__btn--add-recipe" data-tab="3">
+                <span class="signin hidden-icons-text sale__tab_4" >Men</span>
+                </button>
+            </li>
+            <li class="nav__item">
+                <button class="nav__btn nav__btn--add-recipe tag1" data-tab="1" >
+                <svg class="icon-test hoveruv hidden-icons">
+                    <use href="src/img/icons.svg#icon-magnifying-glass"></use>
+                </svg>
+                <span class="signin hoveruv hidden-icons-text">Search</span>
+                </button>
+            </li>
+            </ul>
+        </nav>
+        <!-- Form search 😆  REMOVE VISIBLITY LATER -->
+        <form class="search ">
+            <div class="search-overlay">
+            <div class="search-overlay-content">
+                <input type="text" class="search-overlay-content__field" placeholder="Search Here" autofocus />
+                <button class="btn search-overlay-content__btn">
+                <!-- <svg class="search__icon">
+                    <use href="src/img/icons.svg#icon-close"></use>
+                </svg> -->
+                <span class="closeX">X</span>
+                </button>
+            </div>
+
+            </div>
+
+        
+        </form>
+        <!-- form seach -->
+        <div class="header__logo" onclick="location.href='index.html'" ;>
+            <p>RUBACCINE</p>
+        </div>
+        <nav class="nav">
+            <ul class="nav__list">
+            <li class="nav__item">
+                <button class="nav__btn nav__btn--add-recipe">
+                <span class="signin currency hidden-icons-text">Currency</span>
+                </button>
+            </li>
+            <li class="nav__item">
+                <button class="nav__btn nav__btn--add-recipe">
+                <span class="signin sign__In hidden-icons-text">Sign in</span>
+                </button>
+            </li>
+            <li class="nav__item">
+                <button class="nav__btn nav__btn--bookmarks  tag2">
+                <svg class="icon-test icon__heart__whishlist hidden-icons">
+                    <use href="src/img/icons.svg#icon-heart"></use>
+                </svg>
+                <span class="hidden-icons-text whishlist__form"> WISHLIST </span>
+                </button>
+                
+            </li>
+            <li class="nav__item">
+                <button class="nav__btn nav__btn--add-recipe">
+                <svg class="icon-test icon_bag__icon__small hidden-icons">
+                    <!-- <use href="src/img/icons.svg#icon-shopping_bag"></use> -->
+                    <img src="src/img/cart.svg" style="margin-right: .5rem;" alt="icon"  class="icon-test hoveruv hidden-icons">
+                </svg>
+                <span class="icon-test-name bag__icon__cart hidden-icons-text">bag (1)</span>
+                </button>
+            </li>
+            </ul>
+        </nav>
+        </header>
+    <!-- header END -->
+        <div class="whishlist  ">  <!-- //ALL GOOD TODO  remove visibility at Container down below-->
+            <!-- <hr class="hr3" />  -->
+            <div class="whishlist-container">
+            <div class="whishlist-container-title">
+                <div class="whishlist-container-title-content">
+                <p class="text-main">MY WISHLIST</p>
+                <p class="text-error errorMsgWhishlist">Your wishlist will be lost at the
+                    end of your browsing session. Please sign in or register 
+                    in order to save your wishlist.
+                </p>
+                <p class="text-error errorMsgWhishlist" >There are currently no items in your wishlist</p>
+    
+                </div>
+                <!--  WILL COME BACK LATER 😃 -->
+                <div class="whishlist-container-title-grid">
+                    <div class="whishlist-img">
+                        <div class="whishlist-img-stock">
+                        <p>IN STOCK</p>
+                    
+                        <div class="whishlist-img-stock-close">
+                            <svg class="icon-close icon-close__menu">
+                            <use href="src/img/sprite.svg#icon-close"></use>
+                            </svg>
+                        </div> 
+                        </div>
+                        <div class="whishlist-img-content">
+                        <div class="whishlist-img-content-image">
+                            <img src="/src/img/pic-6.jpg" alt="whishlist-img" class="whishlist-img">
+        
+                        </div>
+                        <div class="whishlist-img-content-size">
+                            <p class="text-clothes-description">Coni Shimmer Tank </p>
+                            <!-- <p class="text-clothes-description">Now £24.00 Was £49.00</p> -->
+                            <p class="text-clothes-description">  £24.00</p>
+                            <div class="whishlist-img-content-size-color-list">
+                            <div class="whishlist-img-content-size-color-list-twoSquares">
+                                <div class="wishlist-product-list" style="border: none;">
+                                <ul class="squares">
+                                    <li class="square">
+                                    <img class="swatch" alt="brown" title="brown" data-original="/src/img/pic-6.jpg" src="/src/img/pic-6.jpg">
+                                    </li>
+                                </ul>
+                                </div>
+                                <div class="wishlist-product-list">
+                                <span class="text-list same-size">XS</span>
+                                </div>
+                            </div>
+                            <p class="text-list">SELECT SIZE</p>
+                            
+                            <p class="text-list-u ">EDIT DETAILS</p>
+                            </div>
+                        </div>
+                            </div>
+                            <div class="whishlist-img-btn">
+                                <div class="whishlist-img-content-size-clothes-form">
+                                <div class="select-box">
+                                    <div class="options-container  ">
+                                    <div class="option">
+                                        <input type="radio" class="radio" id="clothersSize" name="category" >
+                                        <label for="clothersSize">XS</label>
+                                    </div>
+                                    <div class="option">
+                                    <input type="radio" class="radio" id="clothersSize" name="category" >
+                                    <label for="clothersSize">S</label>
+                                    </div>
+                                    <div class="option">
+                                    <input type="radio" class="radio" id="clothersSize" name="category" >
+                                    <label for="clothersSize">M</label>
+                                    </div>
+                                    <div class="option">
+                                    <input type="radio" class="radio" id="clothersSize" name="category" >
+                                    <label for="clothersSize">L</label>
+                                    </div>
+                                    <div class="option">
+                                    <input type="radio" class="radio" id="clothersSize" name="category" >
+                                    <label for="clothersSize">LX</label>
+                                    </div>
+                                    </div>
+                                    <div class="selected">
+                                    -
+                                </div>
+                                </div>
+        
+                                </div>
+                                <p class="text-list-u   size-guide">SIZE GUIDE </p>
+                                <!-- IMPORTANT Btn will be displayed only if whishlist > 0 -->
+                                <button class="btn-add  btn-not-clear">ADD TO BAG</button>
+                                <!--  -->
+                            </div>
+                    </div>
+                    <div class="whishlist-img">
+                        <div class="whishlist-img-stock">
+                        <p>IN STOCK</p>
+                    
+                        <div class="whishlist-img-stock-close">
+                            <svg class="icon-close icon-close__menu">
+                            <use href="src/img/sprite.svg#icon-close"></use>
+                            </svg>
+                        </div> 
+                        </div>
+                        <div class="whishlist-img-content">
+                        <div class="whishlist-img-content-image">
+                            <img src="/src/img/pic-6.jpg" alt="whishlist-img" class="whishlist-img">
+        
+                        </div>
+                        <div class="whishlist-img-content-size">
+                            <p class="text-clothes-description">Coni Shimmer Tank </p>
+                            <!-- <p class="text-clothes-description">Now £24.00 Was £49.00</p> -->
+                            <p class="text-clothes-description">  £24.00</p>
+                            <div class="whishlist-img-content-size-color-list">
+                            <div class="whishlist-img-content-size-color-list-twoSquares">
+                                <div class="wishlist-product-list" style="border: none;">
+                                <ul class="squares">
+                                    <li class="square">
+                                    <img class="swatch" alt="brown" title="brown" data-original="/src/img/pic-6.jpg" src="/src/img/pic-6.jpg">
+                                    </li>
+                                </ul>
+                                </div>
+                                <div class="wishlist-product-list">
+                                <span class="text-list same-size">XS</span>
+                                </div>
+                            </div>
+                            <p class="text-list">SELECT SIZE</p>
+                            
+                            <p class="text-list-u">EDIT DETAILS</p>
+                            </div>
+                        </div>
+                            </div>
+                            <div class="whishlist-img-btn">
+                                <div class="whishlist-img-content-size-clothes-form">
+                                <div class="select-box">
+                                    <div class="options-container  ">
+                                    <div class="option">
+                                        <input type="radio" class="radio" id="clothersSize" name="category" >
+                                        <label for="clothersSize">XS</label>
+                                    </div>
+                                    <div class="option">
+                                    <input type="radio" class="radio" id="clothersSize" name="category" >
+                                    <label for="clothersSize">S</label>
+                                    </div>
+                                    <div class="option">
+                                    <input type="radio" class="radio" id="clothersSize" name="category" >
+                                    <label for="clothersSize">M</label>
+                                    </div>
+                                    <div class="option">
+                                    <input type="radio" class="radio" id="clothersSize" name="category" >
+                                    <label for="clothersSize">L</label>
+                                    </div>
+                                    <div class="option">
+                                    <input type="radio" class="radio" id="clothersSize" name="category" >
+                                    <label for="clothersSize">LX</label>
+                                    </div>
+                                    </div>
+                                    <div class="selected">
+                                    -
+                                </div>
+                                </div>
+        
+                                </div>
+                                <p class="text-list-u   size-guide">SIZE GUIDE </p>
+                                <button class="btn-add  btn-not-clear">ADD TO BAG</button>
+                            </div>
+                    </div>
+                    <div class="whishlist-img">
+                        <div class="whishlist-img-stock">
+                        <p>IN STOCK</p>
+                    
+                        <div class="whishlist-img-stock-close">
+                            <svg class="icon-close icon-close__menu">
+                            <use href="src/img/sprite.svg#icon-close"></use>
+                            </svg>
+                        </div> 
+                        </div>
+                        <div class="whishlist-img-content">
+                        <div class="whishlist-img-content-image">
+                            <img src="/src/img/pic-6.jpg" alt="whishlist-img" class="whishlist-img">
+        
+                        </div>
+                        <div class="whishlist-img-content-size">
+                            <p class="text-clothes-description">Coni Shimmer Tank </p>
+                            <!-- <p class="text-clothes-description">Now £24.00 Was £49.00</p> -->
+                            <p class="text-clothes-description">  £24.00</p>
+                            <div class="whishlist-img-content-size-color-list">
+                            <div class="whishlist-img-content-size-color-list-twoSquares">
+                                <div class="wishlist-product-list" style="border: none;">
+                                <ul class="squares">
+                                    <li class="square">
+                                    <img class="swatch" alt="brown" title="brown" data-original="/src/img/pic-6.jpg" src="/src/img/pic-6.jpg">
+                                    </li>
+                                </ul>
+                                </div>
+                                <div class="wishlist-product-list">
+                                <span class="text-list same-size">XS</span>
+                                </div>
+                            </div>
+                            <p class="text-list">SELECT SIZE</p>
+                            
+                            <p class="text-list-u">EDIT DETAILS</p>
+                            </div>
+                        </div>
+                            </div>
+                            <div class="whishlist-img-btn">
+                                <div class="whishlist-img-content-size-clothes-form">
+                                <div class="select-box">
+                                    <div class="options-container  ">
+                                    <div class="option">
+                                        <input type="radio" class="radio" id="clothersSize" name="category" >
+                                        <label for="clothersSize">XS</label>
+                                    </div>
+                                    <div class="option">
+                                    <input type="radio" class="radio" id="clothersSize" name="category" >
+                                    <label for="clothersSize">S</label>
+                                    </div>
+                                    <div class="option">
+                                    <input type="radio" class="radio" id="clothersSize" name="category" >
+                                    <label for="clothersSize">M</label>
+                                    </div>
+                                    <div class="option">
+                                    <input type="radio" class="radio" id="clothersSize" name="category" >
+                                    <label for="clothersSize">L</label>
+                                    </div>
+                                    <div class="option">
+                                    <input type="radio" class="radio" id="clothersSize" name="category" >
+                                    <label for="clothersSize">LX</label>
+                                    </div>
+                                    </div>
+                                    <div class="selected">
+                                    -
+                                </div>
+                                </div>
+        
+                                </div>
+                                <p class="text-list-u   size-guide">SIZE GUIDE </p>
+                                <button class="btn-add  btn-not-clear">ADD TO BAG</button>
+                            </div>
+                    </div>
+                    <div class="whishlist-img">
+                    <div class="whishlist-img-stock">
+                    <p>IN STOCK</p>
+                
+                    <div class="whishlist-img-stock-close">
+                        <svg class="icon-close icon-close__menu">
+                        <use href="src/img/sprite.svg#icon-close"></use>
+                        </svg>
+                    </div> 
+                    </div>
+                    <div class="whishlist-img-content">
+                    <div class="whishlist-img-content-image">
+                        <img src="/src/img/pic-6.jpg" alt="whishlist-img" class="whishlist-img">
+    
+                    </div>
+                    <div class="whishlist-img-content-size">
+                        <p class="text-clothes-description">Coni Shimmer Tank </p>
+                        <!-- <p class="text-clothes-description">Now £24.00 Was £49.00</p> -->
+                        <p class="text-clothes-description">  £24.00</p>
+                        <div class="whishlist-img-content-size-color-list">
+                        <div class="whishlist-img-content-size-color-list-twoSquares">
+                            <div class="wishlist-product-list" style="border: none;">
+                            <ul class="squares">
+                                <li class="square">
+                                <img class="swatch" alt="brown" title="brown" data-original="/src/img/pic-6.jpg" src="/src/img/pic-6.jpg">
+                                </li>
+                            </ul>
+                            </div>
+                            <div class="wishlist-product-list">
+                            <span class="text-list same-size">XS</span>
+                            </div>
+                        </div>
+                        <p class="text-list">SELECT SIZE</p>
+                        
+                        <p class="text-list-u">EDIT DETAILS</p>
+                        </div>
+                    </div>
+                        </div>
+                        <div class="whishlist-img-btn">
+                            <div class="whishlist-img-content-size-clothes-form">
+                            <div class="select-box">
+                                <div class="options-container  ">
+                                <div class="option">
+                                    <input type="radio" class="radio" id="clothersSize" name="category" >
+                                    <label for="clothersSize">XS</label>
+                                </div>
+                                <div class="option">
+                                <input type="radio" class="radio" id="clothersSize" name="category" >
+                                <label for="clothersSize">S</label>
+                                </div>
+                                <div class="option">
+                                <input type="radio" class="radio" id="clothersSize" name="category" >
+                                <label for="clothersSize">M</label>
+                                </div>
+                                <div class="option">
+                                <input type="radio" class="radio" id="clothersSize" name="category" >
+                                <label for="clothersSize">L</label>
+                                </div>
+                                <div class="option">
+                                <input type="radio" class="radio" id="clothersSize" name="category" >
+                                <label for="clothersSize">LX</label>
+                                </div>
+                                </div>
+                                <div class="selected">
+                                -
+                            </div>
+                            </div>
+    
+                            </div>
+                            <p class="text-list-u   size-guide">SIZE GUIDE </p>
+                            <button class="btn-add  btn-not-clear">ADD TO BAG</button>
+                        </div>
+                </div>
+                <div class="whishlist-img">
+                    <div class="whishlist-img-stock">
+                    <p>IN STOCK</p>
+                
+                    <div class="whishlist-img-stock-close">
+                        <svg class="icon-close icon-close__menu">
+                        <use href="src/img/sprite.svg#icon-close"></use>
+                        </svg>
+                    </div> 
+                    </div>
+                    <div class="whishlist-img-content">
+                    <div class="whishlist-img-content-image">
+                        <img src="/src/img/pic-6.jpg" alt="whishlist-img" class="whishlist-img">
+    
+                    </div>
+                    <div class="whishlist-img-content-size">
+                        <p class="text-clothes-description">Coni Shimmer Tank </p>
+                        <!-- <p class="text-clothes-description">Now £24.00 Was £49.00</p> -->
+                        <p class="text-clothes-description">  £24.00</p>
+                        <div class="whishlist-img-content-size-color-list">
+                        <div class="whishlist-img-content-size-color-list-twoSquares">
+                            <div class="wishlist-product-list" style="border: none;">
+                            <ul class="squares">
+                                <li class="square">
+                                <img class="swatch" alt="brown" title="brown" data-original="/src/img/pic-6.jpg" src="/src/img/pic-6.jpg">
+                                </li>
+                            </ul>
+                            </div>
+                            <div class="wishlist-product-list">
+                            <span class="text-list same-size">XS</span>
+                            </div>
+                        </div>
+                        <p class="text-list">SELECT SIZE</p>
+                        
+                        <p class="text-list-u ">EDIT DETAILS</p>
+                        </div>
+                    </div>
+                        </div>
+                        <div class="whishlist-img-btn">
+                            <div class="whishlist-img-content-size-clothes-form">
+                            <div class="select-box">
+                                <div class="options-container  ">
+                                <div class="option">
+                                    <input type="radio" class="radio" id="clothersSize" name="category" >
+                                    <label for="clothersSize">XS</label>
+                                </div>
+                                <div class="option">
+                                <input type="radio" class="radio" id="clothersSize" name="category" >
+                                <label for="clothersSize">S</label>
+                                </div>
+                                <div class="option">
+                                <input type="radio" class="radio" id="clothersSize" name="category" >
+                                <label for="clothersSize">M</label>
+                                </div>
+                                <div class="option">
+                                <input type="radio" class="radio" id="clothersSize" name="category" >
+                                <label for="clothersSize">L</label>
+                                </div>
+                                <div class="option">
+                                <input type="radio" class="radio" id="clothersSize" name="category" >
+                                <label for="clothersSize">LX</label>
+                                </div>
+                                </div>
+                                <div class="selected">
+                                -
+                            </div>
+                            </div>
+    
+                            </div>
+                            <p class="text-list-u   size-guide">SIZE GUIDE </p>
+                            <button class="btn-add  btn-not-clear">ADD TO BAG</button>
+                        </div>
+                </div>
+                
+                </div>
+                </div>
+                <div class="whishlist-container-title-btn-black">
+                <button class="btn-add  btn-add-all-to-bag active">ADD ALL TO BAG</button>
+                </div>
+            </div>
+            <div class="whishlist-container-info">
+    
+                <hr class="hr" /> 
+                <div class="subscribe-form">
+                    <div class="subscribe-form-left">
+                    <p >
+                        New to Rubaccine? Sign up for 15% off full-price styles in your
+                        first order.
+                    </p>
+                    </div>
+                    <div class="subscribe-form-right">
+                    <p class="text-thiny hidden">
+                        Sign up to receive exclusive updates on our new collections and
+                        special offers. To improve your experience we may; profile,
+                        segment, test, analyse and model your details. You can unsubscribe
+                        at any time via the link in your emails. Please refer to our
+                        <strong>Privacy Policy</strong> for further details.
+                    </p>
+                    <div class="email-parent">
+                        <input
+                        class="footer-newsletter-form__input"
+                        id="footer-newsletter-email"
+                        type="text"
+                        value=""
+                        name="email"
+                        aria-describedby="footer-disclaimer"
+                        placeholder="Email Address"
+                        aria-label="Enter email address"
+                        data-mailcheck="Did you mean"
+                        data-prev-value=""
+                        />
+                        <div class="parent-bottom">
+                        <a href="#" class="input-email-parent">WOMENWEAR</a>
+                        <a href="#" class="input-email-parent">MANWEAR</a>
+                        </div>
+                    </div>
+                    <div class="thinyAlert hidden ">
+                        <p class="errorEmailRegisted">
+                        WE RECOGNISE THIS EMAIL ADDRESS. YOU HAVE ALREADY SUBSCRIBED
+                        </p>
+                    </div>
+                    </div> 
+                    
+    
+                </div>
+                </div>
+                <hr class="hr1" />
+                <div class="footer">
+                    <div class="footer-info">
+                    <div class="footer-info-container">
+                        <div class="footer-info-container-left">
+                        <div class="footer-info-container-left-info1">
+                            <ul class="nav__list-footer">
+                            <li class="nav__item-footer-a">
+                                <a href="#">INFORMATION</a>
+                            </li>
+                            <!--  1020px  😃   Toggle .icon-footer-rotation class to Rotate -->
+                            <svg class="icon-footer icon-hidden footer-fouth ">
+                                <use
+                                href="src/img/sprite.svg#icon-keyboard_arrow_down"
+                                id="dario1"
+                                ></use>
+                            </svg>
+                            </ul>
+                        </div>
+                        <hr class="hr2" />
+                        <!--  1020px  😃 REMOVE VISIBILITY TO SEE -->
+                        <div class="footer-info-container-left-info2  active-link" id="footerUp_4">
+                            <ul  class="nav__list-footer-2 operations__tab--active">
+                            <li class="nav__item-footer"><a href="#">Contact Us</a></li>
+                            <li class="nav__item-footer"><a href="#">Delivery</a></li>
+                            <li class="nav__item-footer">
+                                <a href="#">Returns & Exchange</a>
+                            </li>
+                            <li class="nav__item-footer"><a href="#">FAQs</a></li>
+                            <li class="nav__item-footer"><a href="#">Size Guide</a></li>
+                            <li class="nav__item-footer"><a href="#">Careers</a></li>
+                            <li class="nav__item-footer"><a href="#">Stores</a></li>
+                            <li class="nav__item-footer">
+                                <a href="#">Sustainability</a>
+                            </li>
+                            </ul>
+                        </div>
+                        </div>
+                        <!--  -->
+                        <div class="footer-info-container-right">
+                        <div class="footer-info-container-left-info1">
+                            <ul class="nav__list-footer previeweEl">
+                            <li class="nav__item-footer-a"><a href="#">&nbsp;</a></li>
+                            </ul>
+                        </div>
+                        <!--  1020px  😃 REMOVE VISIBILITY TO SEE -->
+                        <div class="footer-info-container-left-info2 active-link" id="footerUp_44">
+                            <ul class="nav__list-footer-2">
+                            <li class="nav__item-footer">
+                                <a href="#">Accesssibility</a>
+                            </li>
+                            <li class="nav__item-footer"><a href="#">Klarna</a></li>
+                            <li class="nav__item-footer">
+                                <a href="#">Terms & Conditions</a>
+                            </li>
+                            <li class="nav__item-footer">
+                                <a href="#">Privacy Policy</a>
+                            </li>
+                            <li class="nav__item-footer">
+                                <a href="#">Tax Strategy</a>
+                            </li>
+                            <li class="nav__item-footer">
+                                <a href="#">Modern Slavery Act</a>
+                            </li>
+                            <li class="nav__item-footer">
+                                <a href="#">Gender Pay Gap</a>
+                            </li>
+                            <li class="nav__item-footer"><a href="#">Site Map</a></li>
+                            </ul>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                    <!--  -->
+                    <!-- <hr class="hr2"> -->
+                    <div class="footer-icon">
+                    <div class="footer-icon-container">
+                        <div class="footer-icon-container-left">
+                        <div class="footer-info-container-left-info1 ">
+                            <ul class="nav__list-footer">
+                            <li class="nav__item-footer-a">
+                                <a href="#">DOWNLOAD OUR APP</a>
+                            </li>
+                            <!-- 😃 ADD icon-footer-rotation class to Rotate  -->
+                            <svg class="icon-footer icon-hidden footer-five">
+                                <use
+                                href="src/img/sprite.svg#icon-keyboard_arrow_down"
+                                ></use>
+                            </svg>
+                            </ul>
+                        </div>
+                        <hr class="hr2" />
+                        <!--  1020px  😃 REMOVE VISIBILITY TO SEE -->
+                        <div class="footer-info-container-left-info2 active-link"  id="footerUp_5">
+                            <img
+                            src="/src/img/App_Store_(iOS)-Badge-Logo.wine.svg"
+                            alt="app store"
+                            class="appStore"
+                            />
+                        </div>
+                        </div>
+                        <!-- <hr class="hr2"> -->
+                        <!-- <div class="footer-icon-container-right">
+        
+                        </div> -->
+                        <div class="footer-info-container-right">
+                        <div class="footer-info-container-left-info1">
+                            <ul class="nav__list-footer">
+                            <li class="nav__item-footer-a">
+                                <a href="#">FOLLOW US</a>
+                            </li>
+                            <!-- 😃 ADD icon-footer-rotation class to Rotate  -->
+                            <svg class="icon-footer icon-hidden footer-six">
+                                <use
+                                href="src/img/sprite.svg#icon-keyboard_arrow_down"
+                                ></use>
+                            </svg>
+                            </ul>
+                        </div>
+                        <hr class="hr2" />
+                        <!--  1020px  😃 REMOVE VISIBILITY TO SEE -->
+                        <div class="footer-info-container-left-info2 active-link" id="footerUp_6">
+                            <ul class="nav__list-footer-2">
+                            <li class="nav__item-footer"><a href="#">Instagram</a></li>
+                            <li class="nav__item-footer"><a href="#">Facebook</a></li>
+                            <li class="nav__item-footer"><a href="#">Twitter</a></li>
+                            <li class="nav__item-footer"><a href="#">Youtube</a></li>
+                            <li class="nav__item-footer"><a href="#">Pinterest</a></li>
+                            </ul>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <hr class="hr3" />
+                <div class="copyright">
+                    <p>Copyright&copy;Dario Amade 2021</p>
+                </div>
+                <!-- info end -->
+        </div>
+
+
+    </div>
+    <!-- CONTAINER END -->
+  </body>
+</html>
