@@ -4959,6 +4959,8 @@ strong {
   overflow-y: scroll;
   visibility: hidden;
   opacity: 0;
+  visibility: visible;
+  opacity: 1;
 }
 
 .showcase-container {

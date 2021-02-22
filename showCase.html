@@ -1,0 +1,1004 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,600,700"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="src/img/apple-touch-icon.png"
+      type="image/x-icon"
+    />
+
+    <link rel="stylesheet" href="src/sass/main.css" />
+    <script defer src="src/js/controller.js"></script>
+
+    <title>RUBACCINE||ITALIAN FASHION BRAND</title>
+  </head>
+
+  <body>
+      <!--  -->
+    <div class="container">
+        <!--  -->
+        <header class="header ">
+        <nav class="nav nav__container">
+            <ul class="nav__list">
+            <li class="nav__item ">
+                <button class="nav__btn nav__btn--add-recipe " data-tab="1" >
+                <svg class="icon-test nav__bar__icon hidden-icons">
+                    <use href="src/img/sprite.svg#icon-menu1"></use> 
+                    <!-- <img src="src/img/menu-s.svg" alt="icon" class="con-test nav__bar__icon hidden-icons"> -->
+                </svg>
+                <span class="hidden-icons-text  sale__tab_1" style="color: #ec0606">
+                    SALE
+                </span>
+                </button>
+            </li>
+            <li class="nav__item">
+                <button class="nav__btn " data-tab="1" >
+                <span class="signin hidden-icons-text  sale__tab_2" style="color: #ec0606"
+                    >OUTLET</span
+                >
+                </button>
+            </li>
+
+            <li class="nav__item">
+                <button class="nav__btn nav__btn--add-recipe" data-tab="2">
+                <span class="signin hidden-icons-text sale__tab_3" >Women</span>
+                </button>
+            </li>
+
+            <li class="nav__item">
+                <button class="nav__btn nav__btn--add-recipe" data-tab="3">
+                <span class="signin hidden-icons-text sale__tab_4" >Men</span>
+                </button>
+            </li>
+            <li class="nav__item">
+                <button class="nav__btn nav__btn--add-recipe tag1" data-tab="1" >
+                <svg class="icon-test hoveruv hidden-icons">
+                    <use href="src/img/icons.svg#icon-magnifying-glass"></use>
+                </svg>
+                <span class="signin hoveruv hidden-icons-text">Search</span>
+                </button>
+            </li>
+            </ul>
+        </nav>
+        <!-- Form search 😆  REMOVE VISIBLITY LATER -->
+        <form class="search ">
+            <div class="search-overlay">
+            <div class="search-overlay-content">
+                <input type="text" class="search-overlay-content__field" placeholder="Search Here" autofocus />
+                <button class="btn search-overlay-content__btn">
+                <!-- <svg class="search__icon">
+                    <use href="src/img/icons.svg#icon-close"></use>
+                </svg> -->
+                <span class="closeX">X</span>
+                </button>
+            </div>
+
+            </div>
+    
+        
+        </form>
+        <!-- form seach -->
+        <div class="header__logo" onclick="location.href='index.html'" ;>
+            <p>RUBACCINE</p>
+        </div>
+        <nav class="nav">
+            <ul class="nav__list">
+            <li class="nav__item">
+                <button class="nav__btn nav__btn--add-recipe">
+                <span class="signin currency hidden-icons-text">Currency</span>
+                </button>
+            </li>
+            <li class="nav__item">
+                <button class="nav__btn nav__btn--add-recipe">
+                <span class="signin sign__In hidden-icons-text">Sign in</span>
+                </button>
+            </li>
+            <li class="nav__item">
+                <button class="nav__btn nav__btn--bookmarks  tag2">
+                <svg class="icon-test icon__heart__whishlist hidden-icons">
+                    <use href="src/img/icons.svg#icon-heart"></use>
+                </svg>
+                <span class="hidden-icons-text whishlist__form"> WISHLIST </span>
+                </button>
+                
+            </li>
+            <li class="nav__item">
+                <button class="nav__btn nav__btn--add-recipe">
+                <svg class="icon-test icon_bag__icon__small hidden-icons">
+                    <!-- <use href="src/img/icons.svg#icon-shopping_bag"></use> -->
+                    <img src="src/img/cart.svg" style="margin-right: .5rem;" alt="icon"  class="icon-test hoveruv hidden-icons">
+                </svg>
+                <span class="icon-test-name bag__icon__cart hidden-icons-text">bag (1)</span>
+                </button>
+            </li>
+            </ul>
+        </nav>
+        </header>
+    <!-- header END -->
+    <!-- CONTENT -->
+    <div class="showcase">     <!-- 👆 // GOOD TODO at showcase  Still nedd 4 of this loop over then replace data -->
+        <div class="showcase-container">
+          <div class="showcase-container-title">
+            <p class="text-main">Women's All Sale</p>
+            <p class="text-list">Shop our women's Sale. 
+              Leather jackets. Dresses. Handbags. And more. Free 
+              delivery on all UK orders over £150 & free UK returns.
+            </p>
+            <div class="showcase-container-title-category">
+              <ul class="nav__list-preview">
+                <li class="nav__item-preview " ><a href="#" style="color: black;" class="removeUnderline">Dresses</a></li>
+                <li class="nav__item-preview" ><a href="#" style="color: black;" class="removeUnderline">Leather </a></li>
+                <li class="nav__item-preview" ><a href="#" style="color: black;" class="removeUnderline">T-shirts & Sweatshirts</a></li>
+                <li class="nav__item-preview" ><a href="#" style="color: black;" class="removeUnderline">Knitwear</a></li>
+                <li class="nav__item-preview" ><a href="#" style="color: black;" class="removeUnderline">Accessories</a></li>
+              </ul>
+            </div>
+          </div>
+          <hr class="hr5"/>
+          <div class="showcase-container-filter ">
+            <!--  Remove visibility 😆  category stil 4 to go-->
+            <div class="category-page-filter-list">
+              <div class="category-page-filter-list-selectors">
+                  <div class="options-box ">
+                      <div class="option">
+                      <input type="checkbox" id="clothersSize">
+                      <label for="clothersSize" class="text-radio">Coats & Jackets</label>
+                      </div>
+                      <div class="option">
+                       <input type="checkbox" class="radio" id="Leather Jackets" name="category" >
+                       <label for="Leather Jackets" class="text-radio">Leather Jackets</label>
+                     </div>
+                     <div class="option">
+                       <input type="checkbox" class="radio" id="Clothing" name="category" >
+                       <label for="Clothing" class="text-radio">Clothing</label>
+                     </div>
+                     <div class="option">
+                       <input type="checkbox" class="radio" id="Knitwear" name="category" >
+                       <label for="Knitwear" class="text-radio">Knitwear</label>
+                     </div>
+                     <div class="option">
+                       <input type="checkbox" class="radio" id="Trousers & Leggings" name="category" >
+                       <label for="Trousers & Leggings" class="text-radio">Trousers & Leggings</label>
+                     </div> 
+                     <div class="option">
+                      <input type="checkbox" class="radio" id="Handbags" name="category" >
+                      <label for="Handbags" class="text-radio">Handbags</label>
+                    </div> 
+                    <div class="option">
+                      <input type="checkbox" class="radio" id="Playsuits & Jumpsuits" name="category" >
+                      <label for="Playsuits & Jumpsuits" class="text-radio">Playsuits & Jumpsuits</label>
+                    </div> 
+                    <div class="option">
+                      <input type="checkbox" class="radio" id="Tops & Shirts" name="category" >
+                      <label for="Tops & Shirts" class="text-radio">Tops & Shirts</label>
+                    </div> 
+                  </div> 
+                  <div class="options-content ">
+                    <div class="option">
+                       <input type="checkbox" class="radio" id="Dresses" name="category" >
+                       <label for="Dresses" class="text-radio">Dresses</label>
+                     </div>
+                     <div class="option">
+                      <input type="checkbox" class="radio" id="Shirts" name="category" >
+                      <label for="Shirts" class="text-radio">Shirts</label>
+                    </div>
+                    <div class="option">
+                      <input type="checkbox" class="radio" id="Accessories" name="category" >
+                      <label for="Accessories" class="text-radio">Accessories</label>
+                    </div>
+                    <div class="option">
+                      <input type="checkbox" class="radio" id="Wallets" name="category" >
+                      <label for="Wallets" class="text-radio">Wallets</label>
+                    </div>
+                    <div class="option">
+                      <input type="checkbox" class="radio" id="Cardholders" name="category" >
+                      <label for="Cardholders" class="text-radio">Cardholders</label>
+                    </div> 
+                    <div class="option">
+                     <input type="checkbox" class="radio" id="Skirts & Shorts" name="category" >
+                     <label for="Skirts & Shorts" class="text-radio">Skirts & Shorts</label>
+                   </div> 
+                 
+                 </div>  
+
+              </div>
+              <hr class="hr5" />
+              <div class="category-page-filter-list-clear">
+                <div class="category-page-filter-list-clear-left">
+                  <span class="text-filter " >CLEAR ALL</span>
+                </div>
+                <p class="vl2"></p>
+                <div class="category-page-filter-list-clear-right">
+                  <span class="text-filter ">CLOSE</span>
+                </div>
+              </div>
+              <hr class="hr7" />
+            </div>
+
+            <div class="showcase-container-filter-filters">
+              <div class="showcase-container-filter-filters-category">
+                <div class="showcase-container-filter-filters-category-item">
+                  <span class="text-filter " style="border-bottom: none;">FILTERS:</span>
+                </div>
+                <div class="showcase-container-filter-filters-category-item invisble">
+                  <div class="selected-sort">
+                    <span class="text-filter ">category</span>
+                  </div>
+                </div>
+                <div class="showcase-container-filter-filters-category-item invisble">
+                  <div class="selected-sort">
+                    <span class="text-filter ">Colour</span>
+                  </div>
+                </div>
+                <div class="showcase-container-filter-filters-category-item invisble">
+                  <div class="selected-sort">
+                    <span class="text-filter ">Size </span>
+                  </div>
+                </div>
+             
+                <div class="showcase-container-filter-filters-category-item invisble" style="width: 12rem;">
+                  <div class="selected-sort">
+                    <span class="text-filter " >Price Range</span>
+                  </div>
+                </div>
+
+              </div>
+              <p class="vl2"></p>
+              <div class="showcase-container-filter-filters-sort">
+              
+                <div class="showcase-container-filter-filters-category-item">
+                  <span class="text-filter ">SORT BY</p>
+                </div>
+              </div>
+            
+            </div>
+            <hr class="hr6" />
+            <div class="showcase-container-filter-pagination">
+            
+              <div class="showcase-container-filter-pagination-icons">
+                <p class="text-list">VIEW:</p>
+                <svg class="icon-page switch-single-page">
+                  <use href="src/img/sprite.svg#icon-stop2"></use>
+                </svg>
+                <svg class="icon-page switch-double-page">
+                  <use href="src/img/sprite.svg#icon-pause2"></use>
+                </svg>
+
+              </div>
+              <div class="showcase-container-filter-pagination-pages">
+                <button class="btn--pag underline agination__btn--prev">
+                  <span>1</span>
+                </button>
+                <button class="btn--pag pagination__btn--next">
+                  <span>2</span>
+                </button> 
+                <button class="btn--pag pagination__btn--next">
+                  <span>3</span>
+                </button> 
+                <button class="btn--pag pagination__btn--next-all">
+                  <span>VIEW ALL</span>
+                </button> 
+              </div>
+
+            </div>
+
+          </div>
+          <div class="showcase-container-gallery">
+           <div class="showcase-container-gallery-grid ">
+             <div class="showcase-container-gallery-grid-item" >
+               <div class="showcase-container-gallery-grid-item-img">
+                 <div class="size-slider  ">
+                   <div class="size-slider-title" id="one">
+                    <p class="text-bag">In Stock</p>
+                   </div>
+                   <div class="size-slider-num">
+                     <p class="text-size-uk active" >  UK 2</p>
+                     <p class="text-size-uk active">UK 4</p>
+                     <p class="text-size-uk"> UK 6 </p>
+                     <p class="text-size-uk">UK 8 </p>
+                     <p class="text-size-uk"> UK 10</p>
+                     <p class="text-size-uk">UK 12</p>
+                     <p class="text-size-uk active"> UK 14</p>
+                   </div>
+                 </div>
+                 <div class="round-display">
+                   70% OFF
+                 </div>
+                 <img src="/src/img/pic-29.jpg" alt="Clothing" class="clothing-img">
+
+               </div>
+               <div class="showcase-container-gallery-grid-item-description">
+                 <div class="whishlist-icon">
+                  <p class="text-with-background">70% OFF - 1 WEEK ONLY</p>
+                  <svg class="icon-page ">
+                    <use href="src/img/sprite.svg#icon-heart"></use>
+                  </svg>
+
+                 </div>
+               
+                  <p class="text-descrip"> Estella Leather Biker Jacket</p>
+                  <p class="text-descrip1"> <del>£380.00</del>  <span style="color: red;">£114.00 </span></p>
+                  <p class="text-thinny colorDisplay">1 COLOUR</p>
+                  <!-- <p class="one-color">
+                    <span class="thinny-square">
+                      <img src="/src/img/pic-29.jpg" alt="Clothing" class="clothing-img">
+                    </span>
+                    <span class="text-thinny" >RED</span>
+                  </p> -->
+                  <button class="btn-hidden">ADD TO BAG</button>
+               </div>
+
+             </div>
+              <div class="showcase-container-gallery-grid-item" >
+               <div class="showcase-container-gallery-grid-item-img">
+                 <div class="size-slider" id="two">
+                   <div class="size-slider-title">
+                    <p class="text-bag">In Stock</p>
+                   </div>
+                   <div class="size-slider-num">
+                     <p class="text-size-uk active" >  UK 2</p>
+                     <p class="text-size-uk active">UK 4</p>
+                     <p class="text-size-uk"> UK 6 </p>
+                     <p class="text-size-uk">UK 8 </p>
+                     <p class="text-size-uk"> UK 10</p>
+                     <p class="text-size-uk">UK 12</p>
+                     <p class="text-size-uk active"> UK 14</p>
+                   </div>             
+                 </div>
+                 <div class="round-display">
+                   70% OFF
+                 </div>
+                 <img src="/src/img/pic-7.jpg" alt="Clothing" class="clothing-img">
+
+               </div>
+               <div class="showcase-container-gallery-grid-item-description">
+                 <div class="whishlist-icon">
+                  <p class="text-with-background">70% OFF - 1 WEEK ONLY</p>
+                  <svg class="icon-page ">
+                    <use href="src/img/sprite.svg#icon-heart"></use>
+                  </svg>
+
+                 </div>
+               
+                  <p class="text-descrip"> Estella Leather Biker Jacket</p>
+                  <p class="text-descrip1"> <del>£380.00</del>  <span style="color: red;">£114.00 </span></p>
+                  <p class="text-thinny">1 COLOUR</p>
+                  <button class="btn-hidden">ADD TO BAG</button>
+               </div>
+
+             </div>
+             <div class="showcase-container-gallery-grid-item" >
+              <div class="showcase-container-gallery-grid-item-img">
+                <div class="size-slider" id="three">
+                  <div class="size-slider-title">
+                   <p class="text-bag">In Stock</p>
+                  </div>
+             
+                  <div class="size-slider-num">
+                    <p class="text-size-uk active" >  UK 2</p>
+                    <p class="text-size-uk active">UK 4</p>
+                    <p class="text-size-uk"> UK 6 </p>
+                    <p class="text-size-uk">UK 8 </p>
+                    <p class="text-size-uk"> UK 10</p>
+                    <p class="text-size-uk">UK 12</p>
+                    <p class="text-size-uk active"> UK 14</p>
+                 
+                  </div>
+                  
+
+                </div>
+                <div class="round-display">
+                  70% OFF
+                </div>
+                <img src="/src/img/pic-7.jpg" alt="Clothing" class="clothing-img">
+
+              </div>
+              <div class="showcase-container-gallery-grid-item-description">
+                <div class="whishlist-icon">
+                 <p class="text-with-background">70% OFF - 1 WEEK ONLY</p>
+                 <svg class="icon-page ">
+                   <use href="src/img/sprite.svg#icon-heart"></use>
+                 </svg>
+
+                </div>
+              
+                 <p class="text-descrip"> Estella Leather Biker Jacket</p>
+                 <p class="text-descrip1"> <del>£380.00</del>  <span style="color: red;">£114.00 </span></p>
+                 <p class="text-thinny">1 COLOUR</p>
+                 <button class="btn-hidden">ADD TO BAG</button>
+              </div>
+
+            </div>
+            <div class="showcase-container-gallery-grid-item" >
+              <div class="showcase-container-gallery-grid-item-img">
+                <div class="size-slider" id="four">
+                  <div class="size-slider-title">
+                   <p class="text-bag">In Stock</p>
+                  </div>
+             
+                  <div class="size-slider-num">
+                    <p class="text-size-uk active" >  UK 2</p>
+                    <p class="text-size-uk active">UK 4</p>
+                    <p class="text-size-uk"> UK 6 </p>
+                    <p class="text-size-uk">UK 8 </p>
+                    <p class="text-size-uk"> UK 10</p>
+                    <p class="text-size-uk">UK 12</p>
+                    <p class="text-size-uk active"> UK 14</p>
+                 
+                  </div>
+                  
+
+                </div>
+                <div class="round-display">
+                  70% OFF
+                </div>
+                <img src="/src/img/pic-7.jpg" alt="Clothing" class="clothing-img">
+
+              </div>
+              <div class="showcase-container-gallery-grid-item-description">
+                <div class="whishlist-icon">
+                 <p class="text-with-background">70% OFF - 1 WEEK ONLY</p>
+                 <svg class="icon-page ">
+                   <use href="src/img/sprite.svg#icon-heart"></use>
+                 </svg>
+
+                </div>
+              
+                 <p class="text-descrip"> Estella Leather Biker Jacket</p>
+                 <p class="text-descrip1"> <del>£380.00</del>  <span style="color: red;">£114.00 </span></p>
+                 <p class="text-thinny">1 COLOUR</p>
+                 <button class="btn-hidden">ADD TO BAG</button>
+              </div>
+
+            </div>
+           </div>
+           <!--  -->
+           <div class="showcase-container-social">
+            <div class="showcase-container-social-title">
+              <p class="text-main">Wear It Your Way</p>
+            </div>
+            <div class="showcase-container-social-grid">
+              <div class="sliderer">
+                 <div class="slidex">
+                   <img src="/src/img/pic-39.jpg" alt="Photo 1" />
+                   <div class=" slidex-overlay  ">
+                       <img src="/src/img/instagram.svg" alt="" class="insta-icon">
+                       <p>@LUCY_93</p>
+                   </div>
+                  </div>
+                <div class="slidex">
+                  <div class="slidex-container">
+                    <div class="slidex-container-img">
+                        <img class="img" src="/src/img/pic-48.jpg" alt="Photo 3" /> 
+                        <div class="slidex-container-img-overlay ">
+                          <img src="/src/img/instagram.svg" alt="" class="insta-icon">
+                          <p>@BIATRIZ</p>
+                        </div>
+                    </div>
+                  
+                    <div class="slidex-container-title">
+                      <p class="text-main" style="letter-spacing: 0px;"> ＃Rubaccine</p>
+                     <p class="text-rub"> Share how you're styling your @RUBACCINE 
+                       to be featured. Mention @Rubaccine or upload - make your mark.
+                    </p>
+                     
+                     <button class="nav__btn nav__btn--add-recipe" >
+                      <span class="signin hidden-icons-text sale__tab_3">SHARE YOUR STYLE</span>
+                    </button>
+                                            
+                    </div>
+
+                  </div>
+                </div>
+                <div class="slidex ">
+                  <img src="/src/img/pic-41.jpg" alt="Photo 2" />
+                  <div class=" slidex-overlay  ">
+                    <img src="/src/img/instagram.svg" alt="" class="insta-icon">
+                    <p>@JOE_RAMOS</p>
+                </div>
+                </div>
+
+                <div class="slidex ">
+                  <div class="slidex-container" >
+                    <div class="slidex-container-img" style="flex: 0 0 50%;">
+                      <img class="img" src="/src/img/pic-18.jpg" alt="Photo 3" /> 
+                      <div class="slidex-container-img-overlay ">
+                        <img src="/src/img/instagram.svg" alt="" class="insta-icon">
+                        <p>@SASAHA</p>
+                      </div>
+                    </div>
+                  
+                    <div class="slidex-container-title"  style="flex: 0 0 50%;">
+                      <!-- <p class="text-main" style="letter-spacing: 0px;"> ＃Rubaccine</p>
+                     <p class="text-rub"> Share how you're styling your @RUBACCINE 
+                       to be featured. Mention @Rubaccine or upload - make your mark.
+                    </p>
+                     
+                     <button class="nav__btn nav__btn--add-recipe" >
+                      <span class="signin hidden-icons-text sale__tab_3">SHARE YOUR STYLE</span>
+                    </button> -->
+                                            
+                    </div>
+
+                  </div>
+                
+                </div>  
+                <div class="slidex">
+                  <img src="/src/img/pic-32.jpg" alt="Photo 1" />
+                  <div class=" slidex-overlay  ">
+                    <img src="/src/img/instagram.svg" alt="" class="insta-icon">
+                    <p>@MEGAN</p>
+                </div>
+                  
+                </div>
+                <div class="slidex">
+                  <div class="slidex-container">
+                    <div class="slidex-container-img">
+                      <img class="img" src="/src/img/pic-44.jpg" alt="Photo 3" /> 
+                      <div class="slidex-container-img-overlay ">
+                        <img src="/src/img/instagram.svg" alt="" class="insta-icon">
+                        <p>@JIMMY-XU</p>
+                      </div>
+                        
+                    </div>
+                    
+                  
+                    <div class="slidex-container-title">
+                      <!-- <p class="text-main" style="letter-spacing: 0px;"> ＃Rubaccine</p>
+                     <p class="text-rub"> Share how you're styling your @RUBACCINE 
+                       to be featured. Mention @Rubaccine or upload - make your mark.
+                    </p> -->
+                     
+                     <!-- <button class="nav__btn nav__btn--add-recipe" >
+                      <span class="signin hidden-icons-text sale__tab_3">SHARE YOUR STYLE</span>
+                    </button> -->
+                                            
+                    </div>
+
+                  </div>
+                </div>
+                <div class="slidex ">
+                  <img src="/src/img/pic-8.jpg" alt="Photo 2" />
+                  <div class=" slidex-overlay  ">
+                    <img src="/src/img/instagram.svg" alt="" class="insta-icon">
+                    <p>@MCGREGOR</p>
+                </div>
+                
+                </div>
+
+                <div class="slidex ">
+                  <div class="slidex-container" >
+                    <div class="slidex-container-img" style="flex: 0 0 70%;">
+                      <img class="img" src="/src/img/pic-23.jpg" alt="Photo 3" /> 
+                      <div class="slidex-container-img-overlay ">
+                        <img src="/src/img/instagram.svg" alt="" class="insta-icon">
+                        <p>@JOHN_BUZZER</p>
+                      </div>
+                    </div>
+                  
+                    <div class="slidex-container-title"  style="flex: 0 0 30%;">
+                                            
+                    </div>
+
+                  </div>
+                
+                </div> 
+                 <button class="slider__btn slider__btn--left">
+                  <svg class="icon-title-slider ">
+                    <use
+                      href="src/img/sprite.svg#icon-arrow_back_ios"
+                      
+                    ></use>
+                  </svg>
+
+
+                 </button>
+                <button class="slider__btn slider__btn--right">
+                  <svg class="icon-title-slider ">
+                    <use
+                      href="src/img/sprite.svg#icon-arrow_forward_ios"
+                      
+                    ></use>
+                  </svg>
+                </button> 
+              </div>
+              
+            </div>
+            <div class="showcase-container-social-btn">
+              <p class="text-main">Looking for more?</p>
+              <div class="showcase-container-social-btn-conatiner">
+                <ul class="nav__list-preview">
+                  <li class="nav__item-preview "><a href="#" style="color: black;" class="removeUnderline">SHOP SHIRTS</a></li>
+                  <li class="nav__item-preview"><a href="#" style="color: black;" class="removeUnderline">SHOP GIFT CARDS </a></li>
+
+                </ul>
+               
+              </div>
+         
+            </div>
+            <div class="showcase-container-social-reusable">
+              <div class="section-1-content-2" >
+                <div class="section-1-content-2-left">
+                  <p class="text-main">
+                    New to Rubaccine? Sign up for 15% off full-price styles in your
+                    first order.
+                  </p>
+                </div>
+                <div class="section-1-content-2-right">
+                  <p class="text-thiny hidden">
+                    Sign up to receive exclusive updates on our new collections and
+                    special offers. To improve your experience we may; profile,
+                    segment, test, analyse and model your details. You can unsubscribe
+                    at any time via the link in your emails. Please refer to our
+                    <strong>Privacy Policy</strong> for further details.
+                  </p>
+                  <div class="email-parent">
+                    <input
+                      class="footer-newsletter-form__input"
+                      id="footer-newsletter-email1"
+                      type="text"
+                      value=""
+                      name="email"
+                      aria-describedby="footer-disclaimer"
+                      placeholder="Email Address"
+                      aria-label="Enter email address"
+                      data-mailcheck="Did you mean"
+                      data-prev-value=""
+                    />
+                    <div class="parent-bottom">
+                      <a href="#" class="input-email-parent">WOMENWEAR</a>
+                      <a href="#" class="input-email-parent">MANWEAR</a>
+                    </div>
+                  </div>
+                  <div class="thinyAlert hidden">
+                    <p class="errorEmailRegisted">
+                      WE RECOGNISE THIS EMAIL ADDRESS. YOU HAVE ALREADY SUBSCRIBED
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <hr class="hr1" />
+              <div class="footer" >
+                <div class="footer-info">
+                  <div class="footer-info-container">
+                    <div class="footer-info-container-left">
+                      <div class="footer-info-container-left-info1">
+                        <ul class="nav__list-footer ">
+                          <li class="nav__item-footer-a">
+                            <a href="#">INFORMATION</a>
+                          </li>
+                          <!--  1020px  😃   Toggle .icon-footer-rotation class to Rotate -->
+                          <svg class="icon-footer  icon-hidden  ">
+                            <use 
+                              href="src/img/sprite.svg#icon-keyboard_arrow_down"
+                            
+                            ></use>
+                          </svg>
+                        </ul>
+                      </div>
+                      <hr class="hr2" />
+                      <!--  1020px  😃 REMOVE VISIBILITY TO SEE -->
+                      <div class="footer-info-container-left-info2">
+                        <ul class="nav__list-footer-2 operations__tab--active">
+                          <li class="nav__item-footer"><a href="#">Contact Us</a></li>
+                          <li class="nav__item-footer"><a href="#">Delivery</a></li>
+                          <li class="nav__item-footer">
+                            <a href="#">Returns & Exchange</a>
+                          </li>
+                          <li class="nav__item-footer"><a href="#">FAQs</a></li>
+                          <li class="nav__item-footer"><a href="#">Size Guide</a></li>
+                          <li class="nav__item-footer"><a href="#">Careers</a></li>
+                          <li class="nav__item-footer"><a href="#">Stores</a></li>
+                          <li class="nav__item-footer">
+                            <a href="#">Sustainability</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <!--  -->
+                    <div class="footer-info-container-right">
+                      <div class="footer-info-container-left-info1">
+                        <ul class="nav__list-footer previeweEl">
+                          <li class="nav__item-footer-a"><a href="#">&nbsp;</a></li>
+                        </ul>
+                      </div>
+                      <!--  1020px  😃 REMOVE VISIBILITY TO SEE -->
+                      <div class="footer-info-container-left-info2">
+                        <ul class="nav__list-footer-2">
+                          <li class="nav__item-footer">
+                            <a href="#">Accesssibility</a>
+                          </li>
+                          <li class="nav__item-footer"><a href="#">Klarna</a></li>
+                          <li class="nav__item-footer">
+                            <a href="#">Terms & Conditions</a>
+                          </li>
+                          <li class="nav__item-footer">
+                            <a href="#">Privacy Policy</a>
+                          </li>
+                          <li class="nav__item-footer">
+                            <a href="#">Tax Strategy</a>
+                          </li>
+                          <li class="nav__item-footer">
+                            <a href="#">Modern Slavery Act</a>
+                          </li>
+                          <li class="nav__item-footer">
+                            <a href="#">Gender Pay Gap</a>
+                          </li>
+                          <li class="nav__item-footer"><a href="#">Site Map</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--  -->
+                <!-- <hr class="hr2"> -->
+                <div class="footer-icon">
+                  <div class="footer-icon-container">
+                    <div class="footer-icon-container-left">
+                      <div class="footer-info-container-left-info1">
+                        <ul class="nav__list-footer">
+                          <li class="nav__item-footer-a">
+                            <a href="#">DOWNLOAD OUR APP</a>
+                          </li>
+                          <!-- 😃 ADD icon-footer-rotation class to Rotate  -->
+                          <svg class="icon-footer icon-hidden">
+                            <use
+                              href="src/img/sprite.svg#icon-keyboard_arrow_down"
+                            ></use>
+                          </svg>
+                        </ul>
+                      </div>
+                      <hr class="hr2" />
+                      <!--  1020px  😃 REMOVE VISIBILITY TO SEE -->
+                      <div class="footer-info-container-left-info2">
+                        <img
+                          src="/src/img/App_Store_(iOS)-Badge-Logo.wine.svg"
+                          alt="app store"
+                          class="appStore"
+                        />
+                      </div>
+                    </div>
+                    <!-- <hr class="hr2"> -->
+                    <!-- <div class="footer-icon-container-right">
+      
+                    </div> -->
+                    <div class="footer-info-container-right">
+                      <div class="footer-info-container-left-info1">
+                        <ul class="nav__list-footer">
+                          <li class="nav__item-footer-a">
+                            <a href="#">FOLLOW US</a>
+                          </li>
+                          <!-- 😃 ADD icon-footer-rotation class to Rotate  -->
+                          <svg class="icon-footer icon-hidden">
+                            <use
+                              href="src/img/sprite.svg#icon-keyboard_arrow_down"
+                            ></use>
+                          </svg>
+                        </ul>
+                      </div>
+                      <hr class="hr2" />
+                      <!--  1020px  😃 REMOVE VISIBILITY TO SEE -->
+                      <div class="footer-info-container-left-info2">
+                        <ul class="nav__list-footer-2">
+                          <li class="nav__item-footer"><a href="#">Instagram</a></li>
+                          <li class="nav__item-footer"><a href="#">Facebook</a></li>
+                          <li class="nav__item-footer"><a href="#">Twitter</a></li>
+                          <li class="nav__item-footer"><a href="#">Youtube</a></li>
+                          <li class="nav__item-footer"><a href="#">Pinterest</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <hr class="hr3" />
+              <div class="copyright">
+                <p>Copyright&copy;Dario Amade 2021</p>
+              </div>
+         
+            </div>
+           
+
+
+          </div>
+          </div>
+         
+        </div>
+    
+      </div>
+
+       <!-- CONTENT END -->
+       <div class="section-1 "> <!--IMPORTANTdisplays on the bottom slider__contain-active -->
+          
+        <hr class="hr" />
+        <div class="section-1-content-2">
+          <div class="section-1-content-2-left">
+            <p class="text-main">
+              New to Rubaccine? Sign up for 15% off full-price styles in your
+              first order.
+            </p>
+          </div>
+          <div class="section-1-content-2-right">
+            <p class="text-thiny hidden">
+              Sign up to receive exclusive updates on our new collections and
+              special offers. To improve your experience we may; profile,
+              segment, test, analyse and model your details. You can unsubscribe
+              at any time via the link in your emails. Please refer to our
+              <strong>Privacy Policy</strong> for further details.
+            </p>
+            <div class="email-parent">
+              <input
+                class="footer-newsletter-form__input"
+                id="footer-newsletter-email1"
+                type="text"
+                value=""
+                name="email"
+                aria-describedby="footer-disclaimer"
+                placeholder="Email Address"
+                aria-label="Enter email address"
+                data-mailcheck="Did you mean"
+                data-prev-value=""
+              />
+              <div class="parent-bottom">
+                <a href="#" class="input-email-parent">WOMENWEAR</a>
+                <a href="#" class="input-email-parent">MANWEAR</a>
+              </div>
+            </div>
+            <div class="thinyAlert hidden">
+              <p class="errorEmailRegisted">
+                WE RECOGNISE THIS EMAIL ADDRESS. YOU HAVE ALREADY SUBSCRIBED
+              </p>
+            </div>
+          </div>
+        </div>
+        <hr class="hr1" />
+        <div class="footer">
+          <div class="footer-info">
+            <div class="footer-info-container">
+              <div class="footer-info-container-left">
+                <div class="footer-info-container-left-info1">
+                  <ul class="nav__list-footer">
+                    <li class="nav__item-footer-a">
+                      <a href="#">INFORMATION</a>
+                    </li>
+                    <!--  1020px  😃   Toggle .icon-footer-rotation class to Rotate -->
+                    <svg class="icon-footer icon-hidden footer-first ">
+                      <use
+                        href="src/img/sprite.svg#icon-keyboard_arrow_down"
+                        id="dario1"
+                      ></use>
+                    </svg>
+                  </ul>
+                </div>
+                <hr class="hr2" />
+                <!--  1020px  😃 REMOVE VISIBILITY TO SEE -->
+                <div class="footer-info-container-left-info2  active-link" id="footerUp_1">
+                  <ul  class="nav__list-footer-2 operations__tab--active">
+                    <li class="nav__item-footer"><a href="#">Contact Us</a></li>
+                    <li class="nav__item-footer"><a href="#">Delivery</a></li>
+                    <li class="nav__item-footer">
+                      <a href="#">Returns & Exchange</a>
+                    </li>
+                    <li class="nav__item-footer"><a href="#">FAQs</a></li>
+                    <li class="nav__item-footer"><a href="#">Size Guide</a></li>
+                    <li class="nav__item-footer"><a href="#">Careers</a></li>
+                    <li class="nav__item-footer"><a href="#">Stores</a></li>
+                    <li class="nav__item-footer">
+                      <a href="#">Sustainability</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!--  -->
+              <div class="footer-info-container-right">
+                <div class="footer-info-container-left-info1">
+                  <ul class="nav__list-footer previeweEl">
+                    <li class="nav__item-footer-a"><a href="#">&nbsp;</a></li>
+                  </ul>
+                </div>
+                <!--  1020px  😃 REMOVE VISIBILITY TO SEE -->
+                <div class="footer-info-container-left-info2 active-link" id="footerUp_11">
+                  <ul class="nav__list-footer-2">
+                    <li class="nav__item-footer">
+                      <a href="#">Accesssibility</a>
+                    </li>
+                    <li class="nav__item-footer"><a href="#">Klarna</a></li>
+                    <li class="nav__item-footer">
+                      <a href="#">Terms & Conditions</a>
+                    </li>
+                    <li class="nav__item-footer">
+                      <a href="#">Privacy Policy</a>
+                    </li>
+                    <li class="nav__item-footer">
+                      <a href="#">Tax Strategy</a>
+                    </li>
+                    <li class="nav__item-footer">
+                      <a href="#">Modern Slavery Act</a>
+                    </li>
+                    <li class="nav__item-footer">
+                      <a href="#">Gender Pay Gap</a>
+                    </li>
+                    <li class="nav__item-footer"><a href="#">Site Map</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--  -->
+          <!-- <hr class="hr2"> -->
+          <div class="footer-icon">
+            <div class="footer-icon-container">
+              <div class="footer-icon-container-left">
+                <div class="footer-info-container-left-info1 ">
+                  <ul class="nav__list-footer">
+                    <li class="nav__item-footer-a">
+                      <a href="#">DOWNLOAD OUR APP</a>
+                    </li>
+                    <!-- 😃 ADD icon-footer-rotation class to Rotate  -->
+                    <svg class="icon-footer icon-hidden footer-second">
+                      <use
+                        href="src/img/sprite.svg#icon-keyboard_arrow_down"
+                      ></use>
+                    </svg>
+                  </ul>
+                </div>
+                <hr class="hr2" />
+                <!--  1020px  😃 REMOVE VISIBILITY TO SEE -->
+                <div class="footer-info-container-left-info2 active-link"  id="footerUp_2">
+                  <img
+                    src="/src/img/App_Store_(iOS)-Badge-Logo.wine.svg"
+                    alt="app store"
+                    class="appStore"
+                  />
+                </div>
+              </div>
+              <!-- <hr class="hr2"> -->
+              <!-- <div class="footer-icon-container-right">
+
+              </div> -->
+              <div class="footer-info-container-right">
+                <div class="footer-info-container-left-info1">
+                  <ul class="nav__list-footer">
+                    <li class="nav__item-footer-a">
+                      <a href="#">FOLLOW US</a>
+                    </li>
+                    <!-- 😃 ADD icon-footer-rotation class to Rotate  -->
+                    <svg class="icon-footer icon-hidden footer-third">
+                      <use
+                        href="src/img/sprite.svg#icon-keyboard_arrow_down"
+                      ></use>
+                    </svg>
+                  </ul>
+                </div>
+                <hr class="hr2" />
+                <!--  1020px  😃 REMOVE VISIBILITY TO SEE -->
+                <div class="footer-info-container-left-info2 active-link" id="footerUp_3">
+                  <ul class="nav__list-footer-2">
+                    <li class="nav__item-footer"><a href="#">Instagram</a></li>
+                    <li class="nav__item-footer"><a href="#">Facebook</a></li>
+                    <li class="nav__item-footer"><a href="#">Twitter</a></li>
+                    <li class="nav__item-footer"><a href="#">Youtube</a></li>
+                    <li class="nav__item-footer"><a href="#">Pinterest</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr class="hr3" />
+        <div class="copyright">
+          <p>Copyright&copy;Dario Amade 2021</p>
+        </div>
+      </div>
+
+    </div>
+    <!-- CONTAINER END -->
+  </body>
+</html>
