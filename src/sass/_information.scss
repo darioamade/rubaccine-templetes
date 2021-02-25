@@ -1,13 +1,13 @@
 .information {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  overflow-y: scroll;
+  // position: fixed;
+  // top: 0;
+  // left: 0;
+  // right: 0;
+  // bottom: 0;
+  // overflow-y: scroll;
   // visibility: hidden;
   // opacity: 0;
-
+  width: 100%;
   background-color: rgb(255, 255, 255);
   z-index: 9000;
 
@@ -208,7 +208,7 @@
     margin: 0 auto;
     width: 100%;
     //height: 100%;
-    min-height: 20vh;
+    min-height: 1vh;
     border-top: 1px solid #444444;
 
     display: flex;
@@ -290,6 +290,17 @@ input[type='checkbox'] {
     letter-spacing: 0.2em;
     height: 90px;
     white-space: pre;
+    @media screen and (max-width: 768px){
+      width: 110px;
+      font-size: 10px;
+    }
+    @media screen and (max-width: 640px){
+      width: 80px;
+    }
+    @media only screen and (max-width: 371px){
+      width: 50px;
+      
+    }
   }
 
   #checkout-progress .progress-details .progress-box {
@@ -326,10 +337,22 @@ input[type='checkbox'] {
   height: 0;
   position: relative;
   z-index: -10;
+  @media only screen and (max-width: 639px){
+    left: -82px;
+    width: 100px;
+  }
+  @media only screen and (max-width: 371px){
+    width: 50px;
+    left: -50px;
+  }
   // &:nth-child(1){
   //   border: 1px solid rgb(0, 0, 0);// last step
 
   // }
+}
+
+#checkout-progress ul li.bolder .progress-transition  {
+  border: 1px solid rgb(0, 0, 0);
 }
 
 #checkout-progress ul li .progress-box {
@@ -358,6 +381,7 @@ input[type='checkbox'] {
   justify-content: center;
   align-items: center;
   position: relative;
+
   &::after {
     position: absolute;
     content: '';
@@ -366,8 +390,48 @@ input[type='checkbox'] {
     background-size: cover;
     width: 2rem;
     height: 2rem;
+
   }
 }
+
+
+ #checkout-progress ul li.complete .progress-box {
+  border: 2px solid black;
+  background-color: #000;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+#checkout-progress ul li.bold {
+  font-weight: bold;
+}
+
+// #checkout-progress ul li.complete .progress-box {
+//   background-image: url(/img/checkout/tick_progress_64x64.png);
+//   background-size: 20px 20px;
+// }
+
+//NOTE OLD CODE
+//  #checkout-progress ul li.complete .progress-box {
+//   background-color: #000;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   position: relative;
+//   &::after {
+//     position: absolute;
+//     content: '';
+//   border: 2px solid black;
+//   background-color: #000;
+//   background-image: url('/src/img/check-3.svg');
+//   background-position: center;
+//   background-size: cover;
+//   width: 2rem;
+//   height: 2rem;
+//   background-repeat: no-repeat;
+//   background-position: center;
+// }
 // PROGRESS BAR   END
 
 #checkout-progress ul li {
@@ -754,9 +818,9 @@ input[type='checkbox'] {
 }
 
 .deliver__to__address {
-  opacity: 0;
-  visibility: hidden;
-  height: 0rem;
+  // opacity: 0;
+  // visibility: hidden;
+  // height: 0rem;
 }
 .deliver__to__address1 {
   opacity: 0;

@@ -367,6 +367,18 @@
   background-color: #000;
 }
 
+.hr8 {
+  display: none;
+  @media screen and (max-width: 1020px) {
+    display: inline;
+    width: 100vw;
+    margin: 0 auto;
+    border: none;
+    height: 1px;
+    background-color: #ccc;
+
+  }
+}
 
 
 .hr-menu {

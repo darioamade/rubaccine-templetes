@@ -715,10 +715,13 @@
 // z-index: 100;}
 
 .hero-grid{
-  background-image: url('/src/img/pic-16.jpg');
+//background-image: url('/src/img/pic-16.jpg');
+  background-image: url('/src/img/pic-50.jpg');
   background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-size:100% 100%;
+    background-repeat: no-repeat;
   margin-top: 10rem;
   margin-top: 6.4rem; // BUG
   flex: 1;

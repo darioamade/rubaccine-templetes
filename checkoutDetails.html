@@ -1,0 +1,708 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,600,700"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="src/img/apple-touch-icon.png"
+      type="image/x-icon"
+    />
+
+    <link rel="stylesheet" href="src/sass/main.css" />
+    <script defer src="src/js/controller.js"></script>
+
+    <title>RUBACCINE||ITALIAN FASHION BRAND</title>
+  </head>
+
+  <body>
+    <div class="container">
+        <div class="information ">
+            <div class="information-content">
+                <p class="the-title">Rubaccine</p>
+            <div class="secure-email-back">
+                <svg class="icon-title ">
+                <use
+                    href="src/img/sprite.svg#icon-arrow_back_ios"
+                    
+                ></use>
+                </svg>
+                <p class="sub-title "> BACK TO SHOP</p>
+            </div>
+            <div class="information-content-details">
+                <div class="information-content-details-boxs">
+                <div id="checkout-progress" style="display: block;">
+                    <ul>
+                    <!-- Still have to add active class to the squares💥💥💥💥💥 to progress-details -->
+                    <li class="progress-details actived  " id="progress-details " data-stage="details"><div class="progress-box progress-box-with-bg-black"></div><span>Your details</span></li>
+                    <li id="progress-delivery" data-stage="delivery" ><div class="progress-transition"></div><div class="progress-box"></div><span>Delivery </span></li>
+                    <li id="progress-review" data-stage="review"><div class="progress-transition"></div><div class="progress-box"></div><span>Review</span></li>
+                    <li id="progress-payment" data-stage="payment"><div class="progress-transition"></div><div class="progress-box"></div><span>Payment</span></li>
+                    </ul>
+                </div>
+                </div>
+    
+            </div>
+            <div class="information-content-personal-info">
+                <!--     💥    💥    💥   111 💥    💥 -->
+                    <div class="deliver-to-address mid deliverHidden active ">
+                    <div class="deliver-to-address-wrapper">
+                    <div class="deliver-to-address-wrapper-head">
+                    <div class="deliver-to-address-wrapper-head-left">
+                        <svg class="icon-test">
+                        <use href="src/img/sprite.svg#icon-home2"></use>
+                        </svg>
+                        <p>DELIVERY TO AN ADDRESS
+                
+                        </p>
+                    </div>
+                    <div class="deliver-to-address-wrapper-head-right">
+                        <svg class="icon-test">
+                        <use href="src/img/sprite.svg#icon-map-pin-fill"></use>
+                        </svg>
+                        <p> DPD PICK UP</p>
+    
+                    </div>
+    
+                    </div>
+                    <div class="deliver-to-address-wrapper-content">
+                    <p class="empty-title emptyTitleSmall"> Your address book is currently empty.</p>
+    
+                    <div class="deliver-to-address-wrapper-content-form  form__address__1">
+                        <div class="close-form">
+                        <p>ENTER ADDRESS MANUALLY</p>
+                        <svg class="icon-test icon_form_close">
+                            <use href="src/img/sprite.svg#icon-close" ></use>
+                        </svg>
+                        </div>
+                        <div class="information-content-personal-info-form  ">
+                        <div class="information-content-personal-info-form-name">
+                            <div class="information-content-personal-info-form-name-single  inforContPersnSingle">
+                            <label for="First Name" class="form">First Name*</label>
+                            <input type="email" class="form__input" placeholder="First Name"  required>
+                            </div>
+                            <div class="information-content-personal-info-form-name-single  inforContPersnSingle">
+                            <label for="Last Name" class="form">Last Name*</label>
+                            <input type="email" class="form__input" placeholder="Last Name"  required>
+                            </div>
+                            <div class="information-content-personal-info-form-name-single  inforContPersnSingle">
+                            <label for="email" class="form">Address Line 1</label>
+                            <input type="email" class="form__input" placeholder="Address Line 1"  required>
+                            </div>
+                            <div class="information-content-personal-info-form-name-single  inforContPersnSingle">
+                            <label for="email" class="form" style="color: a94442
+                            ;">Address Line 1</label>
+                            <input type="email" class="form__input" placeholder="Address Line 2"  required>
+                            </div>
+                            <div class="information-content-personal-info-form-name-single  inforContPersnSingle">
+                            <label for="Telephone" class="form">Town</label>
+                            <input type="email" class="form__input" placeholder="Town"  required>
+                            </div>
+                            <div class="information-content-personal-info-form-name-single  inforContPersnSingle">
+                            <label for="Telephone" class="form">Country/Province</label>
+                            <input type="email" class="form__input" placeholder="Country/Province"  required>
+                            </div>
+                            <div class="information-content-personal-info-form-name-single  inforContPersnSingle">
+                            <label for="Telephone" class="form">Postcode</label>
+                            <input type="email" class="form__input" placeholder="Postcode"  required>
+                            </div>
+                            <div class="information-content-personal-info-form-name-single  inforContPersnSingle">
+                            <label for="Telephone" class="form">Country</label>
+                            <input type="email" class="form__input" placeholder="Country"  required>
+                            </div>
+                            <div class="information-content-personal-info-form-name-single  inforContPersnSingle">
+                            <label for="email" class="form">&nbsp;</label>
+                            <span style="margin-top: 0rem;" type="email" class="form__input" placeholder="Telephone"  required>
+                                <p >United Kingdom | (Change country)</p>
+                                <div class="bill-address">
+                                <input type="checkbox" name="billAdress" value="billAdress">
+                                <label for="billAdress">Use as my billing address</label><br>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="btn-bottons">
+                            <button class="search-again"> < SEARCH AGAIN </button>
+                            <button class="search-again confirm__address">CONFIRM ADDRESS > </button>
+                        </div>
+                        </div>
+                        </div> 
+                    </div>
+                    <button class="btn-add-address btnGreenDev2 ">+ ADD A NEW ADDRESS</button>
+                    </div>  
+                </div> 
+                <div class="deliver-options-due deliverHidden active">
+                <div class="deliver-options-due-wrapper">
+                    <span>
+                    <p>DELIVERY OPTIONS - DELIVERY OUTSIDE OF THE UK MAY BE 
+                        DELAYED DUE TO EU WITHDRAWAL</p>
+                    </span>
+    
+                <P>Please select your delivery destination 
+                    for available shipping options.</P>
+                <div class="deliver-options-title-btn">
+                    <button class="search-again"> < BACK </button>
+                    <button class="search-again ">REVIEW > </button>
+                </div>
+                
+                </div>
+                
+            
+                </div>
+                </div>     
+                <!--     💥    💥    💥    💥    💥 --> 
+                <div class="deliver deliver__to__address ">
+                    <div class="deliver-to-address  ">
+                    <div class="deliver-to-address-wrapper">
+                    <div class="deliver-to-address-wrapper-head">
+                        <div class="deliver-to-address-wrapper-head-left">
+                        <svg class="icon-test">
+                            <use href="src/img/sprite.svg#icon-home2"></use>
+                        </svg>
+                        <p>DELIVERY TO AN ADDRESS
+                    
+                            </p>
+                        </div>
+                        <div class="deliver-to-address-wrapper-head-right">
+                        <svg class="icon-test">
+                            <use href="src/img/sprite.svg#icon-map-pin-fill"></use>
+                        </svg>
+                        <p> DPD PICK UP</p>
+        
+                        </div>
+        
+                    </div>
+                    <div class="deliver-to-address-wrapper-content">
+                        <div class="deliver-to-address-wrapper-content-address-save">
+                        <div class="deliver-to-address-wrapper-content-address-save-left">
+                            <address>
+                            Dario Amade
+                        
+                            <br>
+                            33<br>
+                            Broxholm Road<br>
+                            London<br>
+                            London<br>
+                            GB<br>
+                            SE27 0NA<br>
+                            <span type="email" class="form__input" placeholder="Telephone" id=email required>
+                                <div class="bill-address">
+                                <input type="checkbox" name="billAdress" value="billAdress">
+                                <label for="billAdress">Use as my billing address</label><br>
+                                </span>
+                            </address>
+                            
+                        </div>
+                        <div class="deliver-to-address-wrapper-content-address-save-right"></div>
+    
+                        </div>
+    
+        
+                        <div class="deliver-to-address-wrapper-content-form  form__address">
+                        <div class="close-form">
+                            <p>ENTER ADDRESS MANUALLY</p>
+                            <svg class="icon-test icon_form_close">
+                            <use href="src/img/sprite.svg#icon-close" ></use>
+                            </svg>
+                        </div>
+                        <div class="information-content-personal-info-form ">
+                            <div class="information-content-personal-info-form-name">
+                            <div class="information-content-personal-info-form-name-single">
+                                <label for="First Name" class="form">First Name*</label>
+                                <input type="email" class="form__input" placeholder="First Name"  required>
+                            </div>
+                            <div class="information-content-personal-info-form-name-single">
+                                <label for="Last Name" class="form">Last Name*</label>
+                                <input type="email" class="form__input" placeholder="Last Name"  required>
+                            </div>
+                            <div class="information-content-personal-info-form-name-single">
+                                <label for="email" class="form">Address Line 1</label>
+                                <input type="email" class="form__input" placeholder="Address Line 1"  required>
+                            </div>
+                            <div class="information-content-personal-info-form-name-single">
+                                <label for="email" class="form" style="color: a94442
+                                ;">Address Line 1</label>
+                                <input type="email" class="form__input" placeholder="Address Line 2"  required>
+                            </div>
+                            <div class="information-content-personal-info-form-name-single">
+                                <label for="Telephone" class="form">Town</label>
+                                <input type="email" class="form__input" placeholder="Town"  required>
+                            </div>
+                            <div class="information-content-personal-info-form-name-single">
+                                <label for="Telephone" class="form">Country/Province</label>
+                                <input type="email" class="form__input" placeholder="Country/Province"  required>
+                            </div>
+                            <div class="information-content-personal-info-form-name-single">
+                                <label for="Telephone" class="form">Postcode</label>
+                                <input type="email" class="form__input" placeholder="Postcode"  required>
+                            </div>
+                            <div class="information-content-personal-info-form-name-single">
+                                <label for="Telephone" class="form">Country</label>
+                                <input type="email" class="form__input" placeholder="Country"  required>
+                            </div>
+                            <div class="information-content-personal-info-form-name-single">
+                                <label for="email" class="form">&nbsp;</label>
+                                <span style="margin-top: 0rem;" type="email" class="form__input" placeholder="Telephone"  required>
+                                <p >United Kingdom | (Change country)</p>
+                                <div class="bill-address">
+                                    <input type="checkbox" name="billAdress" value="billAdress">
+                                    <label for="billAdress">Use as my billing address</label><br>
+                                </span>
+                            </div>
+                            </div>
+                            <div class="btn-bottons">
+                            <button class="search-again"> < SEARCH AGAIN </button>
+                            <button class="search-again confirm__address">CONFIRM ADDRESS > </button>
+                            </div>
+                            </div>
+                        </div> 
+                        </div>
+                        <button class="btn-add-address btn__add__address">+ ADD A NEW ADDRESS</button>
+                    </div>  
+                </div>
+                <div class="deliver-options">
+                    <div class="deliver-options-title">
+                    <p class="title-deliver">DELIVERY OPTIONS - DELIVERY OUTSIDE OF THE UK MAY BE DELAYED 
+                        DUE TO EU WITHDRAWAL</p>
+                    </div>
+                    <div class="deliver-options-title color-active">
+                    <div class="deliver-options-title-top">
+                        <div class="bill-address">
+                        <input type="checkbox" name="billAdress" value="billAdress" checked>
+                        <label for="billAdress">NEXT BUSINESS DAY DELIVERY - ORDER BEFORE 2PM</label><br>
+                        </span>
+                        </div>
+                        <span>FREE</span>
+    
+                    </div>
+                    <div class="deliver-options-title-bottom">
+                        <p>Order by 2pm for next business day delivery. Orders placed after
+                        2pm Thurs and before 3pm Sat will be delivered on Mon. All 
+                        orders delivered Mon to Fri only, excl public holidays.</p>
+                    </div>
+                
+                    </div>
+                    <div class="deliver-options-title ">
+                    <div class="deliver-options-title-top">
+                        <div class="bill-address">
+                        <input type="checkbox" name="billAdress" value="billAdress" >
+                        <label for="billAdress">STANDARD DELIVERY - DELIVERED WITHIN 5-7 WORKING DAYS</label><br>
+                        </span>
+                        </div>
+                        <span>FREE</span>
+    
+                    </div>
+                    <div class="deliver-options-title-bottom">
+                        <p>Orders delivered between Mon and Fri within 5-7 working days, excl 
+                        public holidays. Outlying areas may take longer. We do not deliver 
+                        to APO, FPO or PO box addresses. Expect delivery delays over our 
+                        busy promotional period. European returns are not free. Orders
+                        delivered outside of the UK may be delayed due to withdrawal 
+                        from the EU and customs clearance.</p>
+                    </div>
+                
+                    </div>
+                    <div class="deliver-options-title">
+                    <div class="deliver-options-title-top">
+                        <div class="bill-address">
+                        <input type="checkbox" name="billAdress" value="billAdress" >
+                        <label for="billAdress">SATURDAY DELIVERY - ORDER BEFORE 2PM FRIDAY</label><br>
+                        </span>
+                        </div>
+                        <span>FREE</span>
+    
+                    </div>
+                    <div class="deliver-options-title-bottom">
+                        <p>Order up until 2pm Fri for Saturday delivery. Orders placed after 2pm Friday will be delivered the following Saturday.</p>
+                    </div>
+                
+                    </div>
+                    <div class="deliver-options-title">
+                    <div class="deliver-options-title-top">
+                        <div class="bill-address">
+                        <input type="checkbox" name="billAdress" value="billAdress" >
+                        <label for="billAdress">SUNDAY DELIVERY - ORDER BEFORE 2PM SATURDAY</label><br>
+                        </span>
+                        </div>
+                        <span>FREE</span>
+    
+                    </div>
+                    <div class="deliver-options-title-bottom">
+                        <p>Orders placed up until 2pm on Saturday for our Sunday service. Order after 2pm on Saturday and you'll receive your order the following Sunday.</p>
+                    </div>
+                
+                    </div>
+            
+            
+            
+                    <div class="deliver-options-title">
+                    <div class="deliver-options-title-btn">
+                        <button class="search-again review-proceed-grey"> < BACK </button>
+                        <button class="search-again  review-proceed-green">REVIEW > </button>
+                    </div>
+                    
+                
+                    </div>
+                </div>
+            
+            
+                </div> 
+                <!--   TODO   💥    💥 DONE    💥    💥  TODO  💥 -->
+                
+                
+            
+                </div> 
+                <!--   TODO   💥    💥 DONE    💥    💥  TODO  💥 -->
+        <!--     💥    💥    💥    💥    💥  LAST STEP--> 
+                <div class="product-review active">
+                    <div class="product-review-content ">
+                    <div class="product-review-content-product">
+                        <div class="checkout-page-2-container-item">
+                        <div class="checkout-page-2-container-item-header ">
+                            <div class="checkout-page-2-container-item-header-img" style="justify-content: flex-start;">
+                        <p>Product</p>
+                            </div>
+                            <div class="checkout-page-2-container-item-header-colour">
+                            &nbsp;   
+                            </div>
+                            <div class="checkout-page-2-container-item-header-size">
+                            <p>SIZE</p>
+                            </div>
+                            <div class="checkout-page-2-container-item-header-quatity">
+                            <p>COLOUR  </p>
+                            </div>
+                            <div class="checkout-page-2-container-item-header-price">
+                            <p>Quatity</p>
+                            </div>
+                            <div class="checkout-page-2-container-item-header-close">
+                            <p>PRICE</p>
+                            </div>
+                        </div>
+                        <p class="vl6"></p>
+                        <!--  -->
+                        <div class="checkout-page-2-container-item-product ">
+                            <div class="checkout-page-2-container-item-product-img">
+                            <img src="/src/img/pic-33.jpg" alt="clothing"  class="img">
+                            </div>
+                            <div class="checkout-page-2-container-item-product-colour">
+                            <p class="sub-title">LORI SILK BLEND STRIPE DRESS</p>
+                            </div>
+                            <div class="checkout-page-2-container-item-product-quatity">
+                            <p class="sub-title-prim">Size UK 2</p>
+                    
+                            </div>
+                            <div class="checkout-page-2-container-item-product-quatity">
+                            <p class="sub-title-prim">Chalk White</p>
+                            </div>
+                            <div class="checkout-page-2-container-item-product-price">
+                            <td class="basket-item-quantity">
+                                <label class="item-quantity" aria-live="polite" tabindex="0" aria-label="1">&nbsp; 1 &nbsp;</label>
+                                </td>
+                            </div>
+                            <div class="checkout-page-2-container-item-product-close">
+                            <p class="sub-title">£94.00</p>
+                            </div>
+                        </div>
+                    
+                        <!-- 💪 gift card code -->
+                        <div class="checkout-page-2-container-item-product " style="height: 8rem;">
+                            <div class="checkout-page-2-container-item-product-img">
+                    
+                            </div>
+                            <div class="checkout-page-2-container-item-product-colour">
+                            </div>
+                            <div class="checkout-page-2-container-item-product-size">
+                            </div>
+                            <div class="checkout-page-2-container-item-product-quatity">
+                            </div>
+                            <div class="checkout-page-2-container-item-product-price">
+                            <p class="sub-title">SUBTOTAL</p>
+                            </div>
+                            <div class="checkout-page-2-container-item-product-close">
+                            <p class="sub-title">£94.00</p>
+                            </div>
+                        </div>
+            
+                        </div>
+                    </div>
+                    <div class="product-review-content-details">
+                        <div class="product-review-content-details-square">
+                        <div class="product-review-content-details-square-title">
+                            <p class="title-deliver">YOUR DETAILS</p>
+                        </div>
+                        <div class="product-review-content-details-square-description">
+                            <div class="product-review-content-details-square-description-name">
+                            <div class="product-review-content-details-square-description-name-full">
+                                <span>Name</span>
+                                <p>Dario Amade</p>
+                                <span>Email</span>
+                                <p>dario@outlook.com</p>
+                                <span>Telephone</span>
+                                <p>07542644694</p>
+                            </div>
+                            <div class="product-review-content-details-square-description-name-order">
+                                <span>Email</span>
+                                <p>dario@outlook.com</p>
+                            </div>
+                            
+                            </div>
+                            <div class="product-review-content-details-square-description-btn">
+                            <button class="btn-edit">YOUR DETAILS</button> 
+                            </div>
+                            
+                        </div>
+    
+    
+                        </div>
+                        <div class="product-review-content-details-square">
+                        <div class="product-review-content-details-square-title">
+                            <p class="title-deliver">DELIVERY</p>
+                        </div>
+                        <div class="product-review-content-details-square-description">
+                            <div class="product-review-content-details-square-description-name">
+                            <div class="product-review-content-details-square-description-name-full">
+                                <span>Delivery Address</span>
+                                <p>Dario Amade</p>
+                                <br>
+                                <p>33</p>
+                                <p>Broxholm Road</p>
+                                <p>London</p>
+                                <p>London</p>
+                                <p>GB</p>
+                                <p>SE27 0NA</p>
+                            </div>
+                            <div class="product-review-content-details-square-description-name-order">
+                                <span>Delivery Method</span>
+                                <p>NEXT BUSINESS DAY DELIVERY - ORDER BEFORE 2PM</p>
+                            </div>
+                            
+                            </div>
+                            <div class="product-review-content-details-square-description-btn">
+                            <button class="btn-edit">EDIT DELIVERY</button> 
+                            </div>
+                            
+                        </div>
+    
+    
+                        </div>
+                    </div>
+                    <div class="product-review-content-total">
+                        <div class="product-review-content-total-grid1">
+                        <div class="product-review-content-total-grid1-box">
+                            <div class="product-review-content-total-grid1-box-left">
+                            <div class="product-review-content-total-grid1-box-left-box-1">
+                                <p style="margin: 2rem 0rem;">SUBTOTAL</p>
+                                <p>NEXT BUSINESS DAY DELIVERY - ORDER BEFORE 2PM</p>
+                            </div>
+                            <div class="product-review-content-total-grid1-box-left-box-2">
+                                <p style="margin: 2rem 0rem;">£222.00</p>
+                                <p>£0</p>
+                            </div>
+    
+                            </div>
+                            <div class="product-review-content-total-grid1-box-right">
+                            <div class="product-review-content-total-grid1-box-right-box-1">
+                                <span>TOTAL</span>
+                                <tg>VAT</tg>
+                            </div>
+                            <div class="product-review-content-total-grid1-box-right-box-2">
+                                <span>£222.00</span>
+                                <tg>£37.00</tg>
+                            </div>
+    
+    
+                            </div>
+    
+                        </div>
+    
+    
+                        </div>
+                        <div class="product-review-content-total-grid2">
+                        <div class="product-review-content-total-grid2-btn">
+                            <div class="btn-contanier">
+                            <button class="search-again"> < BACK </button>
+                            </div>
+                        
+                            <div class="bill-address">
+                            <input type="checkbox" name="billAdress" value="billAdress" checked="">
+                            <label for="billAdress">BY COMPLETING YOUR ORDER YOU AGREE TO THE ALLSAINTS <u>Terms and Conditions and relevant tax and duties</u></label><br>
+                            
+                            </div>
+                        </div>
+                        <p class="text-color" style="margin: 1rem 0 2rem 0;"><b>Make 3</b> payments of £38.00. <b>Klarna</b>.
+                            No fees. <u>Learn more</u></p>
+                            <button class="btn-reusable  purchaseSecurely">PURCHASE SECURELY</button>
+    
+                        </div>
+                    
+                    </div>
+                    </div>
+                </div>
+                <div class="payment-methods active">
+                    <div class="payment-methods-content">
+                    <div class="payment-methods-content-card">
+                        <p>GIFT CARDS</p>
+                    </div>
+                    <div class="payment-methods-content-gift-card">
+                        <p class="text-thinny">You have not added any gift cards.</p>
+                        <button class="btn-redeem">+ REDEEM A GIFT CARD</button>
+                    </div>
+                    <div class="payment-methods-content-card">
+                        <p>PAYMENTS OPTIONS</p>
+                    </div>
+                    <div class="payment-methods-content-pay-types">
+                        <div class="payment-methods-content-pay-types-item">
+                        <div class="payment-methods-content-pay-types-item-single">
+                            <p class="text-thinny">How would you like to pay?</p>
+                            <span class="text-thinny">Order total £222.00</span>
+                        </div>
+                        <div class="payment-methods-content-pay-types-item-single1">
+                            <div class="payment-methods-content-pay-types-item-single1-item1">
+                                <!-- <img src="https://upload.wikimedia.org/wikipedia/commons/3/39/PayPal_logo.svg" alt="" class="pay-visa"> -->
+                                <img src="/src/img/pngegg.png" alt="" class="pay-visa">
+                                <p class="text-thinny">Pay using a credit/debit card</p>
+                            </div>
+                            <div class="payment-methods-content-pay-types-item-single1-item3">
+                            <!-- BUG paypal link -->
+                            <button class="btn-black-pay" onclick="https:www.paypal.com/uk/signin">PAY WITH PAYPAL</button>
+                            </div>
+                        </div>
+                        <div class="payment-methods-content-pay-types-item-single1">
+                            <div class="payment-methods-content-pay-types-item-single1-item1">
+                            <img src="/src/img/all.svg" alt="" class="pay-visa">
+                            <p class="text-thinny">	Pay using a credit/debit card</p>
+                        </div>
+                        <div class="payment-methods-content-pay-types-item-single1-item3">
+                            <button class="btn-black-pay">PAY WITH PAYPAL</button>
+                        </div>    
+                        </div>
+                        <div class="payment-methods-content-pay-types-item-single1">
+                            <div class="payment-methods-content-pay-types-item-single1-item1">
+                            <img src="/src/img/theeone.svg" alt="" class="pay-visa">
+                            <p class="text-thinny">3 interest-free instalments</p>
+                        </div>
+                        <div class="payment-methods-content-pay-types-item-single1-item3">
+                            <button class="btn-black-pay">PAY WITH KLARNA</button>
+                        </div>
+                        </div>
+                        <div class="payment-methods-content-pay-types-item-single1">
+                            <div class="payment-methods-content-pay-types-item-single1-item1">
+                            <img src="/src/img/theeone.svg" alt="" class="pay-visa">
+                            <p class="text-thinny">Pay later in 30 days</p>
+                        </div>
+                        <div class="payment-methods-content-pay-types-item-single1-item3">
+                            <button class="btn-black-pay">PAY WITH KLARNA</button>
+                        </div>
+                            
+                        </div>
+    
+                        </div>
+                    
+    
+                    </div>
+                    <div class="payment-methods-content-btn-back">
+                        <button class="search-again"> &lt; BACK </button>
+                    </div>
+                    </div>
+    
+                </div>
+    
+                
+        <!--   TODO   💥    💥  END    💥    💥  TODO  💥 -->
+    
+    
+            <div class="information-content-personal-info-title firstHidden">
+                <p>PERSONAL INFORMATION</p>
+                </div>
+                <div class="information-content-personal-info-sub-title firstHidden">
+                <p>WELCOME NEW CUSTOMER</p>
+    
+                </div>
+                <div class="information-content-personal-info-form  firstHidden">
+                    <div class="information-content-personal-info-form-name">
+                    <div class="information-content-personal-info-form-name-single">
+                    <label for="First Name" class="form">First Name*</label>
+                    <input type="email" class="form__input firstName" placeholder="First Name"  required>
+                    </div>
+                    <div class="information-content-personal-info-form-name-single">
+                    <label for="Last Name" class="form">Last Name*</label>
+                    <input type="email" class="form__input lastName" placeholder="Last Name"  required>
+                    </div>
+                    <div class="information-content-personal-info-form-name-single">
+                    <label for="email" class="form">Email*</label>
+                    <input type="email" class="form__input emailAddress" placeholder="Email"  required>
+                    </div>
+    
+                    <div class="information-content-personal-info-form-name-single">
+                    <label for="Telephone" class="form">Telephone*</label>
+                    <input type="email" class="form__input phoneNumber" placeholder="Telephone"  required>
+                    </div>
+                    <div class="information-content-personal-info-form-name-single">
+                    <label for="email" class="form">&nbsp;</label>
+                    <span type="email" class="form__input" placeholder="Telephone"  required>
+                        <p>You will receive updates on your order via Email. Privacy Policy</p>
+                    </span>
+                    </div>
+                    <div class="information-content-personal-info-form-name-single">
+                    <label for="email" class="form">&nbsp;</label>
+                    <span type="email" class="form__input" placeholder="Telephone"  required>
+                        <button class="btn-green-delivery   btnGreenDev1">DELIVERY ></button>
+                    </span>
+                    </div>
+                    <div class="information-content-personal-info-form-name-single">
+                    <label for="email" class="form">&nbsp;</label>
+                    <span type="email" class="form__input" placeholder="Telephone"  required>
+                        <p>Continue and complete checkout with Rubaccine</p>
+                    </span>
+                    </div>
+                    <div class="information-content-personal-info-form-name-single">
+                    <label for="email" class="form">&nbsp;</label>
+                    <span type="email" class="form__input" placeholder="Telephone"  required>
+                        <img class=" amazonpay-button-inner-image" style="cursor:pointer; max-height:45px;" 
+                        alt="AmazonPay" id="OffAmazonPaymentsWidgets0" src="https://d23yuld0pofhhw.cloudfront.net/default/uk/live/lwa/gold/medium/PwA.png" tabindex="0">
+                    </span>
+                    </div>
+                    <div class="information-content-personal-info-form-name-single">
+                    <label for="email" class="form">&nbsp;</label>
+                    <span type="email" class="form__input" placeholder="Telephone"  required>
+                        <p>Continue and complete checkout by using your Amazon shipping and payment information</p>
+                    </span>
+                    </div>
+                </div>
+        
+    
+                </div>    
+                        <!--   TODO   💥   DONE 💥    💥    💥  TODO  💥 -->
+    
+        </div>
+
+            <!--  FOOTER FOT THIS SECTION -->
+        <div class="secure-suppurt">
+            <div class="checkout-page-2-container-support">
+                <div class="checkout-page-2-container-support-title">
+                    <p class="title-support">QUESTION OR SUPPORT?</p>
+                    <p class="sub-support  ">Send us an email to: <b>ask@rubaccine.com</b></p>
+                    <p class="sub-support  " style="margin-bottom: 0rem;">Where a member of our Customer Experience team will be happy to assist you.</p>
+                    <p class="sub-support-1  ">We are open 9am-11pm BST Monday to Friday.</p>
+                </div>
+                <div class="checkout-page-2-container-support-methods">
+                    <img src="/src/img/visa-logo@logotyp.us.svg" alt="icons" class="pay-icon">
+                    <img src="/src/img/mastercard-maestro-logo@logotyp.us.svg" alt="icons" class="pay-icon">
+                    <img src="/src/img/american-express-logo@logotyp.us.svg" alt="icons" class="pay-icon">
+                    <img src="/src/img/paypal-logo@logotyp.us.svg" alt="icons" class="pay-icon">
+                    <img src="/src/img/mastercard-4.svg" alt="icons" class="pay-icon">
+                    <img src="/src/img/klarna 1.svg" alt="icons" class="pay-icon6">
+                </div>
+            </div>
+        </div>
+
+            <!--  FOOTER FOT THIS SECTION  END-->
+    </div>
+    <!-- CONTAINER END -->
+  </body>
+</html>
