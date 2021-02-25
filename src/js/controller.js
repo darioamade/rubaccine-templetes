@@ -46,13 +46,15 @@ tabContainer.addEventListener('click', function (e) {
 
 /*  FORM DROWDOWN-SIZE */
 
-const selected = document.querySelector('.selected');
+
+/* const selected = document.querySelector('#ma');
 const optionsConatiner = document.querySelector('.options-container');
 const optionsList = document.querySelectorAll('.option');
 const sameSize = document.querySelector('.same-size');
 const sizeGuide = document.querySelector('.size-guide');
 const btnNotClear = document.querySelector('.btn-not-clear');
 const btnReset = document.querySelector('.reset-size-details');
+
 
 selected.addEventListener('click', function () {
   optionsConatiner.classList.toggle('active');
@@ -70,7 +72,7 @@ optionsList.forEach(el => {
     btnNotClear.style.cursor = 'pointer';
     btnNotClear.style.backgroundColor = 'black';
   });
-});
+}); */
 
 // btnReset.addEventListener('click', function () {
 //   selected.innerHTML = '-';
@@ -211,9 +213,9 @@ function removeSlider() {
 
 const amazon = document.querySelector('#AmazonPayButton');
 
-amazon.addEventListener('click', function () {
+/* amazon.addEventListener('click', function () {
   console.log('hey');
-});
+}); */
 
 const addFormAdress = document.querySelector('.btn__add__address');
 // addFormAdress.addEventListener('click', function () {
@@ -729,20 +731,20 @@ const emptyTitleSmall = document.querySelectorAll('.emptyTitleSmall');
 const progressDetails = document.querySelector('#progress-details');
 // INPUT VALUE
 
-const firstName = document.querySelector('.firstName').value;
-const lastName = document.querySelector('.lastName').value;
-const emailAddress = document.querySelector('.emailAddress').value;
-const phoneNumber = document.querySelector('.phoneNumber').value;
+//const firstName = document.querySelector('.firstName').value;
+//const lastName = document.querySelector('.lastName').value;
+// const emailAddress = document.querySelector('.emailAddress').value;
+// const phoneNumber = document.querySelector('.phoneNumber').value;
 
-btnGreenDev.addEventListener('click', function () {
-  firstHidden.forEach(el => {
-    el.classList.add('active');
-  });
-  deliverHidden.forEach(el => {
-    el.classList.replace('active', 'desactived');
-  });
-  // progressDetails.classList.remove('actived')
-});
+// btnGreenDev.addEventListener('click', function () {
+//   firstHidden.forEach(el => {
+//     el.classList.add('active');
+//   });
+//   deliverHidden.forEach(el => {
+//     el.classList.replace('active', 'desactived');
+//   });
+//   // progressDetails.classList.remove('actived')
+// });
 //Open second Form
 btnGreenDevAfter.addEventListener('click', function () {
   emptyTitleSmall.forEach(el => {
