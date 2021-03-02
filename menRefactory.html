@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,600,700"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="src/img/apple-touch-icon.png"
+      type="image/x-icon"
+    />
+
+    <link rel="stylesheet" href="src/sass/main.css" />
+    <script defer src="src/js/controller.js"></script>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+    crossorigin="anonymous"
+  />
+
+    <title>RUBACCINE||ITALIAN FASHION BRAND</title>
+  </head>
+
+  <body>
+      <!--  -->
+    <div class="container">
+        <!--  -->
+        <header class="header ">
+            <nav class="nav nav__container">
+                <ul class="nav__list">
+                <li class="nav__item">
+                    <button class="nav__btn nav__btn--add-recipe" data-tab="2">
+                    <span class="signin hidden-icons-text sale__tab_3" >Women</span>
+                    <img src="src/img/menu-4.svg" alt="icon" class="icon-test nav__bar__icon hidden-icons"> 
+    
+                    </button>
+                </li>
+    
+                <li class="nav__item">
+                    <button class="nav__btn nav__btn--add-recipe" data-tab="3">
+                    <span class="signin hidden-icons-text sale__tab_4" >Men</span>
+                    </button>
+                </li>
+                <li class="nav__item">
+                    <button class="nav__btn nav__btn--add-recipe tag1" data-tab="1" >
+                    <!-- <svg class="icon-test hoveruv hidden-icons">
+                        <use href="src/img/icons.svg#icon-magnifying-glass"></use>
+                    </svg> -->
+                    <img src="src/img/glass-4.svg"  alt="icon" class="icon-test  icon-test_space   hidden-icons"> 
+                    <span class="signin hoveruv hidden-icons-text">Search</span>
+                    </button>
+                </li>
+                </ul>
+            </nav>
+            <!-- Form search 😆  REMOVE VISIBLITY LATER -->
+            <form class="search ">
+                <div class="search-overlay">
+                <div class="search-overlay-content">
+                    <input type="text" class="search-overlay-content__field" placeholder="Search Here" autofocus />
+                    <button class="btn search-overlay-content__btn">
+                    <!-- <svg class="search__icon">
+                        <use href="src/img/icons.svg#icon-close"></use>
+                    </svg> -->
+                    <span class="closeX">X</span>
+                    </button>
+                </div>
+    
+                </div>
+    
+            
+            </form>
+            <!-- form seach -->
+            <div class="header__logo" onclick="location.href='index.html'" ;>
+                <p>RUBACCINE</p>
+            </div>
+            <nav class="nav">
+                <ul class="nav__list">
+                <li class="nav__item">
+                    <button class="nav__btn nav__btn--add-recipe">
+                    <span class="signin currency hidden-icons-text">Currency</span>
+                    </button>
+                </li>
+                <li class="nav__item">
+                    <button class="nav__btn nav__btn--add-recipe">
+                    <span class="signin sign__In hidden-icons-text">Sign in</span>
+                    </button>
+                </li>
+                <li class="nav__item">
+                    <button class="nav__btn nav__btn--bookmarks  tag2">
+                    <svg class=" icon-test_space-1  hidden-icons">
+                        <use href="src/img/icons.svg#icon-heart"></use>
+                    </svg>
+                    <span class="hidden-icons-text whishlist__form"> WISHLIST </span>
+                    </button>
+                    
+                </li>
+                <li class="nav__item">
+                    <button class="nav__btn nav__btn--add-recipe">
+                    <!--   <svg class="icon-test icon_bag__icon__small hidden-icons">
+                        <use href="src/img/icons.svg#icon-shopping_bag"></use>
+    
+                    </svg> -->
+                    <img src="src/img/cart.svg" style="margin-right: .5rem;" alt="icon"  class="icon-test hoveruv hidden-icons">
+                    <span class="icon-test-name bag__icon__cart hidden-icons-text">bag (1)</span>
+                    </button>
+                </li>
+                </ul>
+            </nav>
+        </header>
+        <!-- header END -->
+        <!-- header END -->
+        <!-- Content -->
+        <div class="new-hero">
+            <div class="section-4" style="background-image: url('/src/img/pic-58.jpg');">
+                <div class="campaign-heading lockup">
+                    <p class="campaign-title campaign-left">Hope</p>
+                    <p class="campaign-title campaign-right">Springs</p>
+                    <p class="campaign-title campaign-center">Infernal</p>
+                </div>
+                <div class="campaign-btn">
+                    <a class="as_cta--button" href="#">
+                        <button class="button">SHOP NEW SEASON</button>
+                    </a>
+                       <a class="as_cta--button" href="#">
+                        <button class="button">EXPLORE THE CAMPAIGN</button>
+                    </a>
+                </div>
+            </div>
+       
+            <div class="section-2">
+                <div class="section-2-title">
+                    <p class="text-main">New Now</p>
+
+                </div>
+                <div class="section-2-video">
+                <div class="video-bg">
+                    <div class="video-content">
+                        <div class="player">
+                            <video class="video" src='/src/img/production ID_5102955.mp4' autoplay loop playsinline></video>
+                            <div class="show-controls">
+                                <div class="controls-container">
+                                    <!-- Progress Bar -->
+                                    <div class="progress-range" title="Seek">
+                                        <div class="progress-bar"></div>
+                                    </div>
+                                    <div class="control-group">
+                                        <!-- Left Controls -->
+                                        <div class="controls-left">
+                                            <!-- Play/Pause -->
+                                            <div class="play-controls">
+                                                <i class="fas fa-play" title="Play" id="play-btn"></i>
+                                            </div>
+                                            <div class="time">
+                                                <span class="time-elapsed">00:00 / </span>
+                                                <span class="time-duration">02:49</span>
+                                            </div>
+                                            <!-- Volume -->
+                                        
+                                        </div>
+                                        <!-- Right Controls -->
+                                        <div class="controls-right">
+                                            <!-- Speed -->
+                                            <!-- <div class="speed" title="Playback Rate">
+                                                <select name="playbackRate" class="player-speed">
+                                                    <option value="0.5">0.5 x</option>
+                                                    <option value="0.75">0.75 x</option>
+                                                    <option value="1" selected>1.0 x</option>
+                                                    <option value="1.5">1.5 x</option>
+                                                    <option value="2">2.0 x</option>
+                                                </select>
+                                            </div> -->
+                                            <!-- Time -->
+                                            <div class="volume">
+                                                <div class="volume-icon">
+                                                    <i class="fas fa-volume-up" title="Mute" id="volume-icon"></i>
+                                                </div>
+                                                <!-- <div class="volume-range" title="Change Volume">
+                                                    <div class="volume-bar"></div>
+                                                </div> -->
+                                            </div>
+                                            <!-- Fullscreen -->
+                                            <div class="fullscreen">
+                                                <i class="fas fa-expand"></i>
+                                            </div>
+                                            <div class="fullscreen">
+                                                <i class="fas fa-ellipsis-v"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                </div>
+                <div class="section-2-description">
+                    <p class="text-main text-main-hidden">New Now</p>
+                    <p class="text-commit">Latest Arrivals</p>
+                    <p class="text-commit">Leathers</p>
+                    <p class="text-commit">Dresses</p>
+                    <p class="text-commit">Loungewear</p>
+                    <p class="text-commit">Footwear</p
+                </div>
+            </div>
+            </div>
+            <div class="section-3">
+                <div class="section-3-item grid-item-1">
+                    <div class="section-3-item-img">
+                        <img src="/src/img/pic-59.jpg" alt="spring-colection" class="spring-img">
+
+                    </div>
+                    <div class="section-3-item-title">
+                        <p class="text-main">Spring Uniform</p>
+                        <ul class="nav__list">
+                            <li class="nav__item">
+                                <button class="nav__btn nav__btn--add-recipe" data-tab="2">
+                                <span class="signin sale__tab_3" >SHOP NEW ARRIVALS</span>
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="section-3-item grid-item-2">
+                    <div class="section-3-item-img">
+                        <img src="/src/img/pic-62.jpg" alt="spring-colection" class="spring-img">
+                    </div>
+                    <div class="section-3-item-title">
+                        <p class="text-main">Cropped Or Not</p>
+                        <ul class="nav__list">
+                            <li class="nav__item">
+                                <button class="nav__btn nav__btn--add-recipe" data-tab="2">
+                                <span class="signin sale__tab_3" >SHOP TOPS & SHIRTS</span>
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="section-3-item grid-item-3">
+                    <div class="section-3-item-img">
+                        <img src="/src/img/pic-61.jpg" alt="spring-colection" class="spring-img">
+                    </div>
+                    <div class="section-3-item-title">
+                        <p class="text-main">Still Essential</p>
+                        <ul class="nav__list">
+                            <li class="nav__item">
+                                <button class="nav__btn nav__btn--add-recipe" data-tab="2">
+                                <span class="signin  sale__tab_3" >SHOP DRESSES</span>
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <!-- ContentEnd -->
+        <div class="shop-more ">
+            <hr class="hr" />
+            <div class="section-1-content-1">
+            <p class="text-main">A Conscious Commitment</p>
+            <p>
+                Sustainable changes for right now. A new uniform made using 
+                recycled yarns, responsible wools, vegetable-tanned leathers and innovative water saving techniques..
+            </p>
+            <ul class="nav__list-bottom">
+                <li class="nav__item-bottom outmore">
+                <a href="#">FIND OUT MORE</a>
+                </li>
+            </ul>
+            </div>
+        </div>
+        <div class="section-1 "> <!--IMPORTANTdisplays on the bottom slider__contain-active -->
+            
+            <hr class="hr" />
+            <div class="section-1-content-2">
+            <div class="section-1-content-2-left">
+                <p class="text-main">
+                New to Rubaccine? Sign up for 15% off full-price styles in your
+                first order.
+                </p>
+            </div>
+            <div class="section-1-content-2-right">
+                <p class="text-thiny hidden">
+                Sign up to receive exclusive updates on our new collections and
+                special offers. To improve your experience we may; profile,
+                segment, test, analyse and model your details. You can unsubscribe
+                at any time via the link in your emails. Please refer to our
+                <strong>Privacy Policy</strong> for further details.
+                </p>
+                <div class="email-parent">
+                <input
+                    class="footer-newsletter-form__input"
+                    id="footer-newsletter-email1"
+                    type="text"
+                    value=""
+                    name="email"
+                    aria-describedby="footer-disclaimer"
+                    placeholder="Email Address"
+                    aria-label="Enter email address"
+                    data-mailcheck="Did you mean"
+                    data-prev-value=""
+                />
+                <div class="parent-bottom">
+                    <a href="#" class="input-email-parent">WOMENWEAR</a>
+                    <a href="#" class="input-email-parent">MANWEAR</a>
+                </div>
+                </div>
+                <div class="thinyAlert hidden">
+                <p class="errorEmailRegisted">
+                    WE RECOGNISE THIS EMAIL ADDRESS. YOU HAVE ALREADY SUBSCRIBED
+                </p>
+                </div>
+            </div>
+            </div>
+            <hr class="hr1" />
+            <div class="footer">
+            <div class="footer-info">
+                <div class="footer-info-container">
+                <div class="footer-info-container-left">
+                    <div class="footer-info-container-left-info1">
+                    <ul class="nav__list-footer">
+                        <li class="nav__item-footer-a">
+                        <a href="#">INFORMATION</a>
+                        </li>
+                        <!--  1020px  😃   Toggle .icon-footer-rotation class to Rotate -->
+                        <svg class="icon-footer icon-hidden footer-first ">
+                        <use
+                            href="src/img/sprite.svg#icon-keyboard_arrow_down"
+                            id="dario1"
+                        ></use>
+                        </svg>
+                    </ul>
+                    </div>
+                    <hr class="hr2" />
+                    <!--  1020px  😃 REMOVE VISIBILITY TO SEE -->
+                    <div class="footer-info-container-left-info2  active-link" id="footerUp_1">
+                    <ul  class="nav__list-footer-2 operations__tab--active">
+                        <li class="nav__item-footer"><a href="#">Contact Us</a></li>
+                        <li class="nav__item-footer"><a href="#">Delivery</a></li>
+                        <li class="nav__item-footer">
+                        <a href="#">Returns & Exchange</a>
+                        </li>
+                        <li class="nav__item-footer"><a href="#">FAQs</a></li>
+                        <li class="nav__item-footer"><a href="#">Size Guide</a></li>
+                        <li class="nav__item-footer"><a href="#">Careers</a></li>
+                        <li class="nav__item-footer"><a href="#">Stores</a></li>
+                        <li class="nav__item-footer">
+                        <a href="#">Sustainability</a>
+                        </li>
+                    </ul>
+                    </div>
+                </div>
+                <!--  -->
+                <div class="footer-info-container-right">
+                    <div class="footer-info-container-left-info1">
+                    <ul class="nav__list-footer previeweEl">
+                        <li class="nav__item-footer-a"><a href="#">&nbsp;</a></li>
+                    </ul>
+                    </div>
+                    <!--  1020px  😃 REMOVE VISIBILITY TO SEE -->
+                    <div class="footer-info-container-left-info2 active-link" id="footerUp_11">
+                    <ul class="nav__list-footer-2">
+                        <li class="nav__item-footer">
+                        <a href="#">Accesssibility</a>
+                        </li>
+                        <li class="nav__item-footer"><a href="#">Klarna</a></li>
+                        <li class="nav__item-footer">
+                        <a href="#">Terms & Conditions</a>
+                        </li>
+                        <li class="nav__item-footer">
+                        <a href="#">Privacy Policy</a>
+                        </li>
+                        <li class="nav__item-footer">
+                        <a href="#">Tax Strategy</a>
+                        </li>
+                        <li class="nav__item-footer">
+                        <a href="#">Modern Slavery Act</a>
+                        </li>
+                        <li class="nav__item-footer">
+                        <a href="#">Gender Pay Gap</a>
+                        </li>
+                        <li class="nav__item-footer"><a href="#">Site Map</a></li>
+                    </ul>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <!--  -->
+            <!-- <hr class="hr2"> -->
+            <div class="footer-icon">
+                <div class="footer-icon-container">
+                <div class="footer-icon-container-left">
+                    <div class="footer-info-container-left-info1 ">
+                    <ul class="nav__list-footer">
+                        <li class="nav__item-footer-a">
+                        <a href="#">DOWNLOAD OUR APP</a>
+                        </li>
+                        <!-- 😃 ADD icon-footer-rotation class to Rotate  -->
+                        <svg class="icon-footer icon-hidden footer-second">
+                        <use
+                            href="src/img/sprite.svg#icon-keyboard_arrow_down"
+                        ></use>
+                        </svg>
+                    </ul>
+                    </div>
+                    <hr class="hr2" />
+                    <!--  1020px  😃 REMOVE VISIBILITY TO SEE -->
+                    <div class="footer-info-container-left-info2 active-link"  id="footerUp_2">
+                    <img
+                        src="/src/img/App_Store_(iOS)-Badge-Logo.wine.svg"
+                        alt="app store"
+                        class="appStore"
+                    />
+                    </div>
+                </div>
+                <!-- <hr class="hr2"> -->
+                <!-- <div class="footer-icon-container-right">
+
+                </div> -->
+                <div class="footer-info-container-right">
+                    <div class="footer-info-container-left-info1">
+                    <ul class="nav__list-footer">
+                        <li class="nav__item-footer-a">
+                        <a href="#">FOLLOW US</a>
+                        </li>
+                        <!-- 😃 ADD icon-footer-rotation class to Rotate  -->
+                        <svg class="icon-footer icon-hidden footer-third">
+                        <use
+                            href="src/img/sprite.svg#icon-keyboard_arrow_down"
+                        ></use>
+                        </svg>
+                    </ul>
+                    </div>
+                    <hr class="hr2" />
+                    <!--  1020px  😃 REMOVE VISIBILITY TO SEE -->
+                    <div class="footer-info-container-left-info2 active-link" id="footerUp_3">
+                    <ul class="nav__list-footer-2">
+                        <li class="nav__item-footer"><a href="#">Instagram</a></li>
+                        <li class="nav__item-footer"><a href="#">Facebook</a></li>
+                        <li class="nav__item-footer"><a href="#">Twitter</a></li>
+                        <li class="nav__item-footer"><a href="#">Youtube</a></li>
+                        <li class="nav__item-footer"><a href="#">Pinterest</a></li>
+                    </ul>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+            <hr class="hr3" />
+            <div class="copyright">
+            <p>Copyright&copy;Dario Amade 2021</p>
+            </div>
+        </div>
+
+    </div>
+    <!-- CONTAINER END -->
+  </body>
+</html>

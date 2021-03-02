@@ -46,7 +46,6 @@ tabContainer.addEventListener('click', function (e) {
 
 /*  FORM DROWDOWN-SIZE */
 
-
 /* const selected = document.querySelector('#ma');
 const optionsConatiner = document.querySelector('.options-container');
 const optionsList = document.querySelectorAll('.option');
@@ -1244,3 +1243,18 @@ const contRemoveImgs = document.querySelectorAll('.slidex-container-img');
 const contRemoveImgsTab = document.querySelectorAll(
   '.slidex-container-img-overlay'
 );
+
+const loader = document.querySelector('.loader');
+
+function showLoadingSpinner() {
+  loader.hidden = false;
+}
+showLoadingSpinner();
+
+function removeLoadingSpinner() {
+  if (!loader.hidden) {
+    loader.hidden = true;
+  }
+}
+
+removeLoadingSpinner();

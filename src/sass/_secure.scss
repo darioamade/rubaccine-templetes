@@ -54,7 +54,7 @@
       }
       &-box {
         width: 40%;
-        padding: 1.5rem 0 2rem 0;
+        padding: 2rem 0 2rem 0;
         background-color: #eeeeee;
         display: flex;
         justify-content: center;
@@ -81,6 +81,7 @@
           position: relative;
 
           min-height: 2rem;
+          position: relative;
         }
         &-btn {
           width: 100%;
@@ -132,7 +133,9 @@
     }
   }
 }
-
+.desactive{
+  display: none;
+}
 .control-label {
   margin: 0 auto;
   width: 80%;
@@ -172,6 +175,7 @@
   margin-bottom: 0;
   font-weight: 400;
   text-align: center;
+  transition: all .2s;
 
   cursor: pointer;
 
@@ -180,6 +184,10 @@
   }
 }
 
+.colorGreen{ //after validate password
+  background: #007138; //NOTE after validate password
+  border-color: #007138;//NOTE
+}
 .btn__disabled {
   cursor: not-allowed;
   color: #fff;
@@ -206,3 +214,14 @@
   width: 12rem;
   height: 8rem;
 }
+
+/* Loader */
+.loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+}
+
+
