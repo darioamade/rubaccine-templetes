@@ -1,16 +1,20 @@
 .whishlist {
-  // visibility: hidden;
-  // opacity: 0;
-  //height: 0; //IMPORTANT to remove 
+  visibility: hidden;
+  opacity: 0;
+  height: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
   // margin: 0 auto;
-  visibility: visible;
-  opacity: 1;
-  // overflow-y: scroll;
-  // &::-webkit-scrollbar {
-  //   display: none;
-  // }
+  // visibility: visible;
+  // opacity: 1;
+  overflow-y: scroll;
+  &::-webkit-scrollbar {
+    display: none;
+  }
   z-index: 10;
- 
 
   &-container {
     padding-top: 6.4rem;
@@ -22,7 +26,7 @@
     justify-content: flex-start;
     align-items: center;
     align-content: center;
-   
+
     &-title {
       flex: 1;
       height: 100%;
@@ -38,7 +42,6 @@
         flex-direction: column;
         align-items: center;
         text-align: center;
-    
       }
 
       .text-main {
@@ -53,53 +56,48 @@
       &-grid {
         padding: 2rem 4rem;
         padding: 2rem;
-        min-height: 0rem;
+        // min-height: 0rem;
         background-color: rgb(255, 255, 255);
         width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: flex-start;
         gap: 2rem;
         align-items: center;
 
-         visibility: hidden;
+        visibility: hidden;
         opacity: 0;
         //IMPORTANT
-         //height: 0; 
+        //height: 0;
         visibility: visible;
         opacity: 1;
-        @media screen and (max-width: 1020px) {
-          justify-content: center;
-          align-items: center;
-          min-width: 95vw;
+        //IMPORTANT
+
+        display: grid;
+        grid-template-rows:  min-content;
+        grid-template-columns: repeat(4, 1fr);
+        @media screen and (max-width: 1020px){
+          grid-template-columns: repeat(1, 1fr)
         }
 
         .whishlist-img {
-          max-width: 43rem;   //IMPORTANT display grid with 4
-          //min-width: 25vw; // right size 
-          min-width: 24vw;
-          min-height: calc(62vh - 6.4rem);
-          //max-height: calc(95vh + 6.4rem);
-          @media screen and (max-width: 768px) {
-            min-height: calc(50vh - 6.4rem);
+          width: 100%;
+          min-height: 60vh;
+          @media screen and (max-width: 1750px){
+            min-height: 50vh;
           }
-          @media screen and (max-width: 650px) {
-            min-height: calc(45vh - 6.4rem);
+          @media screen and (max-width: 1450px){
+            min-height: 40vh;
           }
-          @media screen and (max-width: 550px) {
-            min-height: calc(40vh - 6.4rem);
+          @media screen and (max-width: 1020px){
+            min-height: 50vh;
           }
           display: flex;
           flex-direction: column;
           justify-content: center;
           align-items: center;
           border: 0.5px solid #ccc;
-          // overflow: hidden;     
-
-          @media screen and (max-width: 1020px) {
-            max-width: 43rem;
-            max-width: 95vw;
-          }
+          display: grid;
+          grid-template-rows: 10% 60% 30; 
+          grid-template-columns: 1fr;
+          
           &-stock {
             flex: 0 0 10%;
             min-height: 4rem;
@@ -136,10 +134,7 @@
             }
           }
           &-content {
-            flex: 0 0 40%;
-            min-height: 40rem;
             width: 100%;
-
             display: flex;
             flex-direction: column;
             @media screen and (max-width: 1020px) {
@@ -228,7 +223,7 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-  
+
             position: relative;
             p {
               font-size: 1.1rem;
@@ -368,7 +363,8 @@
   }
 }
 
-.btn-add {//IMPORTANT To be displyed only if there's items in the whishlist
+.btn-add {
+  //IMPORTANT To be displyed only if there's items in the whishlist
   background-color: rgb(0, 0, 0);
   color: #ffffff;
   border: 0.0625rem solid #fff;
@@ -530,4 +526,10 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
+}
+
+.activation {
+  visibility: visible;
+  opacity: 1;
+  height: 100vh;
 }
