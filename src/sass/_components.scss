@@ -1,6 +1,5 @@
 .hero-sale {
- display: none;
- 
+  display: none;
 
   &-container {
     padding: 1rem 2rem;
@@ -386,7 +385,7 @@
     display: flex;
     justify-content: center;
     align-items: flex-end;
-   
+
     &-logo-sale {
       width: 100%;
       height: 100%;
@@ -624,15 +623,15 @@
         .email-parent {
           width: 100%;
           height: 100%;
-          .parent-bottom{
-            .input-email-parent{
+          .parent-bottom {
+            .input-email-parent {
               font-size: 10px;
-            font-weight: 500;
-            font-style: normal;
-            font-stretch: normal;
-            line-height: 1.2;
-            letter-spacing: 1px;
-            color: #fff;
+              font-weight: 500;
+              font-style: normal;
+              font-stretch: normal;
+              line-height: 1.2;
+              letter-spacing: 1px;
+              color: #fff;
             }
           }
         }
@@ -651,12 +650,11 @@
   line-height: 1.2;
   letter-spacing: 1px;
   color: #fff;
- 
+
   color: #ffffff;
   &:focus,
   &:active {
     outline: none;
-    
   }
 }
 
@@ -671,10 +669,9 @@
   cursor: pointer;
 }
 
-.email-parent{
+.email-parent {
   border-bottom: 0.5px solid #fff;
 }
-
 
 .popup-auto #ooter-newsletter-email1 {
   font-size: 10px;
@@ -686,13 +683,12 @@
   color: #ffffff;
 }
 
-
 .page {
   left: 0;
   margin: 0;
   background: white;
   position: relative;
-  transition: left .3s ease-in-out;
+  transition: left 0.3s ease-in-out;
   overflow: auto;
   width: 100%;
 }
@@ -714,14 +710,14 @@
 // width: 100%;
 // z-index: 100;}
 
-.hero-grid{
-//background-image: url('/src/img/pic-16.jpg');
+.hero-grid {
+  //background-image: url('/src/img/pic-16.jpg');
   background-image: url('/src/img/pic-50.jpg');
   background-position: center;
-   background-repeat: no-repeat;
-   background-size: cover;
-   background-size:100% 100%;
-    background-repeat: no-repeat;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
   margin-top: 10rem;
   margin-top: 6.4rem; // BUG
   flex: 1;
@@ -735,12 +731,9 @@
   // display: flex;
   justify-content: center;
   align-items: center;
-
- 
 }
 
-
-.women-tab-grid{
+.women-tab-grid {
   flex: 1;
   height: 100%;
   width: 100vw;
@@ -750,12 +743,11 @@
   margin-top: 10rem;
   margin-top: 6.4rem; // BUG
 
-
   height: 100vh;
   min-height: 100vh; // BUG introduced
   width: 100%;
 
-  //NOTE new ajust 
+  //NOTE new ajust
   // position: absolute;
   // top: 0;
   // left: 0;
@@ -764,7 +756,6 @@
 
   // visibility: hidden;
   // opacity: 0;
-
 
   @media screen and (max-width: 768px) {
     margin-top: 0rem;
@@ -777,102 +768,4 @@
     margin-top: 0rem;
     flex-direction: column;
   }
-
-}
-
-
-
-
-/// Slider
-
-/* SLIDER */
-.slider {
-  width: 80vw;
-  height: 60rem;
-  margin: 0 auto;
-  position: relative;
-
-
-  /* IN THE END */
-  overflow: hidden;
-}
-
-.slide {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 60rem;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  /* THIS creates the animation! */
-  transition: transform 1s;
-}
-
-.slide > img {
-  /* Only for images that have different size than slide */
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.slider__btn {
-  position: absolute;
-  top: 50%;
-  z-index: 10;
-
-  border: none;
-  background: rgba(255, 255, 255, 0.7);
-  font-family: inherit;
-  color: #333;
-  border-radius: 50%;
-  height: 5.5rem;
-  width: 5.5rem;
-  font-size: 3.25rem;
-  cursor: pointer;
-}
-
-.slider__btn--left {
-  left: 6%;
-  transform: translate(-50%, -50%);
-}
-
-.slider__btn--right {
-  right: 6%;
-  transform: translate(50%, -50%);
-}
-
-.dots {
-  position: absolute;
-  bottom: 5%;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-}
-
-.dots__dot {
-  border: none;
-  background-color: #b9b9b9;
-  opacity: 0.7;
-  height: 1rem;
-  width: 1rem;
-  border-radius: 50%;
-  margin-right: 1.75rem;
-  cursor: pointer;
-  transition: all 0.5s;
-
-  /* Only necessary when overlying images */
-  /* box-shadow: 0 0.6rem 1.5rem rgba(0, 0, 0, 0.7); */
-}
-
-.dots__dot:last-child {
-  margin: 0;
-}
-
-.dots__dot--active {
-  /* background-color: #fff; */
-  background-color: #888;
-  opacity: 1;
 }

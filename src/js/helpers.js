@@ -261,7 +261,7 @@ navContainer.addEventListener('mouseleave', function () {
   .classList.remove('hidden');
 }); */
 
-dropSelect.forEach(el =>
+/* dropSelect.forEach(el =>
   el.addEventListener('mouseover', function (e) {
     //const clickedIt = e.target.parentElement;
     const clickedIt = e.target.closest('.nav__btn');
@@ -290,7 +290,7 @@ dropSelect.forEach(el =>
     tabsContent.forEach(t => t.classList.add('hidden'));
     tabsContent.forEach(t => (t.classList.style.display = 'none'));
   })
-);
+); */
 
 // SEARCH
 const searchIcon = document.querySelector('.icon-test_space ');
@@ -331,37 +331,14 @@ navBarIconClose.addEventListener('click', function () {
   menuBarIcon.style.transform = 'scale(0,1)';
 });
 
-
-
 // Slider
 const slider = function () {
   const slides = document.querySelectorAll('.slide');
-  const btnLeft = document.querySelector('.slider__btn--left');
-  const btnRight = document.querySelector('.slider__btn--right');
-  const dotContainer = document.querySelector('.dots');
+  const btnLeft = document.querySelector('.slider-spring__btn__btn--left');
+  const btnRight = document.querySelector('.slider-spring__btn__btn--right');
 
   let curSlide = 0;
   const maxSlide = slides.length;
-
-  // Functions
-  const createDots = function () {
-    slides.forEach(function (_, i) {
-      dotContainer.insertAdjacentHTML(
-        'beforeend',
-        `<button class="dots__dot" data-slide="${i}"></button>`
-      );
-    });
-  };
-
-  const activateDot = function (slide) {
-    document
-      .querySelectorAll('.dots__dot')
-      .forEach(dot => dot.classList.remove('dots__dot--active'));
-
-    document
-      .querySelector(`.dots__dot[data-slide="${slide}"]`)
-      .classList.add('dots__dot--active');
-  };
 
   const goToSlide = function (slide) {
     slides.forEach(
@@ -378,7 +355,7 @@ const slider = function () {
     }
 
     goToSlide(curSlide);
-    activateDot(curSlide);
+    // activateDot(curSlide);
   };
 
   const prevSlide = function () {
@@ -388,32 +365,209 @@ const slider = function () {
       curSlide--;
     }
     goToSlide(curSlide);
-    activateDot(curSlide);
+    // activateDot(curSlide);
   };
 
   const init = function () {
     goToSlide(0);
-    createDots();
+    // createDots();
 
-    activateDot(0);
+    // activateDot(0);
   };
   init();
 
   // Event handlers
-  btnRight.addEventListener('click', nextSlide);
+  /*  btnRight.addEventListener('click', nextSlide);
   btnLeft.addEventListener('click', prevSlide);
-
+ */
   document.addEventListener('keydown', function (e) {
     if (e.key === 'ArrowLeft') prevSlide();
     e.key === 'ArrowRight' && nextSlide();
   });
-
-  dotContainer.addEventListener('click', function (e) {
-    if (e.target.classList.contains('dots__dot')) {
-      const { slide } = e.target.dataset;
-      goToSlide(slide);
-      activateDot(slide);
-    }
-  });
 };
 slider();
+
+// Player
+const player = document.querySelector('.player');
+const video = document.querySelector('video');
+const progressRange = document.querySelector('.progress-range');
+const progressBar = document.querySelector('.progress-bar');
+const playBtn = document.querySelector('#play-btn');
+const volumeIcon = document.querySelector('#volume-icon');
+const volumeRange = document.querySelector('.volume-range');
+const volumeBar = document.querySelector('.volume-bar');
+const currentTime = document.querySelector('.time-elapsed');
+const duration = document.querySelector('.time-duration');
+const fullscreenBtn = document.querySelector('.fullscreen');
+const btnInpicture = document.querySelector('.fa-ellipsis-v');
+const whishlistImgSingle = document.querySelectorAll('.whishlist-img');
+let whishlistImgClose = document.querySelectorAll('.whishlist-img-stock-close');
+
+let lastVolume = 1;
+
+function changeVolume(e) {
+  let volume = e.offsetX / volumeRange.offsetWidth;
+
+  if (volume < 0.1) {
+    volume = 0;
+  }
+  if (volume > 0.9) {
+    volume = 1;
+  }
+  volumeBar.style.width = ` ${volume * 100}%`;
+  video.volume = volume;
+
+  volumeIcon.className = ''; // no icon
+  if (volume > 0.7) {
+    volumeIcon.classList.add('fas', 'fa-volume-up');
+  } else if (volume < 0.7 && volume > 0) {
+    volumeIcon.classList.add('fas', 'fa-volume-down');
+  } else if (volume === 0) {
+    volumeIcon.classList.add('fas', 'fa-volume-off');
+  }
+  lastVolume = volume;
+}
+
+function toggleMute() {
+  volumeIcon.className = '';
+  if (video.volume) {
+    lastVolume = video.volume;
+    video.volume = 0;
+    volumeBar.style.width = 0;
+    volumeIcon.classList.add('fas', 'fa-volume-mute');
+    volumeIcon.setAttribute('title', 'Unmute');
+  } else {
+    video.volume = lastVolume;
+    volumeBar.style.width = `${lastVolume * 100}%`;
+    volumeIcon.classList.add('fas', 'fa-volume-up');
+    volumeIcon.setAttribute('title', 'Mute');
+  }
+}
+
+function calcDisplayTime(time) {
+  const minutes = Math.floor(time / 60);
+  let seconds = Math.floor(time % 60);
+  seconds = seconds > 9 ? seconds : `0${seconds}`;
+
+  return ` ${minutes}:${seconds}`;
+}
+
+function updateProgress() {
+  //console.log('currentTime', video.currentTime, 'duartion', video.duration);
+  progressBar.style.width = `${(video.currentTime / video.duration) * 100}%`;
+  currentTime.textContent = `${calcDisplayTime(video.currentTime)} / `;
+  duration.textContent = `${calcDisplayTime(video.duration)}  `;
+}
+function showPlayIcon() {
+  playBtn.classList.replace('fa-pause', 'fa-play');
+  playBtn.setAttribute('title', 'Play');
+}
+
+function togglePlay() {
+  if (video.paused) {
+    video.play();
+    playBtn.classList.replace('fa-play', 'fa-pause');
+    playBtn.setAttribute('title', 'Pause');
+  } else {
+    video.pause();
+    showPlayIcon();
+  }
+}
+
+/* View in fullscreen */
+function openFullscreen(elem) {
+  if (elem.requestFullscreen) {
+    elem.requestFullscreen();
+  } else if (elem.webkitRequestFullscreen) {
+    /* Safari */
+    elem.webkitRequestFullscreen();
+  } else if (elem.msRequestFullscreen) {
+    /* IE11 */
+    elem.msRequestFullscreen();
+  }
+  video.classList.add('video-fullscreen');
+}
+
+/* Close fullscreen */
+function closeFullscreen() {
+  if (document.exitFullscreen) {
+    document.exitFullscreen();
+  } else if (document.webkitExitFullscreen) {
+    /* Safari */
+    document.webkitExitFullscreen();
+  } else if (document.msExitFullscreen) {
+    /* IE11 */
+    document.msExitFullscreen();
+  }
+  video.classList.remove('video-fullscreen');
+}
+
+let fullscreen = false;
+
+function toggleFullscreen() {
+  if (!fullscreen) {
+    openFullscreen(player);
+  } else {
+    closeFullscreen();
+  }
+  fullscreen = !fullscreen;
+}
+
+playBtn.addEventListener('click', togglePlay);
+video.addEventListener('click', togglePlay);
+video.addEventListener('ended', showPlayIcon);
+
+video.addEventListener('timeupdate', updateProgress);
+video.addEventListener('canplay', updateProgress);
+volumeRange.addEventListener('click', changeVolume);
+volumeIcon.addEventListener('click', toggleMute);
+fullscreenBtn.addEventListener('click', toggleFullscreen);
+
+/* async function selectMediaStream() {
+  try {
+    const mediaStream = await navigator.mediaDevices.getDisplayMedia();
+    video.srcObject = mediaStream;
+    video.onloadedmetadata = () => {
+      video.play();
+    };
+  } catch (error) {
+    console.log('Oops!', error);
+  }
+}
+btnInpicture.addEventListener('click', async () => {
+  btnInpicture.disabled = true;
+  await video.requestPictureInPicture();
+  btnInpicture.disabled = false;
+});
+
+selectMediaStream(); */
+
+// whishlistImgClose.forEach(el =>
+//   el.addEventListener('click', function () {
+//     console.log('removed');
+
+//     whishlistImgSingle.forEach( el => el.style.opacity = 0 )
+//     whishlistImgSingle.forEach( el => el.style.visibility = 'hidden' )
+//     // whishlistImgSingle.style.opacity = 0;
+//     // whishlistImgSingle.style.visibility = 'hidden';
+//   })
+// );
+// whishlistImgSingle.addEventListener('click', function(){
+//
+// })
+
+// whishlistImgSingle
+let types = [];
+
+whishlistImgClose.forEach(el => el.addEventListener('click', function () {}));
+
+/* let elements = [1, 3, 8, 5, 16, 1, 4];
+for (i = elements.length - 1; i >= 0; --i) {
+  if (elements[i] % 2 === 0) {
+    elements.splice(i, 1); // Remove even numbers
+  }
+} */
+
+// for( let i = 0; i < whishlistImgSingle.length; i--){
+
+// }

@@ -71,22 +71,22 @@
         //IMPORTANT
 
         display: grid;
-        grid-template-rows:  min-content;
+        grid-template-rows: min-content;
         grid-template-columns: repeat(4, 1fr);
-        @media screen and (max-width: 1020px){
-          grid-template-columns: repeat(1, 1fr)
+        @media screen and (max-width: 1020px) {
+          grid-template-columns: repeat(1, 1fr);
         }
 
         .whishlist-img {
           width: 100%;
           min-height: 60vh;
-          @media screen and (max-width: 1750px){
+          @media screen and (max-width: 1750px) {
             min-height: 50vh;
           }
-          @media screen and (max-width: 1450px){
+          @media screen and (max-width: 1450px) {
             min-height: 40vh;
           }
-          @media screen and (max-width: 1020px){
+          @media screen and (max-width: 1020px) {
             min-height: 50vh;
           }
           display: flex;
@@ -95,9 +95,11 @@
           align-items: center;
           border: 0.5px solid #ccc;
           display: grid;
-          grid-template-rows: 10% 60% 30; 
+          grid-template-rows: 10% 60% 30;
           grid-template-columns: 1fr;
-          
+          visibility: visible;
+          opacity: 1;
+
           &-stock {
             flex: 0 0 10%;
             min-height: 4rem;
