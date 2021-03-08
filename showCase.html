@@ -15,7 +15,7 @@
     />
 
     <link rel="stylesheet" href="src/sass/main.css" />
-    <script defer src="src/js/controller.js"></script>
+    <script defer src="src/js/model.js"></script>
 
     <title>RUBACCINE||ITALIAN FASHION BRAND</title>
   </head>
@@ -123,7 +123,7 @@
         </header>
     <!-- header END -->
     <!-- CONTENT -->
-    <div class="showcase">     <!-- 👆 // GOOD TODO at showcase  Still nedd 4 of this loop over then replace data -->
+    <div class="showcase">     
         <div class="showcase-container">
           <div class="showcase-container-title">
             <p class="text-main">Women's All Sale</p>
@@ -142,14 +142,13 @@
             </div>
           </div>
           <hr class="hr5"/>
-          <div class="showcase-container-filter ">
-            <!--  Remove visibility 😆  category stil 4 to go-->
+          <div class="showcase-container-filter  ">
             <div class="category-page-filter-list">
               <div class="category-page-filter-list-selectors">
                   <div class="options-box ">
                       <div class="option">
-                      <input type="checkbox" id="clothersSize">
-                      <label for="clothersSize" class="text-radio">Coats & Jackets</label>
+                        <input type="checkbox" id="clothersSize">
+                        <label for="clothersSize" class="text-radio">Coats & Jackets</label>
                       </div>
                       <div class="option">
                        <input type="checkbox" class="radio" id="Leather Jackets" name="category" >
@@ -205,7 +204,6 @@
                      <input type="checkbox" class="radio" id="Skirts & Shorts" name="category" >
                      <label for="Skirts & Shorts" class="text-radio">Skirts & Shorts</label>
                    </div> 
-                 
                  </div>  
 
               </div>
@@ -221,7 +219,6 @@
               </div>
               <hr class="hr7" />
             </div>
-
             <div class="showcase-container-filter-filters">
               <div class="showcase-container-filter-filters-category">
                 <div class="showcase-container-filter-filters-category-item">
@@ -242,26 +239,21 @@
                     <span class="text-filter ">Size </span>
                   </div>
                 </div>
-             
                 <div class="showcase-container-filter-filters-category-item invisble" style="width: 12rem;">
                   <div class="selected-sort">
                     <span class="text-filter " >Price Range</span>
                   </div>
                 </div>
-
               </div>
               <p class="vl2"></p>
               <div class="showcase-container-filter-filters-sort">
-              
                 <div class="showcase-container-filter-filters-category-item">
-                  <span class="text-filter ">SORT BY</p>
+                  <span class="text-filter ">SORT BY</span>
                 </div>
               </div>
-            
             </div>
             <hr class="hr6" />
             <div class="showcase-container-filter-pagination">
-            
               <div class="showcase-container-filter-pagination-icons">
                 <p class="text-list">VIEW:</p>
                 <svg class="icon-page switch-single-page">
@@ -270,7 +262,6 @@
                 <svg class="icon-page switch-double-page">
                   <use href="src/img/sprite.svg#icon-pause2"></use>
                 </svg>
-
               </div>
               <div class="showcase-container-filter-pagination-pages">
                 <button class="btn--pag underline agination__btn--prev">
@@ -286,533 +277,294 @@
                   <span>VIEW ALL</span>
                 </button> 
               </div>
-
             </div>
-
           </div>
           <div class="showcase-container-gallery">
-           <div class="showcase-container-gallery-grid ">
-             <div class="showcase-container-gallery-grid-item" >
-               <div class="showcase-container-gallery-grid-item-img">
-                 <div class="size-slider  ">
-                   <div class="size-slider-title" id="one">
-                    <p class="text-bag">In Stock</p>
-                   </div>
-                   <div class="size-slider-num">
-                     <p class="text-size-uk active" >  UK 2</p>
-                     <p class="text-size-uk active">UK 4</p>
-                     <p class="text-size-uk"> UK 6 </p>
-                     <p class="text-size-uk">UK 8 </p>
-                     <p class="text-size-uk"> UK 10</p>
-                     <p class="text-size-uk">UK 12</p>
-                     <p class="text-size-uk active"> UK 14</p>
-                   </div>
-                 </div>
-                 <div class="round-display">
-                   70% OFF
-                 </div>
-                 <img src="/src/img/pic-29.jpg" alt="Clothing" class="clothing-img">
-
-               </div>
-               <div class="showcase-container-gallery-grid-item-description">
-                 <div class="whishlist-icon">
-                  <p class="text-with-background">70% OFF - 1 WEEK ONLY</p>
-                  <svg class="icon-page ">
-                    <use href="src/img/sprite.svg#icon-heart"></use>
-                  </svg>
-
-                 </div>
-               
-                  <p class="text-descrip"> Estella Leather Biker Jacket</p>
-                  <p class="text-descrip1"> <del>£380.00</del>  <span style="color: red;">£114.00 </span></p>
-                  <p class="text-thinny colorDisplay">1 COLOUR</p>
-                  <!-- <p class="one-color">
-                    <span class="thinny-square">
-                      <img src="/src/img/pic-29.jpg" alt="Clothing" class="clothing-img">
-                    </span>
-                    <span class="text-thinny" >RED</span>
-                  </p> -->
-                  <button class="btn-hidden">ADD TO BAG</button>
-               </div>
-
-             </div>
-              <div class="showcase-container-gallery-grid-item" >
-               <div class="showcase-container-gallery-grid-item-img">
-                 <div class="size-slider" id="two">
-                   <div class="size-slider-title">
-                    <p class="text-bag">In Stock</p>
-                   </div>
-                   <div class="size-slider-num">
-                     <p class="text-size-uk active" >  UK 2</p>
-                     <p class="text-size-uk active">UK 4</p>
-                     <p class="text-size-uk"> UK 6 </p>
-                     <p class="text-size-uk">UK 8 </p>
-                     <p class="text-size-uk"> UK 10</p>
-                     <p class="text-size-uk">UK 12</p>
-                     <p class="text-size-uk active"> UK 14</p>
-                   </div>             
-                 </div>
-                 <div class="round-display">
-                   70% OFF
-                 </div>
-                 <img src="/src/img/pic-7.jpg" alt="Clothing" class="clothing-img">
-
-               </div>
-               <div class="showcase-container-gallery-grid-item-description">
-                 <div class="whishlist-icon">
-                  <p class="text-with-background">70% OFF - 1 WEEK ONLY</p>
-                  <svg class="icon-page ">
-                    <use href="src/img/sprite.svg#icon-heart"></use>
-                  </svg>
-
-                 </div>
-               
-                  <p class="text-descrip"> Estella Leather Biker Jacket</p>
-                  <p class="text-descrip1"> <del>£380.00</del>  <span style="color: red;">£114.00 </span></p>
-                  <p class="text-thinny">1 COLOUR</p>
-                  <button class="btn-hidden">ADD TO BAG</button>
-               </div>
-
-             </div>
-             <div class="showcase-container-gallery-grid-item" >
-              <div class="showcase-container-gallery-grid-item-img">
-                <div class="size-slider" id="three">
-                  <div class="size-slider-title">
-                   <p class="text-bag">In Stock</p>
+            <div class="showcase-container-gallery-grid ">
+                <div class="showcase-container-gallery-grid-item" >
+                  <div class="showcase-container-gallery-grid-item-img">
+                    <div class="size-slider  ">
+                      <div class="size-slider-title" id="one">
+                        <p class="text-bag">Quick Add To Bag</p>
+                      </div>
+                      <div class="size-slider-num">
+                        <p class="text-size-uk active" >  UK 2</p>
+                        <p class="text-size-uk active">UK 4</p>
+                        <p class="text-size-uk"> UK 6 </p>
+                        <p class="text-size-uk">UK 8 </p>
+                        <p class="text-size-uk"> UK 10</p>
+                        <p class="text-size-uk">UK 12</p>
+                        <p class="text-size-uk active"> UK 14</p>
+                      </div>
+                    </div>
+                    <div class="round-display">
+                      70% OFF
+                    </div>
+                    <img src="/src/img/pic-29.jpg" alt="Clothing" class="clothing-img">
                   </div>
-             
-                  <div class="size-slider-num">
-                    <p class="text-size-uk active" >  UK 2</p>
-                    <p class="text-size-uk active">UK 4</p>
-                    <p class="text-size-uk"> UK 6 </p>
-                    <p class="text-size-uk">UK 8 </p>
-                    <p class="text-size-uk"> UK 10</p>
-                    <p class="text-size-uk">UK 12</p>
-                    <p class="text-size-uk active"> UK 14</p>
-                 
-                  </div>
+                  <div class="showcase-container-gallery-grid-item-description">
+                    <div class="whishlist-icon">
+                      <p class="text-with-background">70% OFF - 1 WEEK ONLY</p>
+                      <svg class=" icon-page-increase">
+                        <use href="src/img/sprite.svg#icon-heart"></use>
+                      </svg>
+                    </div>
                   
-
-                </div>
-                <div class="round-display">
-                  70% OFF
-                </div>
-                <img src="/src/img/pic-7.jpg" alt="Clothing" class="clothing-img">
-
-              </div>
-              <div class="showcase-container-gallery-grid-item-description">
-                <div class="whishlist-icon">
-                 <p class="text-with-background">70% OFF - 1 WEEK ONLY</p>
-                 <svg class="icon-page ">
-                   <use href="src/img/sprite.svg#icon-heart"></use>
-                 </svg>
-
-                </div>
-              
-                 <p class="text-descrip"> Estella Leather Biker Jacket</p>
-                 <p class="text-descrip1"> <del>£380.00</del>  <span style="color: red;">£114.00 </span></p>
-                 <p class="text-thinny">1 COLOUR</p>
-                 <button class="btn-hidden">ADD TO BAG</button>
-              </div>
-
-            </div>
-            <div class="showcase-container-gallery-grid-item" >
-              <div class="showcase-container-gallery-grid-item-img">
-                <div class="size-slider" id="four">
-                  <div class="size-slider-title">
-                   <p class="text-bag">In Stock</p>
+                      <p class="text-descrip"> Estella Leather Biker Jacket</p>
+                      <p class="text-descrip1"> <del>£380.00</del>  <span style="color: red;">£114.00 </span></p>
+                      <p class="text-thinny colorDisplay">1 COLOUR</p>
+                      <p class="one-color hidden">
+                        <span class="thinny-square">
+                          <img src="/src/img/pic-29.jpg" alt="Clothing" class="clothing-img">
+                        </span>
+                        <span class="text-thinny" >RED</span>
+                      </p> 
+                      <button class="btn-hidden">ADD TO BAG</button>
                   </div>
-             
-                  <div class="size-slider-num">
-                    <p class="text-size-uk active" >  UK 2</p>
-                    <p class="text-size-uk active">UK 4</p>
-                    <p class="text-size-uk"> UK 6 </p>
-                    <p class="text-size-uk">UK 8 </p>
-                    <p class="text-size-uk"> UK 10</p>
-                    <p class="text-size-uk">UK 12</p>
-                    <p class="text-size-uk active"> UK 14</p>
-                 
+
+                </div>
+
+
+
+
+                <div class="showcase-container-gallery-grid-item" >
+                <div class="showcase-container-gallery-grid-item-img">
+                  <div class="size-slider" id="two">
+                    <div class="size-slider-title">
+                      <p class="text-bag">In Stock</p>
+                    </div>
+                    <div class="size-slider-num">
+                      <p class="text-size-uk active" >  UK 2</p>
+                      <p class="text-size-uk active">UK 4</p>
+                      <p class="text-size-uk"> UK 6 </p>
+                      <p class="text-size-uk">UK 8 </p>
+                      <p class="text-size-uk"> UK 10</p>
+                      <p class="text-size-uk">UK 12</p>
+                      <p class="text-size-uk active"> UK 14</p>
+                    </div>             
                   </div>
-                  
-
-                </div>
-                <div class="round-display">
-                  70% OFF
-                </div>
-                <img src="/src/img/pic-7.jpg" alt="Clothing" class="clothing-img">
-
-              </div>
-              <div class="showcase-container-gallery-grid-item-description">
-                <div class="whishlist-icon">
-                 <p class="text-with-background">70% OFF - 1 WEEK ONLY</p>
-                 <svg class="icon-page ">
-                   <use href="src/img/sprite.svg#icon-heart"></use>
-                 </svg>
-
-                </div>
-              
-                 <p class="text-descrip"> Estella Leather Biker Jacket</p>
-                 <p class="text-descrip1"> <del>£380.00</del>  <span style="color: red;">£114.00 </span></p>
-                 <p class="text-thinny">1 COLOUR</p>
-                 <button class="btn-hidden">ADD TO BAG</button>
-              </div>
-
-            </div>
-           </div>
-           <!--  -->
-           <div class="showcase-container-social">
-            <div class="showcase-container-social-title">
-              <p class="text-main">Wear It Your Way</p>
-            </div>
-            <div class="showcase-container-social-grid">
-              <div class="sliderer">
-                 <div class="slidex">
-                   <img src="/src/img/pic-39.jpg" alt="Photo 1" />
-                   <div class=" slidex-overlay  ">
-                       <img src="/src/img/instagram.svg" alt="" class="insta-icon">
-                       <p>@LUCY_93</p>
-                   </div>
+                  <div class="round-display">
+                    70% OFF
                   </div>
-                <div class="slidex">
-                  <div class="slidex-container">
-                    <div class="slidex-container-img">
-                        <img class="img" src="/src/img/pic-48.jpg" alt="Photo 3" /> 
-                        <div class="slidex-container-img-overlay ">
-                          <img src="/src/img/instagram.svg" alt="" class="insta-icon">
-                          <p>@BIATRIZ</p>
+                  <img src="/src/img/pic-7.jpg" alt="Clothing" class="clothing-img">
+
+                </div>
+                <div class="showcase-container-gallery-grid-item-description">
+                  <div class="whishlist-icon">
+                    <p class="text-with-background">70% OFF - 1 WEEK ONLY</p>
+                    <svg class="icon-page-increase">
+                      <use href="src/img/sprite.svg#icon-heart"></use>
+                    </svg>
+
+                  </div>
+                
+                    <p class="text-descrip"> Estella Leather Biker Jacket</p>
+                    <p class="text-descrip1"> <del>£380.00</del>  <span style="color: red;">£114.00 </span></p>
+                    <p class="text-thinny">1 COLOUR</p>
+                    <button class="btn-hidden">ADD TO BAG</button>
+                </div>
+
+                </div>
+                <div class="showcase-container-gallery-grid-item" >
+                  <div class="showcase-container-gallery-grid-item-img">
+                    <div class="size-slider" id="three">
+                      <div class="size-slider-title">
+                      <p class="text-bag">In Stock</p>
+                      </div>
+                      <div class="size-slider-num">
+                        <p class="text-size-uk active" >  UK 2</p>
+                        <p class="text-size-uk active">UK 4</p>
+                        <p class="text-size-uk"> UK 6 </p>
+                        <p class="text-size-uk">UK 8 </p>
+                        <p class="text-size-uk"> UK 10</p>
+                        <p class="text-size-uk">UK 12</p>
+                        <p class="text-size-uk active"> UK 14</p>
+                      </div>
+                    </div>
+                    <div class="round-display">
+                      70% OFF
+                    </div>
+                    <img src="/src/img/pic-7.jpg" alt="Clothing" class="clothing-img">
+                  </div>
+                  <div class="showcase-container-gallery-grid-item-description">
+                    <div class="whishlist-icon">
+                    <p class="text-with-background">70% OFF - 1 WEEK ONLY</p>
+                    <svg class="icon-page-increase ">
+                      <use href="src/img/sprite.svg#icon-heart"></use>
+                    </svg>
+                    </div>
+                    <p class="text-descrip"> Estella Leather Biker Jacket</p>
+                    <p class="text-descrip1">
+                        <del>£380.00</del>  
+                        <span style="color: red;">£114.00 </span>
+                      </p>
+                    <p class="text-thinny">1 COLOUR</p>
+                    <button class="btn-hidden">ADD TO BAG</button>
+                  </div>
+                </div>
+                <div class="showcase-container-gallery-grid-item" >
+                  <div class="showcase-container-gallery-grid-item-img">
+                      <div class="size-slider" id="four">
+                        <div class="size-slider-title">
+                          <p class="text-bag">In Stock</p>
                         </div>
+                        <div class="size-slider-num">
+                          <p class="text-size-uk active" >  UK 2</p>
+                          <p class="text-size-uk active">UK 4</p>
+                          <p class="text-size-uk"> UK 6 </p>
+                          <p class="text-size-uk">UK 8 </p>
+                          <p class="text-size-uk"> UK 10</p>
+                          <p class="text-size-uk">UK 12</p>
+                          <p class="text-size-uk active"> UK 14</p>
+                        </div>    
+                      </div>
+                      <div class="round-display">
+                        70% OFF
+                      </div>
+                      <img src="/src/img/pic-7.jpg" alt="Clothing" class="clothing-img">
+                  </div>
+                  <div class="showcase-container-gallery-grid-item-description">
+                    <div class="whishlist-icon">
+                      <p class="text-with-background">70% OFF - 1 WEEK ONLY</p>
+                      <svg class="icon-page ">
+                        <use href="src/img/sprite.svg#icon-heart"></use>
+                      </svg>
                     </div>
-                  
-                    <div class="slidex-container-title">
-                      <p class="text-main" style="letter-spacing: 0px;"> ＃Rubaccine</p>
-                     <p class="text-rub"> Share how you're styling your @RUBACCINE 
-                       to be featured. Mention @Rubaccine or upload - make your mark.
-                    </p>
-                     
-                     <button class="nav__btn nav__btn--add-recipe" >
-                      <span class="signin hidden-icons-text sale__tab_3">SHARE YOUR STYLE</span>
+                    <p class="text-descrip"> Estella Leather Biker Jacket</p>
+                    <p class="text-descrip1">
+                      <del>£380.00</del>  
+                      <span style="color: red;">£114.00 </span>
+                      </p>
+                    <p class="text-thinny">1 COLOUR</p>
+                    <button class="btn-hidden">ADD TO BAG</button>
+                  </div>
+                </div>
+            </div>
+            
+            <div class="showcase-container-social">
+                <div class="showcase-container-social-title">
+                  <p class="text-main">Wear It Your Way</p>
+                </div>
+                <div class="showcase-container-social-grid">
+                  <div class="sliderer">
+                    <div class="slidex">
+                      <img src="/src/img/pic-39.jpg" alt="Photo 1" />
+                      <div class=" slidex-overlay  ">
+                          <img src="/src/img/instagram.svg" alt="" class="insta-icon">
+                          <p>@LUCY_93</p>
+                      </div>
+                      </div>
+                    <div class="slidex">
+                      <div class="slidex-container">
+                        <div class="slidex-container-img">
+                            <img class="img" src="/src/img/pic-48.jpg" alt="Photo 3" /> 
+                            <div class="slidex-container-img-overlay ">
+                              <img src="/src/img/instagram.svg" alt="" class="insta-icon">
+                              <p>@BIATRIZ</p>
+                            </div>
+                        </div>
+                        <div class="slidex-container-title">
+                            <p class="text-main" style="letter-spacing: 0px;">
+                              ＃Rubaccine
+                            </p>
+                            <p class="text-rub"> 
+                              Share how you're styling your @RUBACCINE 
+                              to be featured. Mention @Rubaccine or upload - make your mark.
+                            </p>
+                          <button class="nav__btn nav__btn--add-recipe" >
+                            <span class="signin hidden-icons-text sale__tab_3">SHARE YOUR STYLE</span>
+                          </button>              
+                        </div>
+                      </div>
+                    </div>
+                    <div class="slidex ">
+                      <img src="/src/img/pic-41.jpg" alt="Photo 2" />
+                      <div class=" slidex-overlay  ">
+                        <img src="/src/img/instagram.svg" alt="" class="insta-icon">
+                        <p>@JOE_RAMOS</p>
+                      </div>
+                    </div>
+                    <div class="slidex ">
+                      <div class="slidex-container" >
+                        <div class="slidex-container-img" style="flex: 0 0 50%;">
+                          <img class="img" src="/src/img/pic-18.jpg" alt="Photo 3" /> 
+                          <div class="slidex-container-img-overlay ">
+                            <img src="/src/img/instagram.svg" alt="" class="insta-icon">
+                            <p>@SASAHA</p>
+                          </div>
+                        </div>
+                        <div class="slidex-container-title"  style="flex: 0 0 50%;">                 
+                        </div>
+                      </div>
+                    </div>  
+                    <div class="slidex">
+                      <img src="/src/img/pic-32.jpg" alt="Photo 1" />
+                      <div class=" slidex-overlay  ">
+                        <img src="/src/img/instagram.svg" alt="" class="insta-icon">
+                        <p>@MEGAN</p>
+                      </div>
+                    </div>
+                    <div class="slidex">
+                      <div class="slidex-container">
+                        <div class="slidex-container-img">
+                          <img class="img" src="/src/img/pic-44.jpg" alt="Photo 3" /> 
+                          <div class="slidex-container-img-overlay ">
+                            <img src="/src/img/instagram.svg" alt="" class="insta-icon">
+                            <p>@JIMMY-XU</p>
+                          </div>
+                        </div> 
+                        <div class="slidex-container-title">              
+                        </div>
+                      </div>
+                    </div>
+                    <div class="slidex ">
+                      <img src="/src/img/pic-8.jpg" alt="Photo 2" />
+                      <div class=" slidex-overlay  ">
+                        <img src="/src/img/instagram.svg" alt="" class="insta-icon">
+                        <p>@MCGREGOR</p>
+                    </div>
+                    </div>
+                    <div class="slidex ">
+                      <div class="slidex-container" >
+                        <div class="slidex-container-img" style="flex: 0 0 70%;">
+                          <img class="img" src="/src/img/pic-23.jpg" alt="Photo 3" /> 
+                          <div class="slidex-container-img-overlay ">
+                            <img src="/src/img/instagram.svg" alt="" class="insta-icon">
+                            <p>@JOHN_BUZZER</p>
+                          </div>
+                        </div>
+                        <div class="slidex-container-title"  style="flex: 0 0 30%;">                   
+                        </div>
+                      </div>
+                    </div> 
+                    <button class="slider__btn slider__btn--left">
+                      <svg class="icon-title-slider ">
+                        <use
+                          href="src/img/sprite.svg#icon-arrow_back_ios" ></use>
+                      </svg>
                     </button>
-                                            
-                    </div>
-
+                    <button class="slider__btn slider__btn--right">
+                      <svg class="icon-title-slider ">
+                        <use
+                          href="src/img/sprite.svg#icon-arrow_forward_ios">
+                        </use>
+                      </svg>
+                    </button> 
                   </div>
                 </div>
-                <div class="slidex ">
-                  <img src="/src/img/pic-41.jpg" alt="Photo 2" />
-                  <div class=" slidex-overlay  ">
-                    <img src="/src/img/instagram.svg" alt="" class="insta-icon">
-                    <p>@JOE_RAMOS</p>
-                </div>
-                </div>
-
-                <div class="slidex ">
-                  <div class="slidex-container" >
-                    <div class="slidex-container-img" style="flex: 0 0 50%;">
-                      <img class="img" src="/src/img/pic-18.jpg" alt="Photo 3" /> 
-                      <div class="slidex-container-img-overlay ">
-                        <img src="/src/img/instagram.svg" alt="" class="insta-icon">
-                        <p>@SASAHA</p>
-                      </div>
-                    </div>
-                  
-                    <div class="slidex-container-title"  style="flex: 0 0 50%;">
-                      <!-- <p class="text-main" style="letter-spacing: 0px;"> ＃Rubaccine</p>
-                     <p class="text-rub"> Share how you're styling your @RUBACCINE 
-                       to be featured. Mention @Rubaccine or upload - make your mark.
-                    </p>
-                     
-                     <button class="nav__btn nav__btn--add-recipe" >
-                      <span class="signin hidden-icons-text sale__tab_3">SHARE YOUR STYLE</span>
-                    </button> -->
-                                            
-                    </div>
-
-                  </div>
-                
-                </div>  
-                <div class="slidex">
-                  <img src="/src/img/pic-32.jpg" alt="Photo 1" />
-                  <div class=" slidex-overlay  ">
-                    <img src="/src/img/instagram.svg" alt="" class="insta-icon">
-                    <p>@MEGAN</p>
-                </div>
-                  
-                </div>
-                <div class="slidex">
-                  <div class="slidex-container">
-                    <div class="slidex-container-img">
-                      <img class="img" src="/src/img/pic-44.jpg" alt="Photo 3" /> 
-                      <div class="slidex-container-img-overlay ">
-                        <img src="/src/img/instagram.svg" alt="" class="insta-icon">
-                        <p>@JIMMY-XU</p>
-                      </div>
-                        
-                    </div>
-                    
-                  
-                    <div class="slidex-container-title">
-                      <!-- <p class="text-main" style="letter-spacing: 0px;"> ＃Rubaccine</p>
-                     <p class="text-rub"> Share how you're styling your @RUBACCINE 
-                       to be featured. Mention @Rubaccine or upload - make your mark.
-                    </p> -->
-                     
-                     <!-- <button class="nav__btn nav__btn--add-recipe" >
-                      <span class="signin hidden-icons-text sale__tab_3">SHARE YOUR STYLE</span>
-                    </button> -->
-                                            
-                    </div>
-
+                <div class="showcase-container-social-btn">
+                  <p class="text-main">Looking for more?</p>
+                  <div class="showcase-container-social-btn-conatiner">
+                    <ul class="nav__list-preview">
+                      <li class="nav__item-preview "><a href="#" style="color: black;" class="removeUnderline">SHOP SHIRTS</a></li>
+                      <li class="nav__item-preview"><a href="#" style="color: black;" class="removeUnderline">SHOP GIFT CARDS </a></li>
+                    </ul>
                   </div>
                 </div>
-                <div class="slidex ">
-                  <img src="/src/img/pic-8.jpg" alt="Photo 2" />
-                  <div class=" slidex-overlay  ">
-                    <img src="/src/img/instagram.svg" alt="" class="insta-icon">
-                    <p>@MCGREGOR</p>
-                </div>
-                
-                </div>
-
-                <div class="slidex ">
-                  <div class="slidex-container" >
-                    <div class="slidex-container-img" style="flex: 0 0 70%;">
-                      <img class="img" src="/src/img/pic-23.jpg" alt="Photo 3" /> 
-                      <div class="slidex-container-img-overlay ">
-                        <img src="/src/img/instagram.svg" alt="" class="insta-icon">
-                        <p>@JOHN_BUZZER</p>
-                      </div>
-                    </div>
-                  
-                    <div class="slidex-container-title"  style="flex: 0 0 30%;">
-                                            
-                    </div>
-
-                  </div>
-                
-                </div> 
-                 <button class="slider__btn slider__btn--left">
-                  <svg class="icon-title-slider ">
-                    <use
-                      href="src/img/sprite.svg#icon-arrow_back_ios"
-                      
-                    ></use>
-                  </svg>
-
-
-                 </button>
-                <button class="slider__btn slider__btn--right">
-                  <svg class="icon-title-slider ">
-                    <use
-                      href="src/img/sprite.svg#icon-arrow_forward_ios"
-                      
-                    ></use>
-                  </svg>
-                </button> 
-              </div>
-              
             </div>
-            <div class="showcase-container-social-btn">
-              <p class="text-main">Looking for more?</p>
-              <div class="showcase-container-social-btn-conatiner">
-                <ul class="nav__list-preview">
-                  <li class="nav__item-preview "><a href="#" style="color: black;" class="removeUnderline">SHOP SHIRTS</a></li>
-                  <li class="nav__item-preview"><a href="#" style="color: black;" class="removeUnderline">SHOP GIFT CARDS </a></li>
-
-                </ul>
-               
-              </div>
-         
-            </div>
-            <div class="showcase-container-social-reusable">
-              <div class="section-1-content-2" >
-                <div class="section-1-content-2-left">
-                  <p class="text-main">
-                    New to Rubaccine? Sign up for 15% off full-price styles in your
-                    first order.
-                  </p>
-                </div>
-                <div class="section-1-content-2-right">
-                  <p class="text-thiny hidden">
-                    Sign up to receive exclusive updates on our new collections and
-                    special offers. To improve your experience we may; profile,
-                    segment, test, analyse and model your details. You can unsubscribe
-                    at any time via the link in your emails. Please refer to our
-                    <strong>Privacy Policy</strong> for further details.
-                  </p>
-                  <div class="email-parent">
-                    <input
-                      class="footer-newsletter-form__input"
-                      id="footer-newsletter-email1"
-                      type="text"
-                      value=""
-                      name="email"
-                      aria-describedby="footer-disclaimer"
-                      placeholder="Email Address"
-                      aria-label="Enter email address"
-                      data-mailcheck="Did you mean"
-                      data-prev-value=""
-                    />
-                    <div class="parent-bottom">
-                      <a href="#" class="input-email-parent">WOMENWEAR</a>
-                      <a href="#" class="input-email-parent">MANWEAR</a>
-                    </div>
-                  </div>
-                  <div class="thinyAlert hidden">
-                    <p class="errorEmailRegisted">
-                      WE RECOGNISE THIS EMAIL ADDRESS. YOU HAVE ALREADY SUBSCRIBED
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <hr class="hr1" />
-              <div class="footer" >
-                <div class="footer-info">
-                  <div class="footer-info-container">
-                    <div class="footer-info-container-left">
-                      <div class="footer-info-container-left-info1">
-                        <ul class="nav__list-footer ">
-                          <li class="nav__item-footer-a">
-                            <a href="#">INFORMATION</a>
-                          </li>
-                          <!--  1020px  😃   Toggle .icon-footer-rotation class to Rotate -->
-                          <svg class="icon-footer  icon-hidden  ">
-                            <use 
-                              href="src/img/sprite.svg#icon-keyboard_arrow_down"
-                            
-                            ></use>
-                          </svg>
-                        </ul>
-                      </div>
-                      <hr class="hr2" />
-                      <!--  1020px  😃 REMOVE VISIBILITY TO SEE -->
-                      <div class="footer-info-container-left-info2">
-                        <ul class="nav__list-footer-2 operations__tab--active">
-                          <li class="nav__item-footer"><a href="#">Contact Us</a></li>
-                          <li class="nav__item-footer"><a href="#">Delivery</a></li>
-                          <li class="nav__item-footer">
-                            <a href="#">Returns & Exchange</a>
-                          </li>
-                          <li class="nav__item-footer"><a href="#">FAQs</a></li>
-                          <li class="nav__item-footer"><a href="#">Size Guide</a></li>
-                          <li class="nav__item-footer"><a href="#">Careers</a></li>
-                          <li class="nav__item-footer"><a href="#">Stores</a></li>
-                          <li class="nav__item-footer">
-                            <a href="#">Sustainability</a>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                    <!--  -->
-                    <div class="footer-info-container-right">
-                      <div class="footer-info-container-left-info1">
-                        <ul class="nav__list-footer previeweEl">
-                          <li class="nav__item-footer-a"><a href="#">&nbsp;</a></li>
-                        </ul>
-                      </div>
-                      <!--  1020px  😃 REMOVE VISIBILITY TO SEE -->
-                      <div class="footer-info-container-left-info2">
-                        <ul class="nav__list-footer-2">
-                          <li class="nav__item-footer">
-                            <a href="#">Accesssibility</a>
-                          </li>
-                          <li class="nav__item-footer"><a href="#">Klarna</a></li>
-                          <li class="nav__item-footer">
-                            <a href="#">Terms & Conditions</a>
-                          </li>
-                          <li class="nav__item-footer">
-                            <a href="#">Privacy Policy</a>
-                          </li>
-                          <li class="nav__item-footer">
-                            <a href="#">Tax Strategy</a>
-                          </li>
-                          <li class="nav__item-footer">
-                            <a href="#">Modern Slavery Act</a>
-                          </li>
-                          <li class="nav__item-footer">
-                            <a href="#">Gender Pay Gap</a>
-                          </li>
-                          <li class="nav__item-footer"><a href="#">Site Map</a></li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!--  -->
-                <!-- <hr class="hr2"> -->
-                <div class="footer-icon">
-                  <div class="footer-icon-container">
-                    <div class="footer-icon-container-left">
-                      <div class="footer-info-container-left-info1">
-                        <ul class="nav__list-footer">
-                          <li class="nav__item-footer-a">
-                            <a href="#">DOWNLOAD OUR APP</a>
-                          </li>
-                          <!-- 😃 ADD icon-footer-rotation class to Rotate  -->
-                          <svg class="icon-footer icon-hidden">
-                            <use
-                              href="src/img/sprite.svg#icon-keyboard_arrow_down"
-                            ></use>
-                          </svg>
-                        </ul>
-                      </div>
-                      <hr class="hr2" />
-                      <!--  1020px  😃 REMOVE VISIBILITY TO SEE -->
-                      <div class="footer-info-container-left-info2">
-                        <img
-                          src="/src/img/App_Store_(iOS)-Badge-Logo.wine.svg"
-                          alt="app store"
-                          class="appStore"
-                        />
-                      </div>
-                    </div>
-                    <!-- <hr class="hr2"> -->
-                    <!-- <div class="footer-icon-container-right">
-      
-                    </div> -->
-                    <div class="footer-info-container-right">
-                      <div class="footer-info-container-left-info1">
-                        <ul class="nav__list-footer">
-                          <li class="nav__item-footer-a">
-                            <a href="#">FOLLOW US</a>
-                          </li>
-                          <!-- 😃 ADD icon-footer-rotation class to Rotate  -->
-                          <svg class="icon-footer icon-hidden">
-                            <use
-                              href="src/img/sprite.svg#icon-keyboard_arrow_down"
-                            ></use>
-                          </svg>
-                        </ul>
-                      </div>
-                      <hr class="hr2" />
-                      <!--  1020px  😃 REMOVE VISIBILITY TO SEE -->
-                      <div class="footer-info-container-left-info2">
-                        <ul class="nav__list-footer-2">
-                          <li class="nav__item-footer"><a href="#">Instagram</a></li>
-                          <li class="nav__item-footer"><a href="#">Facebook</a></li>
-                          <li class="nav__item-footer"><a href="#">Twitter</a></li>
-                          <li class="nav__item-footer"><a href="#">Youtube</a></li>
-                          <li class="nav__item-footer"><a href="#">Pinterest</a></li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <hr class="hr3" />
-              <div class="copyright">
-                <p>Copyright&copy;Dario Amade 2021</p>
-              </div>
-         
-            </div>
-           
-
-
           </div>
-          </div>
-         
         </div>
-    
-      </div>
+    </div>
 
        <!-- CONTENT END -->
        <div class="section-1 "> <!--IMPORTANTdisplays on the bottom slider__contain-active -->

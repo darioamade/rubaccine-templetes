@@ -15,6 +15,7 @@
     />
 
     <link rel="stylesheet" href="src/sass/main.css" />
+    <!-- <script defer src="src/js/controller.js"></script> -->
     <script defer src="src/js/helpers.js"></script>
     <link
     rel="stylesheet"
@@ -255,7 +256,7 @@
                 </div>
                 <!--  WILL COME BACK LATER 😃 -->
                 <div class="whishlist-container-title-grid">
-                  <div class="whishlist-img "  id="img--1">
+                  <div class="whishlist-img">
                     <div class="whishlist-img-stock">
                       <p>IN STOCK</p>
                   
@@ -330,7 +331,7 @@
                     <!--  -->
                     </div>
                   </div>
-                  <div class="whishlist-img" id="img--2">
+                  <div class="whishlist-img">
                     <div class="whishlist-img-stock">
                       <p>IN STOCK</p>
                   
@@ -403,7 +404,7 @@
                             <button class="btn-add  btn-not-clear">ADD TO BAG</button>
                           </div>
                   </div>
-                  <div class="whishlist-img" id="img--3">
+                  <div class="whishlist-img">
                     <div class="whishlist-img-stock">
                       <p>IN STOCK</p>
                   
@@ -476,7 +477,7 @@
                             <button class="btn-add  btn-not-clear">ADD TO BAG</button>
                           </div>
                   </div>
-                  <div class="whishlist-img" id="img--4">
+                  <div class="whishlist-img">
                     <div class="whishlist-img-stock">
                       <p>IN STOCK</p>
                   
@@ -549,7 +550,7 @@
                             <button class="btn-add  btn-not-clear">ADD TO BAG</button>
                           </div>
                   </div>
-                  <div class="whishlist-img" id="img--5">
+                  <div class="whishlist-img">
                     <div class="whishlist-img-stock">
                       <p>IN STOCK</p>
                   
@@ -622,7 +623,8 @@
                             <button class="btn-add  btn-not-clear">ADD TO BAG</button>
                           </div>
                   </div>
-                </div>
+                
+                  </div>
                 </div>
                 <div class="whishlist-container-title-btn-black">
                   <button class="btn-add  btn-add-all-to-bag active">ADD ALL TO BAG</button>
@@ -986,7 +988,7 @@
             
             </form>
                <!--  NAV  SALE TAB -1 SALE-->
-            <div class="nav-link-preview  hero__tab__hidden hero-sale__content--1 sale__tab_1_box hidden "> <!-- //TODO DONE   ok-->
+               <div class="nav-link-preview  hero__tab__hidden hero-sale__content--1 sale__tab_1_box hidden "> <!-- //TODO DONE   ok-->
                 <div class="nav-link-preview-container-left">
                     <ul class="nav__list-preview">
                       <li class="nav__item-preview bold-title">
@@ -1346,7 +1348,7 @@
                         <use href="src/img/icons.svg#icon-shopping_bag"></use>
     
                     </svg> -->
-                    <img src="src/img/cart.svg" alt="icon"  class="icon-test  icon_bag__icon__small hoveruv hidden-icons">
+                    <img src="src/img/cart.svg" style="margin-right: .5rem;" alt="icon"  class="icon-test  icon_bag__icon__small hoveruv hidden-icons">
                     <span class="icon-test-name bag__icon__cart hidden-icons-text">bag (1)</span>
                     </button>
                 </li>
@@ -1357,20 +1359,31 @@
         <!-- header END -->
         <!-- Content -->
         <div class="new-hero">
-            <div class="section-4a " >
+            <div class="section-4" style="background-image: url('/src/img/pic-58.jpg');">
                 <div class="campaign-heading lockup">
                     <p class="campaign-title campaign-left">Hope</p>
                     <p class="campaign-title campaign-right">Springs</p>
                     <p class="campaign-title campaign-center">Infernal</p>
                 </div>
+                <div class="campaign-btn">
+                    <a class="as_cta--button" href="#">
+                        <button class="button">SHOP NEW SEASON</button>
+                    </a>
+                       <a class="as_cta--button" href="#">
+                        <button class="button">EXPLORE THE CAMPAIGN</button>
+                    </a>
+                </div>
             </div>
-            <div class="section-5">
-                <p class="text-main">This season, we’re celebrating the emergence of spring with 
-                    our new collection, Hope Springs Infernal.</p>
+            
+            <div class="section-2b">
+                <p class="text-main">New Now</p>
+
             </div>
-            <div class="section-6">
-                <div class="section-6-content">
-                    <div class="player">
+            <div class="section-2">
+                <div class="section-2-video">
+                    <div class="video-bg">
+                        <div class="video-content">
+                             <div class="player">
                         <video class="video" src='/src/img/production ID_5102955.mp4' autoplay loop playsinline></video>
                         <div class="show-controls">
                             <div class="controls-container">
@@ -1412,102 +1425,85 @@
                             </div>
                         </div>
                     </div>
-
-
+                        </div>
+                    </div>
                 </div>
-
-            </div>
-            <div class="section-6a">
-                <div class="slider-spring ">
-                    <div class="slide"><img src="/src/img/pic-51.jpg" alt="Photo 1" /></div>
-                    <div class="slide"><img  src="/src/img/Desktop - 1.svg" alt="Photo 2"/></div>
-                    <div class="slide"><img src="/src/img/pic-54.jpg" alt="Photo 3" /></div>
-                    <div class="slide"><img  src="/src/img/Desktop - 3.svg" alt="Photo 2"/></div>
-                    <div class="slide"><img src="/src/img/pic-71.jpg" alt="Photo 4" /></div>  
+                <div class="section-2-description">
+                    <p class="text-main text-main-hidden">New Now</p>
+                    <p class="text-commit">Latest Arrivals</p>
+                    <p class="text-commit">Leathers</p>
+                    <p class="text-commit">Dresses</p>
+                    <p class="text-commit">Loungewear</p>
+                    <p class="text-commit">Footwear</p
                 </div>
-                <button class="slider-spring__btn slider-spring__btn__btn--left">
-                    <svg class="icon-slider ">
-                    <use href="src/img/sprite.svg#icon-keyboard_arrow_left"></use>
-                    </svg>
-                </button>
-                <button class="slider-spring__btn slider-spring__btn__btn--right">
-                        <svg class="icon-slider ">
-                    <use href="src/img/sprite.svg#icon-keyboard_arrow_right"></use>
-                    </svg>
-                </button>
-             
             </div>
-            <div class="section-5">
-                <p class="text-main">It’s time for nature, space, and some much needed escapism.
-                    A celebration of new beginnings.
-                </p>
             </div>
-            <div class="section-7">
-                <div class="section-7-content">
-                    <img src="/src/img/pic-65.jpg" alt="spring-img" class="spring-img">
+            <div class="section-3">
+                <div class="section-3-item grid-item-1">
+                    <div class="section-3-item-img">
+                        <img src="/src/img/pic-59.jpg" alt="spring-colection" class="spring-img">
+
+                    </div>
+                    <div class="section-3-item-title">
+                        <p class="text-main">Spring Uniform</p>
+                        <ul class="nav__list">
+                            <li class="nav__item">
+                                <button class="nav__btn nav__btn--add-recipe" data-tab="2">
+                                <span class="signin sale__tab_3" >SHOP NEW ARRIVALS</span>
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
 
                 </div>
-            </div>
-            <div class="section-8">
-                <div class="section-8-content">
-                    <img src="/src/img/pic-66.jpg" alt="spring-img" class="spring-img">
-
+                <div class="section-3-item grid-item-2">
+                    <div class="section-3-item-img">
+                        <img src="/src/img/pic-62.jpg" alt="spring-colection" class="spring-img">
+                    </div>
+                    <div class="section-3-item-title">
+                        <p class="text-main">Cropped Or Not</p>
+                        <ul class="nav__list">
+                            <li class="nav__item">
+                                <button class="nav__btn nav__btn--add-recipe" data-tab="2">
+                                <span class="signin sale__tab_3" >SHOP TOPS & SHIRTS</span>
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="section-3-item grid-item-3">
+                    <div class="section-3-item-img">
+                        <img src="/src/img/pic-61.jpg" alt="spring-colection" class="spring-img">
+                    </div>
+                    <div class="section-3-item-title">
+                        <p class="text-main">Still Essential</p>
+                        <ul class="nav__list">
+                            <li class="nav__item">
+                                <button class="nav__btn nav__btn--add-recipe" data-tab="2">
+                                <span class="signin  sale__tab_3" >SHOP DRESSES</span>
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-            <div class="section-9">
-                <div class="section-9-content">
-                    <img src="/src/img/pic-51.jpg" alt="spring-img" class="spring-img">
-                    <img src="/src/img/pic-67.jpg" alt="spring-img" class="spring-img">
-                    <img src="/src/img/pic-68.jpg" alt="spring-img" class="spring-img">
-                    <img src="/src/img/pic-64.jpg" alt="spring-img" class="spring-img">
-                </div>
-            </div>
-            <div class="section-5">
-                <p class="text-main">We’re continuing our conscious commitment with 
-                    regular drops of loungewear, denim and t-shirts. All designed and 
-                    produced with reduced water waste in mind.
-                </p>
-                <div class="section-10"> 
-                </div>
-            </div>
-            <div class="section-7">
-                <div class="section-7-content">
-                    <img src="/src/img/pic-74.jpg" alt="spring-img" class="spring-img">
-
-                </div>
-            </div>
-            <div class="section-7">
-                <div class="section-7-content">
-                    <img src="/src/img/pic-73.jpg" alt="spring-img" class="spring-img">
-
-                </div>
-            </div>
-            <div class="section-8">
-                <div class="section-8-content">
-                    <img src="/src/img/pic-72.jpg" alt="spring-img" class="spring-img">
-
-                </div>
-            </div>
-            <div class="section-11">
-                <div class="section-11-description">
-                    <p class="text-main">And where better to introduce a collection that highlights
-                        the importance of water, 
-                       than the place where water is most scarce - the desert.
-                   </p>
-
-                </div>
-                <div class="section-11-btn">
-                    <div class="campaign-btn">
-                        <a class="as_cta--button" href="#">
-                            <button class="button">SHOP WOMEN</button>
-                        </a>
-                        <a class="as_cta--button" href="#">
-                            <button class="button">SHOP MEN</button>
-                        </a>
-                    </div> 
-                </div>
-            </div>
+        </div>
         <!-- ContentEnd -->
+        <div class="shop-more ">
+            <hr class="hr" />
+            <div class="section-1-content-1">
+            <p class="text-main">A Conscious Commitment</p>
+            <p>
+                Sustainable changes for right now. A new uniform made using 
+                recycled yarns, responsible wools, vegetable-tanned leathers and innovative water saving techniques..
+            </p>
+            <ul class="nav__list-bottom">
+                <li class="nav__item-bottom outmore">
+                <a href="#">FIND OUT MORE</a>
+                </li>
+            </ul>
+            </div>
+        </div>
         <div class="section-1 "> <!--IMPORTANTdisplays on the bottom slider__contain-active -->
             
             <hr class="hr" />

@@ -231,13 +231,14 @@ saleTab3.addEventListener('mouseenter', function () {
 //   saleTabBox3.classList.add('hidden');
 // });
 
- */
+  */ 
 
+  // MENU  MOUSE HOVER ( women and men)
 const tabsContent = document.querySelectorAll('.hero__tab__hidden');
 const navContainer = document.querySelector('.nav__container');
 const dropSelect = document.querySelectorAll('.drop-select');
 
-/* navContainer.addEventListener('mouseover', function (e) {
+ navContainer.addEventListener('mouseover', function (e) {
   //const clickedIt = e.target.parentElement;
   const clickedIt = e.target.closest('.nav__btn');
   console.log(clickedIt);
@@ -259,7 +260,7 @@ navContainer.addEventListener('mouseleave', function () {
   document
   .querySelector(`.hero-sale__content--${clickedIt.dataset.tab} `)
   .classList.remove('hidden');
-}); */
+});
 
 /* dropSelect.forEach(el =>
   el.addEventListener('mouseover', function (e) {
@@ -377,9 +378,9 @@ const slider = function () {
   init();
 
   // Event handlers
-  /*  btnRight.addEventListener('click', nextSlide);
-  btnLeft.addEventListener('click', prevSlide);
- */
+/*    btnRight.addEventListener('click', nextSlide);
+  btnLeft.addEventListener('click', prevSlide); */
+
   document.addEventListener('keydown', function (e) {
     if (e.key === 'ArrowLeft') prevSlide();
     e.key === 'ArrowRight' && nextSlide();
@@ -571,3 +572,15 @@ for (i = elements.length - 1; i >= 0; --i) {
 // for( let i = 0; i < whishlistImgSingle.length; i--){
 
 // }
+
+var myobj = document.getElementById(".currency");
+
+// var x = window.matchMedia("(max-width: 1720px)")
+// function myFunction(x) {
+//   if (x.matches) { // If media query matches
+//     myobj.remove();
+//   } 
+// }
+
+// myFunction(x) 
+

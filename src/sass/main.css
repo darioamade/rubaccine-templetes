@@ -1673,6 +1673,14 @@ body {
   height: 100%;
 }
 
+@media only screen and (max-width: 1020px) {
+  .nav__list {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
 .nav__item {
   position: relative;
 }
@@ -1690,6 +1698,9 @@ body {
   border: none;
   cursor: pointer;
   padding: 0 1.5rem;
+  /*   @media only screen and (max-width: 375px) {
+      padding: 0 0.145rem;
+    } */
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   display: -webkit-box;
@@ -1700,15 +1711,9 @@ body {
           align-items: center;
 }
 
-@media only screen and (max-width: 1020px) {
+@media only screen and (max-width: 600px) {
   .nav__btn {
-    padding: 0 0.445rem;
-  }
-}
-
-@media only screen and (max-width: 375px) {
-  .nav__btn {
-    padding: 0 0.145rem;
+    padding: 0rem;
   }
 }
 
@@ -2121,6 +2126,10 @@ body {
 @media screen and (max-width: 1020px) {
   .hidden-icons-text {
     display: none;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    visibility: hidden;
   }
 }
 
@@ -2139,6 +2148,27 @@ body {
 @media screen and (max-width: 1020px) {
   .con-tes-mar {
     margin-left: 0rem;
+  }
+}
+
+@media screen and (max-width: 1020px) {
+  .nav__item .currency {
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+    width: 0;
+    overflow: hidden;
+  }
+}
+
+.icon_bag__icon__small {
+  margin-left: 2.5rem;
+}
+
+@media screen and (max-width: 550px) {
+  .icon_bag__icon__small {
+    margin-right: 1.5rem;
   }
 }
 
@@ -6185,18 +6215,10 @@ strong {
 
 .showcase {
   background-color: #ffffff;
-  position: fixed;
-  top: 6.4rem;
-  left: 0;
-  right: 0;
-  height: 100vh;
+  margin-top: 6.4rem;
+  min-height: 100vh;
   width: 100%;
-  z-index: 200;
-  overflow-y: scroll;
-  visibility: hidden;
-  opacity: 0;
-  visibility: visible;
-  opacity: 1;
+  z-index: 4;
 }
 
 .showcase-container {
@@ -6247,8 +6269,9 @@ strong {
 }
 
 .showcase-container-filter {
-  min-height: 5rem;
+  height: auto;
   width: 100%;
+  background-color: #fff;
   padding: 2rem 4rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -6462,7 +6485,7 @@ strong {
 }
 
 .showcase-container-gallery {
-  height: calc(100vh - 6rem);
+  min-height: calc(100vh - 6rem);
   width: 100vw;
 }
 
@@ -6473,7 +6496,6 @@ strong {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  overflow-y: scroll;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (31%)[3];
@@ -6513,7 +6535,6 @@ strong {
   .showcase-container-gallery-grid {
     -ms-grid-columns: (95%)[1];
         grid-template-columns: repeat(1, 95%);
-    grid-auto-rows: minmax(100%, auto);
   }
 }
 
@@ -6782,10 +6803,65 @@ strong {
   letter-spacing: 1px;
 }
 
+.icon-page-increase {
+  opacity: 0;
+  visibility: hidden;
+  width: 2rem;
+  height: 2rem;
+  fill: #444444;
+  position: relative;
+  display: block;
+  background: white;
+  opacity: 0.54;
+  cursor: pointer;
+}
+
+.showcase-container-gallery-grid-item:hover .size-slider {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+}
+
+.showcase-container-gallery-grid-item:hover .icon-page-increase {
+  opacity: 1;
+  visibility: visible;
+}
+
+.showcase-container-gallery-grid-item:hover .icon-page-increase:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.one-color {
+  width: 100;
+  min-height: 2rem;
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.one-color .thinny-square {
+  width: 2rem;
+  height: 1.5rem;
+  background-color: lawngreen;
+}
+
 .showcase-container-social {
   width: 100%;
   margin: 0 auto;
   padding: 0rem;
+  border: 2px solid red;
 }
 
 .showcase-container-social-title {
@@ -6806,6 +6882,7 @@ strong {
   width: 100vw;
   height: 70rem;
   margin: 0 auto;
+  background-color: pink;
 }
 
 .showcase-container-social-btn {
@@ -6938,6 +7015,15 @@ strong {
   position: relative;
   /* IN THE END */
   overflow: hidden;
+}
+
+@media screen and (max-width: 1020px) {
+  .sliderer {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    background-color: red;
+  }
 }
 
 .slidex {
@@ -7106,6 +7192,13 @@ strong {
   height: 5.5rem;
   width: 5.5rem;
   cursor: pointer;
+}
+
+@media screen and (max-width: 1020px) {
+  .slider__btn {
+    opacity: 0;
+    visibility: hidden;
+  }
 }
 
 .slider__btn--left {
@@ -7392,30 +7485,6 @@ strong {
       0 22.3px 17.9px rgba(0, 0, 0, 0.042), 0 41.8px 33.4px rgba(0, 0, 0, 0.05),
       0 100px 80px rgba(0, 0, 0, 0.07);
 */
-.one-color {
-  width: 100;
-  min-height: 2rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-}
-
-.one-color .thinny-square {
-  width: 2rem;
-  height: 1.5rem;
-  background-color: lawngreen;
-}
-
 .icon-page {
   width: 2rem;
   height: 2rem;
@@ -7529,6 +7598,15 @@ strong {
     opacity: 1;
     margin: 0rem;
   }
+}
+
+.sticky {
+  position: fixed;
+  top: 6.4rem;
+  left: 0;
+  right: 0;
+  z-index: 20;
+  border-bottom: 1px solid #444444;
 }
 
 .showcase-loads {
@@ -12283,6 +12361,12 @@ input[type='checkbox'] {
   }
 }
 
+@media only screen and (max-width: 600px) {
+  .icon-test_space {
+    margin-left: 3rem;
+  }
+}
+
 .icon-test_space-1 {
   width: 2rem;
   height: 2rem;
@@ -12297,6 +12381,12 @@ input[type='checkbox'] {
 @media only screen and (max-width: 768px) {
   .icon-test_space-1 {
     margin-left: -3rem;
+  }
+}
+
+@media only screen and (max-width: 431px) {
+  .icon-test_space-1 {
+    margin-left: -2rem;
   }
 }
 

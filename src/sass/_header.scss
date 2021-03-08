@@ -24,6 +24,7 @@
     justify-content: center;
     align-items: center;
 
+
     p {
       // font-family: orpheuspro, serif;
       // font-size: 4rem;
@@ -417,9 +418,11 @@ li button .signin .hoveruv:hover {
 .nav {
   align-self: stretch;
   margin: 0 1.5rem;
+
   //BUG
   @media only screen and (max-width: 550px) {
     margin-right: 0.5rem;
+  
   }
   @media only screen and (max-width: 375px) {
     margin-right: 0rem;
@@ -429,6 +432,9 @@ li button .signin .hoveruv:hover {
     list-style: none;
     display: flex;
     height: 100%;
+    @media only screen and (max-width: 1020px){
+      justify-content: space-between;
+    }
   }
 
   &__item {
@@ -450,12 +456,15 @@ li button .signin .hoveruv:hover {
 
     padding: 0 1.5rem; // BUG
     // padding-right: 1rem;
-    @media only screen and (max-width: 1020px) {
-      padding: 0 0.445rem;
+    // @media only screen and (max-width: 1020px) {
+    //   padding: 0 0.445rem;
+    // }
+    @media only screen and (max-width: 600px) {
+      padding: 0rem;
     }
-    @media only screen and (max-width: 375px) {
+  /*   @media only screen and (max-width: 375px) {
       padding: 0 0.145rem;
-    }
+    } */
     transition: all 0.3s;
     display: flex;
     align-items: center;
@@ -798,6 +807,10 @@ li button .signin .hoveruv:hover {
 .hidden-icons-text {
   @media screen and (max-width: 1020px) {
     display: none;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    visibility: hidden;
   }
 }
 .hidden-icons {
@@ -812,5 +825,26 @@ li button .signin .hoveruv:hover {
   margin-left: -2.5rem;
   @media screen and (max-width: 1020px) {
     margin-left: 0rem;
+  }
+}
+
+
+@media screen and (max-width: 1020px){
+  .nav__item .currency{
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+    height: 0; 
+    width: 0;
+    overflow: hidden;
+  }
+}
+
+
+
+.icon_bag__icon__small{
+  margin-left: 2.5rem;
+  @media screen and (max-width: 550px) {
+    margin-right: 1.5rem;
   }
 }
